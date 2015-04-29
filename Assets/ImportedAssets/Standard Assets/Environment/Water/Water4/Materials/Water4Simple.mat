@@ -2,13 +2,14 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Water4Simple
   m_Shader: {fileID: 4800000, guid: 8aaff0751054e4a9cb4642d01eaf5be9, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -111,6 +112,10 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
+          name: _SpecularColor
+        second: {r: .820895553, g: .805815935, b: .771886885, a: 1}
+      data:
+        first:
           name: _DistortParams
         second: {r: 1.02857149, g: .201872215, b: 2.76662493, a: -.417142838}
       data:
@@ -141,10 +146,6 @@ Material:
         first:
           name: _ReflectionColor
         second: {r: .47582978, g: .606486499, b: .664179087, a: .470588237}
-      data:
-        first:
-          name: _SpecularColor
-        second: {r: .820895553, g: .805815935, b: .771886885, a: 1}
       data:
         first:
           name: _WorldLightDir
