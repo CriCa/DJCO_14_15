@@ -44,7 +44,7 @@ public class NetworkManager : MonoBehaviour {
 		                          0.98f,
 		                          0f);
 
-		player = PhotonNetwork.Instantiate ("FPSPlayer", 
+		player = PhotonNetwork.Instantiate ("PlayerModel", 
 		                                    pos,
 		                                    Quaternion.identity,
 		                                    0);
