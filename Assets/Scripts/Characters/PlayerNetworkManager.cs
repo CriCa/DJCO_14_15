@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerNetworkManager : Photon.MonoBehaviour {
 
@@ -9,10 +10,15 @@ public class PlayerNetworkManager : Photon.MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
 		if(photonView.isMine)
 		{
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+
 			GetComponent<Rigidbody>().useGravity = true;
+			GetComponent<AudioSource>().enabled = true;
+			GetComponent<FirstPersonController>().enabled = true;
+			GetComponentInChildren<Camera>().enabled = true;
 
 			/*GetComponent<FirstPersonCharacter>().enabled = true;
 			GetComponent<FirstPersonHeadBob>().enabled = true;
