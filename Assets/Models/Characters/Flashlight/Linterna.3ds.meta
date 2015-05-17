@@ -1,14 +1,22 @@
 fileFormatVersion: 2
-guid: 69ec7fc160c05b24590cf0856f85aa5c
+guid: 1c72026b8e0decb4bb73e2750505bd64
+timeCreated: 1431885461
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Sphere
+    100004: Sphere.001
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: wallstone
-    11100000: //RootNode
+    400002: Sphere
+    400004: Sphere.001
+    2300000: Sphere
+    2300002: Sphere.001
+    3300000: Sphere
+    3300002: Sphere.001
+    4300000: Sphere.001
+    4300002: Sphere
   materials:
     importMaterials: 1
     materialName: 0
@@ -42,11 +50,11 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
@@ -62,7 +70,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
