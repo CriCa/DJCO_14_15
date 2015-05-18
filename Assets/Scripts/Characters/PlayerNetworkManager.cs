@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.Characters.FirstPerson;
 
@@ -10,8 +10,8 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 {
 	float smoothing = 10f; // lerping movement update speed
 
-	Vector3 position;
-	Quaternion rotation;
+	Vector3 position = Vector3.zero;
+	Quaternion rotation = Quaternion.identity;
 
 	Transform flashlight;
 	Light flashlightToggle;
@@ -36,9 +36,6 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 			foreach (Camera cam in GetComponentsInChildren<Camera>()) {
 				cam.enabled = true;
 			}
-
-			// enable chat
-			GameObject.FindGameObjectWithTag("ChatInput").GetComponent<ChatController>().enabled = true;
 
 			// flashlight should be drawn on top of everything for this player only
 			transform.Find("Flashlight/FlashlightModel/Mesh").gameObject.layer = 8;

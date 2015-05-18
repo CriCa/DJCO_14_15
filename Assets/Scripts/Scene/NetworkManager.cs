@@ -37,6 +37,7 @@ public class NetworkManager : MonoBehaviour
 
 	void OnJoinedLobby() {
 		PhotonNetwork.playerName = "Player " + Random.Range(0, 9999);
+		ChatManager.instance.SetPlayerName(PhotonNetwork.playerName);
 
 		RoomOptions ro = new RoomOptions() {isVisible = true, maxPlayers = 5};
 		PhotonNetwork.JoinOrCreateRoom("Default", ro, TypedLobby.Default);
@@ -49,35 +50,8 @@ public class NetworkManager : MonoBehaviour
 		ExitGames.Client.Photon.Hashtable roomProperties = new ExitGames.Client.Photon.Hashtable();
 		roomProperties.Add("m", mapExample);
 
+		// set map in room properties
 		PhotonNetwork.room.SetCustomProperties(roomProperties);
-	}
-
-	void OnPhotonCreateRoomFailed(object[] codeAndMsg) {
-
-	}
-
-	void OnJoinedRoom() {
-		StartSpawnProcess(0f);
-	}
-
-	void OnPhotonJoinRoomFailed(object[] codeAndMsg) {
-
-	}
-
-	void OnPhotonRandomJoinFailed(object[] codeAndMsg) {
-
-	}
-
-	void OnPhotonPlayerConnected(PhotonPlayer player) {
-		Debug.Log(player.name + " just connected.");
-	}
-
-	void OnPhotonPlayerDisconnected(PhotonPlayer player) {
-		Debug.Log(player.name + " has left the game.");
-	}
-
-	void OnPhotonMaxCccuReached() {
-
 	}
 
 	void OnPhotonCustomRoomPropertiesChanged() {
@@ -89,16 +63,55 @@ public class NetworkManager : MonoBehaviour
 		}
 	}
 
+	void OnPhotonCreateRoomFailed(object[] codeAndMsg) {
+
+	}
+
+	void OnJoinedRoom() {
+		// spawn player
+		spawnCamera.enabled = true;
+		SpawnPlayer();
+
+		// enable chat
+		GetComponent<ChatManager>().enabled = true;
+	}
+
+	void OnPhotonJoinRoomFailed(object[] codeAndMsg) {
+
+	}
+
+	void OnPhotonRandomJoinFailed(object[] codeAndMsg) {
+
+	}
+
+	void OnPhotonPlayerConnected(PhotonPlayer player) {
+		ChatManager.instance.AddMessage(player.name + " just connected.");
+	}
+
+	void OnPhotonPlayerDisconnected(PhotonPlayer player) {
+		ChatManager.instance.AddMessage(player.name + " has left the game.");
+	}
+
+	void OnPhotonMaxCccuReached() {
+
+	}
+
 	void StartSpawnProcess(float respawnTime) {
 		spawnCamera.enabled = true;
 		StartCoroutine("SpawnPlayer", respawnTime);
 	}
 	
-	IEnumerator SpawnPlayer(float respawnTime) {
+	IEnumerator WaitAndSpawn(float respawnTime) {
 		yield return new WaitForSeconds(respawnTime);
+		SpawnPlayer();
+	}
 
+	void SpawnPlayer() {
+		// spawn player
 		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 0.98f, 0f);
 		player = PhotonNetwork.Instantiate ("PlayerModel", pos, Quaternion.identity, 0);
+		
+		// disable spawn camera
 		spawnCamera.enabled = false;
 	}
 
@@ -108,5 +121,9 @@ public class NetworkManager : MonoBehaviour
 
 	public string GetPlayerName() {
 		return PhotonNetwork.player.name;
+	}
+
+	public void SetPlayerName(string playerName) {
+		PhotonNetwork.playerName = playerName;
 	}
 }

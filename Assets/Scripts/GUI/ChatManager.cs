@@ -9,8 +9,11 @@ using System.Collections.Generic;
  * Responsible for listening to player input and outputing to the GUI.
  * Alerts all players whenever a new message has been set via RPC.
  */
-public class ChatController : MonoBehaviour 
+public class ChatManager : MonoBehaviour 
 {	
+	public static ChatManager instance = null; // singleton object
+
+	public InputField input; // input field
 	public Text output; // output field
 	public int maxMessages = 4; // maximum number of messages on screen at a time
 	public KeyCode activationKey = KeyCode.Y; // keypress needed to activate input
@@ -20,17 +23,24 @@ public class ChatController : MonoBehaviour
 	FlashlightController flController;
 	string playerName;
 
-	InputField input;
 	Queue<string> messages;
 	bool isSelected; // provides more control over input selection
+
+	void Awake() {
+		if (instance == null) {
+			instance = this;
+		}
+		else if (instance != this) {
+			Destroy(gameObject); 
+		}
+	}
 	
 	void Start () {
 		photonView = GetComponent<PhotonView>();
 		fpController = NetworkManager.instance.GetPlayer().GetComponent<FirstPersonController>();
 		flController = NetworkManager.instance.GetPlayer().GetComponentInChildren<FlashlightController>();
 		playerName = NetworkManager.instance.GetPlayerName();
-
-		input = this.GetComponent<InputField>();
+		
 		messages = new Queue<string>();
 		isSelected = false;
 	}
@@ -41,7 +51,11 @@ public class ChatController : MonoBehaviour
 		}
 
 		else if (isSelected && Input.GetKeyDown(KeyCode.Return)) {
-			AddMessage(playerName + ": " + input.text);
+			if (input.text != "" && input.text.Length <= 80) {
+				string message = playerName + ": " + input.text;
+				photonView.RPC("AddMessage_RPC", PhotonTargets.All, message);
+			}
+
 			DeselectInput();
 		}
 		
@@ -68,14 +82,12 @@ public class ChatController : MonoBehaviour
 		isSelected = false;
 	}
 
-	void AddMessage(string message) {
-		if (message != "" && message.Length <= 80) {
-			photonView.RPC("AddMessage_RPC", PhotonTargets.All, message);
-		}
-	}
-	
 	[RPC]
 	void AddMessage_RPC(string message) {
+		AddMessage(message);
+	}
+
+	public void AddMessage(string message) {
 		messages.Enqueue(message);
 		
 		if (messages.Count > maxMessages) {
@@ -87,5 +99,13 @@ public class ChatController : MonoBehaviour
 		foreach (string m in messages) {
 			output.text += m + "\n";
 		}
+	}	
+
+	public void SetPlayerName(string playerName) {
+		this.playerName = playerName;
+	}
+
+	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
+
 	}
 }
