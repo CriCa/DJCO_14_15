@@ -44,23 +44,20 @@ public class NetworkManager : MonoBehaviour
 	}
 
 	void OnCreatedRoom() {
-		// map generation example
-		string mapExample = "sp00ky";
+		// generate map
+		MapManager.instance.GenerateMap();
+		int [] map = MapManager.instance.GetMinimizedMap();
 
 		ExitGames.Client.Photon.Hashtable roomProperties = new ExitGames.Client.Photon.Hashtable();
-		roomProperties.Add("m", mapExample);
+		roomProperties.Add("m", map);
 
 		// set map in room properties
 		PhotonNetwork.room.SetCustomProperties(roomProperties);
 	}
 
 	void OnPhotonCustomRoomPropertiesChanged() {
-		// this also gets called when a player joins a room
-		ExitGames.Client.Photon.Hashtable roomProperties = PhotonNetwork.room.customProperties;
-		
-		if (roomProperties["m"] != null) {
-			Debug.Log("Map changed. Current map is " + roomProperties["m"]);
-		}
+		// this also gets called when a player joins a room, when the properties are first set
+
 	}
 
 	void OnPhotonCreateRoomFailed(object[] codeAndMsg) {
@@ -68,6 +65,18 @@ public class NetworkManager : MonoBehaviour
 	}
 
 	void OnJoinedRoom() {
+		// spawn map
+		ExitGames.Client.Photon.Hashtable roomProperties = PhotonNetwork.room.customProperties;
+
+		// player that created room will join before creating, so we need to check for null
+		if (roomProperties["m"] != null) {
+			int[] map = (int[]) roomProperties["m"];
+			Debug.Log("Will now spawn map.");
+
+			MapManager.instance.FillMap(map);
+			MapManager.instance.SpawnMap();
+		}
+
 		// spawn player
 		spawnCamera.enabled = true;
 		SpawnPlayer();
@@ -108,8 +117,8 @@ public class NetworkManager : MonoBehaviour
 
 	void SpawnPlayer() {
 		// spawn player
-		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 0.98f, 0f);
-		player = PhotonNetwork.Instantiate ("PlayerModel", pos, Quaternion.identity, 0);
+		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 12.5f, 0f);
+		player = PhotonNetwork.Instantiate("PlayerModel", pos, Quaternion.identity, 0);
 		
 		// disable spawn camera
 		spawnCamera.enabled = false;

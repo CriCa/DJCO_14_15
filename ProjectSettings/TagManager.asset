@@ -7,6 +7,7 @@ TagManager:
   - ChatInput
   - ChatOutput
   - Flashlight
+  - World
   layers:
   - Default
   - TransparentFX
