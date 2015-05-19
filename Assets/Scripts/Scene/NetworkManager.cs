@@ -117,7 +117,7 @@ public class NetworkManager : MonoBehaviour
 
 	void SpawnPlayer() {
 		// spawn player
-		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 12.5f, 0f);
+		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 0.98f, 0f);
 		player = PhotonNetwork.Instantiate("PlayerModel", pos, Quaternion.identity, 0);
 		
 		// disable spawn camera
