@@ -14,7 +14,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 	float smoothing = 10f; // lerping movement update speed
 
 	Transform flashlight; // original flashlight
-	Quaternion flashlightGoal; // lerping destionation
+	Quaternion flashlightGoal = Quaternion.identity; // lerping destionation
 	Light flashlightToggle; // spotlight status (on or off)
 
 	// using Awake, and not Start, because OnPhotonSerializeView may run before Start has finished
