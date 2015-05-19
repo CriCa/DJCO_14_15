@@ -8,6 +8,7 @@ using System.Collections.Generic;
  * Chat Controller
  * Responsible for listening to player input and outputing to the GUI.
  * Alerts all players whenever a new message has been set via RPC.
+ * May also be used by other components to inform the player whenever a given event takes place.
  */
 public class ChatManager : MonoBehaviour 
 {	
@@ -21,10 +22,12 @@ public class ChatManager : MonoBehaviour
 	PhotonView photonView; // needed for RPC
 	FirstPersonController fpController; // player controls should be disabled when writing a message
 	FlashlightController flController;
-	string playerName;
 
 	Queue<string> messages;
+	string playerName;
 	bool isSelected; // provides more control over input selection
+	string infoColor = "#2EE62E";
+	string warningColor = "#F72929";
 
 	void Awake() {
 		if (instance == null) {
@@ -39,9 +42,9 @@ public class ChatManager : MonoBehaviour
 		photonView = GetComponent<PhotonView>();
 		fpController = NetworkManager.instance.GetPlayer().GetComponent<FirstPersonController>();
 		flController = NetworkManager.instance.GetPlayer().GetComponentInChildren<FlashlightController>();
-		playerName = NetworkManager.instance.GetPlayerName();
 		
 		messages = new Queue<string>();
+		playerName = NetworkManager.instance.GetPlayerName();
 		isSelected = false;
 	}
 
@@ -52,7 +55,7 @@ public class ChatManager : MonoBehaviour
 
 		else if (isSelected && Input.GetKeyDown(KeyCode.Return)) {
 			if (input.text != "" && input.text.Length <= 80) {
-				string message = playerName + ": " + input.text;
+				string message = BoldText(playerName) + ": " + input.text;
 				photonView.RPC("AddMessage_RPC", PhotonTargets.All, message);
 			}
 
@@ -101,8 +104,28 @@ public class ChatManager : MonoBehaviour
 		}
 	}	
 
+	public void AddInfoMessage(string message) {
+		message = ColorText(message, infoColor);
+		message = BoldText(message);
+		AddMessage(message);
+	}
+
+	public void AddWarningMessage(string message) {
+		message = ColorText(message, warningColor);
+		message = BoldText(message);
+		AddMessage(message);
+	}
+
 	public void SetPlayerName(string playerName) {
 		this.playerName = playerName;
+	}
+
+	string BoldText(string text) {
+		return "<b>" + text + "</b>";
+	}
+
+	string ColorText(string text, string color) {
+		return "<color=" + color + ">" + text + "</color>";
 	}
 
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {

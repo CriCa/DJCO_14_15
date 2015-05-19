@@ -4,8 +4,9 @@ using System.Collections.Generic;
 
 /* 
  * Map Manager
- * Holds all the rooms in the map.
- * Allows the generation and spawning of a new map.
+ * Holds all the rooms in the map in a matrix of ints in order to improve server performance.
+ * As the server will be holding the map in said matrix, it's easier to keep it in this format locally to avoid convertions.
+ * This script is also responsible for the generation of the initial map (by the server creator) and rooms spawning (by all players).
  */
 public class MapManager : MonoBehaviour 
 {
@@ -72,6 +73,7 @@ public class MapManager : MonoBehaviour
 		return randomPos;
 	}
 
+	// fills map with numberNeeded instances of objectType
 	void FillWithObject(int objectType, int numberNeeded) {
 		for (int i = 0; i < numberNeeded; i++) {
 			Vector2 randomPos = GetRandomPosition();
@@ -86,7 +88,7 @@ public class MapManager : MonoBehaviour
 			map[(int)pos.x, (int)pos.y] = 0;
 		}
 
-		// all positions have been filled at this point, so we can clear this
+		// all positions have been filled at this point, so we can clear the positions list
 		mapPositions.Clear();
 	}
 
@@ -110,9 +112,7 @@ public class MapManager : MonoBehaviour
 
 		for (int i = 0; i < newMap.Length; i++) {
 			map[i/mapSize, i%mapSize] = newMap[i];
-
 		}
-
 	}
 
 	public void SpawnMap() {
@@ -120,6 +120,9 @@ public class MapManager : MonoBehaviour
 			for (int j = 0; j < mapSize; j++) {
 				Vector3 pos = new Vector3 (i * roomSpacement, 12, j * roomSpacement);
 				GameObject bridgeObj;
+
+				// TODO: use something like bridgeSpacement later
+				// TODO: check for i, and instantiate corresponding prefab (as per dictionary)
 
 				GameObject roomObj = Instantiate(roomTypes[0], pos, Quaternion.identity) as GameObject;
 				roomObj.transform.parent = world.transform;

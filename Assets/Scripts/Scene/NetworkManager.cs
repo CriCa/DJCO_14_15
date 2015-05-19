@@ -29,10 +29,15 @@ public class NetworkManager : MonoBehaviour
 	void Start() {
 		PhotonNetwork.logLevel = PhotonLogLevel.ErrorsOnly;
 		PhotonNetwork.ConnectUsingSettings(VERSION);
+
+		StartCoroutine("UpdateConnectionText");
 	}
 
-	void Update() {
-		connText.text = PhotonNetwork.connectionStateDetailed.ToString();
+	IEnumerator UpdateConnectionText() {
+		while (true) {
+			connText.text = PhotonNetwork.connectionStateDetailed.ToString();
+			yield return null;
+		}
 	}
 
 	void OnJoinedLobby() {
@@ -46,7 +51,7 @@ public class NetworkManager : MonoBehaviour
 	void OnCreatedRoom() {
 		// generate map
 		MapManager.instance.GenerateMap();
-		int [] map = MapManager.instance.GetMinimizedMap();
+		int[] map = MapManager.instance.GetMinimizedMap();
 
 		ExitGames.Client.Photon.Hashtable roomProperties = new ExitGames.Client.Photon.Hashtable();
 		roomProperties.Add("m", map);
@@ -65,18 +70,24 @@ public class NetworkManager : MonoBehaviour
 	}
 
 	void OnJoinedRoom() {
-		// spawn map
+		// get server settings, including map
 		ExitGames.Client.Photon.Hashtable roomProperties = PhotonNetwork.room.customProperties;
 
-		// player that created room will join before creating, so we need to check for null
+		// we no longer need connection info, so the field can be used for other stuff
+		StopCoroutine("UpdateConnectionText");
+		connText.text = "Instantiating map";
+
+		// player that created room could join before creating, so we need to check for null
 		if (roomProperties["m"] != null) {
 			int[] map = (int[]) roomProperties["m"];
-			Debug.Log("Will now spawn map.");
 
+			// we have the map info, so we can instantiate the rooms
 			MapManager.instance.FillMap(map);
 			MapManager.instance.SpawnMap();
-		}
 
+			connText.text = "";
+		}
+		
 		// spawn player
 		spawnCamera.enabled = true;
 		SpawnPlayer();
@@ -94,11 +105,11 @@ public class NetworkManager : MonoBehaviour
 	}
 
 	void OnPhotonPlayerConnected(PhotonPlayer player) {
-		ChatManager.instance.AddMessage(player.name + " just connected.");
+		ChatManager.instance.AddInfoMessage(player.name + " just connected.");
 	}
 
 	void OnPhotonPlayerDisconnected(PhotonPlayer player) {
-		ChatManager.instance.AddMessage(player.name + " has left the game.");
+		ChatManager.instance.AddWarningMessage(player.name + " has left the game.");
 	}
 
 	void OnPhotonMaxCccuReached() {

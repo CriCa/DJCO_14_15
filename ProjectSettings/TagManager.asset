@@ -4,10 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - ChatInput
-  - ChatOutput
   - Flashlight
   - World
+  - GameHint
   layers:
   - Default
   - TransparentFX
