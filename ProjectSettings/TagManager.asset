@@ -7,6 +7,8 @@ TagManager:
   - Flashlight
   - World
   - GameHint
+  - PlayerBody
+  - FlashlightCharge
   layers:
   - Default
   - TransparentFX

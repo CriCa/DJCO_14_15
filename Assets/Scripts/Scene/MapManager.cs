@@ -11,17 +11,16 @@ using System.Collections.Generic;
 public class MapManager : MonoBehaviour 
 {
 	public static MapManager instance = null; // singleton object	
+
 	public int mapSize; // nr of rooms, equal in both sides
 	public GameObject[] roomTypes;
 	public GameObject bridge;
 
 	GameObject world; // where to instantiate the rooms
-	float roomSpacement = 36f; // space between each room
+	float roomSpacement = 38.2f; // space between each room
+	float bridgesSpacement = 19f; // space between bridge and room origin
 	List<Vector2> mapPositions; // list of all possible positions on the map
 	int[,] map; // grid with all rooms
-
-	// we need to know which prefabs to instantiate, so we need a list of matches
-	Dictionary<int, GameObject> mapMatches;
 
 	void Awake() {
 		if (instance == null) {
@@ -36,18 +35,27 @@ public class MapManager : MonoBehaviour
 		world = GameObject.FindGameObjectWithTag("World");
 		mapPositions = new List<Vector2>();
 		map = new int[mapSize, mapSize];
-		mapMatches = new Dictionary<int, GameObject>();
-
-		for (int i = 0; i < roomTypes.Length; i++) {
-			mapMatches.Add(i, roomTypes[i]);
-		}
 	}
 
 	public void GenerateMap() {
 		InitializeMap();
-		FillWithObject(0, 1);
-		FillWithObject(1, 1);
-		FillWithObject(2, 2);
+
+		// force first room to be a regular room
+		mapPositions.RemoveAt(0);
+		map[0,0] = 0;
+
+		// force second room to be a falling room
+		mapPositions.RemoveAt(0);
+		map[0,1] = 2;
+
+		// force third room to be a spikes room
+		mapPositions.RemoveAt(0);
+		map[0,2] = 3;
+
+		// force at least three rooms of type 1
+		// FillWithObject(1, 3);
+
+		// all others can be anything
 		FillRemainingPositions();
 	}
 
@@ -83,7 +91,7 @@ public class MapManager : MonoBehaviour
 	}
 
 	void FillRemainingPositions() {
-		// for each remaining position in the list, fill map with random object
+		// for each remaining position in the list, fill map with (TODO) random object
 		foreach(Vector2 pos in mapPositions) {
 			map[(int)pos.x, (int)pos.y] = 0;
 		}
@@ -116,27 +124,27 @@ public class MapManager : MonoBehaviour
 	}
 
 	public void SpawnMap() {
+		float floorHeight = 0;
+
 		for (int i = 0; i < mapSize; i++) {
 			for (int j = 0; j < mapSize; j++) {
-				Vector3 pos = new Vector3 (i * roomSpacement, 12, j * roomSpacement);
+				int type = map[i, j];
+				Vector3 pos = new Vector3 (i * roomSpacement, floorHeight, j * roomSpacement);
 				GameObject bridgeObj;
 
-				// TODO: use something like bridgeSpacement later
-				// TODO: check for i, and instantiate corresponding prefab (as per dictionary)
-
-				GameObject roomObj = Instantiate(roomTypes[0], pos, Quaternion.identity) as GameObject;
+				GameObject roomObj = Instantiate(roomTypes[type], pos, Quaternion.identity) as GameObject;
 				roomObj.transform.parent = world.transform;
 
 				if (j != mapSize - 1) {
-					pos = new Vector3 (i * roomSpacement, 12, j * roomSpacement + 18);
-					bridgeObj = Instantiate(bridge, pos, Quaternion.identity) as GameObject;
+					pos = new Vector3 (i * roomSpacement, floorHeight, j * roomSpacement + bridgesSpacement);
+					Quaternion rot = Quaternion.Euler(0, 90, 0);
+					bridgeObj = Instantiate(bridge, pos, rot) as GameObject;
 					bridgeObj.transform.parent = world.transform;
 				}
 
 				if (i != mapSize - 1) {
-					pos = new Vector3 (i * roomSpacement + 18, 12, j * roomSpacement);
-					Quaternion rot = Quaternion.Euler(0, 90, 0);
-					bridgeObj = Instantiate(bridge, pos, rot) as GameObject;
+					pos = new Vector3 (i * roomSpacement + bridgesSpacement, floorHeight, j * roomSpacement);
+					bridgeObj = Instantiate(bridge, pos, Quaternion.identity) as GameObject;
 					bridgeObj.transform.parent = world.transform;
 				}
 			}

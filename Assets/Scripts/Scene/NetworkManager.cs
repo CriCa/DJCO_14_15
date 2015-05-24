@@ -11,6 +11,7 @@ public class NetworkManager : MonoBehaviour
 	public static NetworkManager instance = null; // singleton object
 
 	public string VERSION; // current game version
+	public int secondsToStart = 30; // seconds to start game once enough players have joined
 
 	[SerializeField] Text connText;
 	[SerializeField] Camera spawnCamera;
@@ -54,9 +55,10 @@ public class NetworkManager : MonoBehaviour
 		int[] map = MapManager.instance.GetMinimizedMap();
 
 		ExitGames.Client.Photon.Hashtable roomProperties = new ExitGames.Client.Photon.Hashtable();
-		roomProperties.Add("m", map);
+		roomProperties.Add("map", map);
+		roomProperties.Add("started", false);
 
-		// set map in room properties
+		// set custom properties
 		PhotonNetwork.room.SetCustomProperties(roomProperties);
 	}
 
@@ -70,7 +72,7 @@ public class NetworkManager : MonoBehaviour
 	}
 
 	void OnJoinedRoom() {
-		// get server settings, including map
+		// get server settings
 		ExitGames.Client.Photon.Hashtable roomProperties = PhotonNetwork.room.customProperties;
 
 		// we no longer need connection info, so the field can be used for other stuff
@@ -78,8 +80,8 @@ public class NetworkManager : MonoBehaviour
 		connText.text = "Instantiating map";
 
 		// player that created room could join before creating, so we need to check for null
-		if (roomProperties["m"] != null) {
-			int[] map = (int[]) roomProperties["m"];
+		if (roomProperties["map"] != null) {
+			int[] map = (int[]) roomProperties["map"];
 
 			// we have the map info, so we can instantiate the rooms
 			MapManager.instance.FillMap(map);
