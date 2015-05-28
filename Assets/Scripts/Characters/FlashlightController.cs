@@ -10,8 +10,7 @@ public class FlashlightController : MonoBehaviour
 {
 	public Light spotlight; // flashlight's light
 	public KeyCode activationKey = KeyCode.E; // keypress needed to toggle the light
-	public Transform target; // flashlight direction should follow the main camera
-	public float drainSpeed = 1f; // speed at which charge is depleted
+	public float drainSpeed = 0.05f; // speed at which charge is depleted
 
 	float maxIntensity; // default spotlight intensity
 	float maxCharge = 100f; // default charge level
@@ -25,8 +24,6 @@ public class FlashlightController : MonoBehaviour
 	}
 
 	void Update () {
-		transform.rotation = target.rotation;
-
 		if (Input.GetKeyDown(activationKey)) {
 			spotlight.enabled = !spotlight.enabled;
 		}

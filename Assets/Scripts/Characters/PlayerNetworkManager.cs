@@ -10,18 +10,16 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class PlayerNetworkManager : Photon.MonoBehaviour 
 {
 	Vector3 positionGoal = Vector3.zero; // lerping destination
-	Quaternion rotationGoal = Quaternion.identity; // we don't want to move directly to the new position, we want to go towards it
-	float smoothing = 10f; // lerping movement update speed
+	Quaternion rotationGoal = Quaternion.identity; // we don't want to go directly to the new position, we want to move towards it
+	float smoothing = 10f; // lerping movement update "speed"
 
-	Transform flashlightTransform; // original flashlight
-	Quaternion flashlightGoal = Quaternion.identity; // lerping destionation
-	Light flashlight; // spotlight status (on or off)
+	Light spotlight; // light from the flashlight
+	Quaternion spotlightRotationGoal = Quaternion.identity; // lerping destination
 
 	// using Awake, and not Start, because OnPhotonSerializeView may run before Start has finished
 	void Awake() {
 		// should always grab a reference to the flashlight
-		flashlightTransform = transform.Find("Flashlight");
-		flashlight = GetComponentInChildren<Light>();
+		spotlight = GetComponentInChildren<Light>();
 
 		// if it's a local object, we want to enable all controls
 		if(photonView.isMine) {
@@ -40,9 +38,14 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 				cam.enabled = true;
 			}
 
-			// flashlight should be drawn on top of everything for this player only
-			transform.Find("Flashlight/FlashlightModel/Mesh").gameObject.layer = 8;
+			// draw items on top of everything
+			transform.Find("Items/Flashlight/FlashlightModel").gameObject.layer = 8;
+			transform.Find("Items/Weapon/WeaponModel").gameObject.layer = 8;
+
+			// enable all item controllers
 			GetComponentInChildren<FlashlightController>().enabled = true;
+			GetComponentInChildren<RotationFollower>().enabled = true;
+			GetComponentInChildren<ShootingController>().enabled = true;
 		}
 
 		// otherwise, we want to update our object with the info we might receive
@@ -68,7 +71,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 
 			transform.position = Vector3.Lerp(transform.position, positionGoal, Time.deltaTime * smoothing);
 			transform.rotation = Quaternion.Lerp(transform.rotation, rotationGoal, Time.deltaTime * smoothing);
-			flashlightTransform.rotation = Quaternion.Lerp(flashlightTransform.rotation, flashlightGoal, Time.deltaTime * smoothing);
+			spotlight.transform.rotation = Quaternion.Lerp(spotlight.transform.rotation, spotlightRotationGoal, Time.deltaTime * smoothing);
 			yield return null;
 		}
 	}
@@ -79,18 +82,18 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 			stream.SendNext(transform.position);
 			stream.SendNext(transform.rotation);
 
-			stream.SendNext(flashlightTransform.rotation);
-			stream.SendNext(flashlight.enabled);
-			stream.SendNext(flashlight.intensity);
+			stream.SendNext(spotlight.transform.rotation);
+			stream.SendNext(spotlight.intensity);
+			stream.SendNext(spotlight.enabled);
 		}
 		// otherwise, we need to update this player according to its owner
 		else {
 			positionGoal = (Vector3)stream.ReceiveNext();
 			rotationGoal = (Quaternion)stream.ReceiveNext();
 
-			flashlightGoal = (Quaternion)stream.ReceiveNext();
-			flashlight.enabled = (bool)stream.ReceiveNext(); // since this one is a simple bool, we can update it directly
-			flashlight.intensity = (float)stream.ReceiveNext();
+			spotlightRotationGoal = (Quaternion)stream.ReceiveNext();
+			spotlight.intensity = (float)stream.ReceiveNext();
+			spotlight.enabled = (bool)stream.ReceiveNext();
 		}
 	}
 }
