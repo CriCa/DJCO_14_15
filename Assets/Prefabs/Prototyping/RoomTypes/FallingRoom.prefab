@@ -2506,7 +2506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10cf14b371b75f94c9c2f39d49927a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallingTime: 7
+  fallingTime: 3
 --- !u!114 &11464864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2518,7 +2518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8021672d60937d4d80c3a1ef4b0cc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tip: Floor is lava, hehehehe brbrbrbr
+  tip: A journey of a thousand miles begins with a single step
 --- !u!135 &13509010
 SphereCollider:
   m_ObjectHideFlags: 1

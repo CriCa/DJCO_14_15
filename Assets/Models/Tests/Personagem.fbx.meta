@@ -1,0 +1,616 @@
+fileFormatVersion: 2
+guid: 0123ca21400e53741abfbcbaff50233a
+timeCreated: 1432916472
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: arm.L
+    100002: arm.L 1
+    100004: arm.L 2
+    100006: arm.L.001
+    100008: arm.L.001 1
+    100010: arm.L.001 2
+    100012: arm.R
+    100014: arm.R 1
+    100016: arm.R 2
+    100018: arm.R.001
+    100020: arm.R.001 1
+    100022: arm.R.001 2
+    100024: Armature.001
+    100026: Armature.002
+    100028: Armature.004
+    100030: armpole.L
+    100032: armpole.L 1
+    100034: armpole.L 2
+    100036: armpole.L_end
+    100038: armpole.L_end 1
+    100040: armpole.L_end 2
+    100042: armpole.R
+    100044: armpole.R 1
+    100046: armpole.R 2
+    100048: armpole.R_end
+    100050: armpole.R_end 1
+    100052: armpole.R_end 2
+    100054: Bone
+    100056: Bone 1
+    100058: Bone 2
+    100060: Camera
+    100062: foot.L
+    100064: foot.L 1
+    100066: foot.L 2
+    100068: foot.R
+    100070: foot.R 1
+    100072: foot.R 2
+    100074: footbone.L
+    100076: footbone.L 1
+    100078: footbone.L 2
+    100080: footbone.R
+    100082: footbone.R 1
+    100084: footbone.R 2
+    100086: footik.L
+    100088: footik.L 1
+    100090: footik.L 2
+    100092: footik.R
+    100094: footik.R 1
+    100096: footik.R 2
+    100098: Hand.L.001
+    100100: Hand.L.001 1
+    100102: Hand.L.001 2
+    100104: Hand.L.002
+    100106: Hand.L.002 1
+    100108: Hand.L.002 2
+    100110: Hand.L.003
+    100112: hand.L.003
+    100114: Hand.L.003 1
+    100116: hand.L.003 1
+    100118: Hand.L.003 2
+    100120: hand.L.003 2
+    100122: hand.L.003_end
+    100124: hand.L.003_end 1
+    100126: hand.L.003_end 2
+    100128: Hand.L.004
+    100130: hand.L.004
+    100132: Hand.L.004 1
+    100134: hand.L.004 1
+    100136: Hand.L.004 2
+    100138: hand.L.004 2
+    100140: Hand.L.005
+    100142: hand.L.005
+    100144: Hand.L.005 1
+    100146: hand.L.005 1
+    100148: Hand.L.005 2
+    100150: hand.L.005 2
+    100152: hand.L.005_end
+    100154: hand.L.005_end 1
+    100156: hand.L.005_end 2
+    100158: hand.L.006
+    100160: hand.L.006 1
+    100162: hand.L.006 2
+    100164: hand.L.006_end
+    100166: hand.L.006_end 1
+    100168: hand.L.006_end 2
+    100170: hand.L.007
+    100172: hand.L.007 1
+    100174: hand.L.007 2
+    100176: hand.L.007_end
+    100178: hand.L.007_end 1
+    100180: hand.L.007_end 2
+    100182: hand.L.008
+    100184: hand.L.008 1
+    100186: hand.L.008 2
+    100188: hand.L.008_end
+    100190: hand.L.008_end 1
+    100192: hand.L.008_end 2
+    100194: Hand.R
+    100196: hand.R
+    100198: Hand.R 1
+    100200: hand.R 1
+    100202: Hand.R 2
+    100204: hand.R 2
+    100206: Hand.R.001
+    100208: hand.R.001
+    100210: Hand.R.001 1
+    100212: hand.R.001 1
+    100214: Hand.R.001 2
+    100216: hand.R.001 2
+    100218: Hand.R.002
+    100220: hand.R.002
+    100222: Hand.R.002 1
+    100224: hand.R.002 1
+    100226: Hand.R.002 2
+    100228: hand.R.002 2
+    100230: hand.R.002_end
+    100232: hand.R.002_end 1
+    100234: hand.R.002_end 2
+    100236: Hand.R.003
+    100238: hand.R.003
+    100240: Hand.R.003 1
+    100242: hand.R.003 1
+    100244: Hand.R.003 2
+    100246: hand.R.003 2
+    100248: hand.R.003_end
+    100250: hand.R.003_end 1
+    100252: hand.R.003_end 2
+    100254: Hand.R.004
+    100256: hand.R.004
+    100258: Hand.R.004 1
+    100260: hand.R.004 1
+    100262: Hand.R.004 2
+    100264: hand.R.004 2
+    100266: hand.R.004_end
+    100268: hand.R.004_end 1
+    100270: hand.R.004_end 2
+    100272: hand.R.005
+    100274: hand.R.005 1
+    100276: hand.R.005 2
+    100278: hand.R.005_end
+    100280: hand.R.005_end 1
+    100282: hand.R.005_end 2
+    100284: hand.R_end
+    100286: hand.R_end 1
+    100288: hand.R_end 2
+    100290: handik.L
+    100292: handik.L 1
+    100294: handik.L 2
+    100296: handik.L_end
+    100298: handik.L_end 1
+    100300: handik.L_end 2
+    100302: handik.R
+    100304: handik.R 1
+    100306: handik.R 2
+    100308: handik.R_end
+    100310: handik.R_end 1
+    100312: handik.R_end 2
+    100314: handscale.L
+    100316: handscale.L 1
+    100318: handscale.L 2
+    100320: handscale.L_end
+    100322: handscale.L_end 1
+    100324: handscale.L_end 2
+    100326: handscale.R
+    100328: handscale.R 1
+    100330: handscale.R 2
+    100332: handscale.R_end
+    100334: handscale.R_end 1
+    100336: handscale.R_end 2
+    100338: handscale2.L
+    100340: handscale2.L 1
+    100342: handscale2.L 2
+    100344: handscale2.L_end
+    100346: handscale2.L_end 1
+    100348: handscale2.L_end 2
+    100350: handscale2.R
+    100352: handscale2.R 1
+    100354: handscale2.R 2
+    100356: handscale2.R_end
+    100358: handscale2.R_end 1
+    100360: handscale2.R_end 2
+    100362: head
+    100364: head 1
+    100366: head 2
+    100368: head.001
+    100370: head.001 1
+    100372: head.001 2
+    100374: head.001_end
+    100376: head.001_end 1
+    100378: head.001_end 2
+    100380: HumanMale.003
+    100382: Leg.L
+    100384: Leg.L 1
+    100386: Leg.L 2
+    100388: Leg.L.001
+    100390: Leg.L.001 1
+    100392: Leg.L.001 2
+    100394: Leg.L.001_end
+    100396: Leg.L.001_end 1
+    100398: Leg.L.001_end 2
+    100400: Leg.R
+    100402: Leg.R 1
+    100404: Leg.R 2
+    100406: Leg.R.001
+    100408: Leg.R.001 1
+    100410: Leg.R.001 2
+    100412: Leg.R.001_end
+    100414: Leg.R.001_end 1
+    100416: Leg.R.001_end 2
+    100418: legik.L
+    100420: legik.L 1
+    100422: legik.L 2
+    100424: legik.L_end
+    100426: legik.L_end 1
+    100428: legik.L_end 2
+    100430: legik.R
+    100432: legik.R 1
+    100434: legik.R 2
+    100436: legik.R_end
+    100438: legik.R_end 1
+    100440: legik.R_end 2
+    100442: legpole.L
+    100444: legpole.L 1
+    100446: legpole.L 2
+    100448: legpole.L_end
+    100450: legpole.L_end 1
+    100452: legpole.L_end 2
+    100454: legpole.R
+    100456: legpole.R 1
+    100458: legpole.R 2
+    100460: legpole.R_end
+    100462: legpole.R_end 1
+    100464: legpole.R_end 2
+    100466: //RootNode
+    100468: Plane.000
+    100470: shoulder.L
+    100472: shoulder.L 1
+    100474: shoulder.L 2
+    100476: shoulder.R
+    100478: shoulder.R 1
+    100480: shoulder.R 2
+    100482: spine
+    100484: spine 1
+    100486: spine 2
+    100488: spine.001
+    100490: spine.001 1
+    100492: spine.001 2
+    100494: toebone.L
+    100496: toebone.L 1
+    100498: toebone.L 2
+    100500: toebone.L_end
+    100502: toebone.L_end 1
+    100504: toebone.L_end 2
+    100506: toebone.R
+    100508: toebone.R 1
+    100510: toebone.R 2
+    100512: toebone.R_end
+    100514: toebone.R_end 1
+    100516: toebone.R_end 2
+    100518: toes.L
+    100520: toes.L 1
+    100522: toes.L 2
+    100524: toes.L_end
+    100526: toes.L_end 1
+    100528: toes.L_end 2
+    100530: toes.R
+    100532: toes.R 1
+    100534: toes.R 2
+    100536: toes.R_end
+    100538: toes.R_end 1
+    100540: toes.R_end 2
+    400000: arm.L
+    400002: arm.L 1
+    400004: arm.L 2
+    400006: arm.L.001
+    400008: arm.L.001 1
+    400010: arm.L.001 2
+    400012: arm.R
+    400014: arm.R 1
+    400016: arm.R 2
+    400018: arm.R.001
+    400020: arm.R.001 1
+    400022: arm.R.001 2
+    400024: Armature.001
+    400026: Armature.002
+    400028: Armature.004
+    400030: armpole.L
+    400032: armpole.L 1
+    400034: armpole.L 2
+    400036: armpole.L_end
+    400038: armpole.L_end 1
+    400040: armpole.L_end 2
+    400042: armpole.R
+    400044: armpole.R 1
+    400046: armpole.R 2
+    400048: armpole.R_end
+    400050: armpole.R_end 1
+    400052: armpole.R_end 2
+    400054: Bone
+    400056: Bone 1
+    400058: Bone 2
+    400060: Camera
+    400062: foot.L
+    400064: foot.L 1
+    400066: foot.L 2
+    400068: foot.R
+    400070: foot.R 1
+    400072: foot.R 2
+    400074: footbone.L
+    400076: footbone.L 1
+    400078: footbone.L 2
+    400080: footbone.R
+    400082: footbone.R 1
+    400084: footbone.R 2
+    400086: footik.L
+    400088: footik.L 1
+    400090: footik.L 2
+    400092: footik.R
+    400094: footik.R 1
+    400096: footik.R 2
+    400098: Hand.L.001
+    400100: Hand.L.001 1
+    400102: Hand.L.001 2
+    400104: Hand.L.002
+    400106: Hand.L.002 1
+    400108: Hand.L.002 2
+    400110: Hand.L.003
+    400112: hand.L.003
+    400114: Hand.L.003 1
+    400116: hand.L.003 1
+    400118: Hand.L.003 2
+    400120: hand.L.003 2
+    400122: hand.L.003_end
+    400124: hand.L.003_end 1
+    400126: hand.L.003_end 2
+    400128: Hand.L.004
+    400130: hand.L.004
+    400132: Hand.L.004 1
+    400134: hand.L.004 1
+    400136: Hand.L.004 2
+    400138: hand.L.004 2
+    400140: Hand.L.005
+    400142: hand.L.005
+    400144: Hand.L.005 1
+    400146: hand.L.005 1
+    400148: Hand.L.005 2
+    400150: hand.L.005 2
+    400152: hand.L.005_end
+    400154: hand.L.005_end 1
+    400156: hand.L.005_end 2
+    400158: hand.L.006
+    400160: hand.L.006 1
+    400162: hand.L.006 2
+    400164: hand.L.006_end
+    400166: hand.L.006_end 1
+    400168: hand.L.006_end 2
+    400170: hand.L.007
+    400172: hand.L.007 1
+    400174: hand.L.007 2
+    400176: hand.L.007_end
+    400178: hand.L.007_end 1
+    400180: hand.L.007_end 2
+    400182: hand.L.008
+    400184: hand.L.008 1
+    400186: hand.L.008 2
+    400188: hand.L.008_end
+    400190: hand.L.008_end 1
+    400192: hand.L.008_end 2
+    400194: Hand.R
+    400196: hand.R
+    400198: Hand.R 1
+    400200: hand.R 1
+    400202: Hand.R 2
+    400204: hand.R 2
+    400206: Hand.R.001
+    400208: hand.R.001
+    400210: Hand.R.001 1
+    400212: hand.R.001 1
+    400214: Hand.R.001 2
+    400216: hand.R.001 2
+    400218: Hand.R.002
+    400220: hand.R.002
+    400222: Hand.R.002 1
+    400224: hand.R.002 1
+    400226: Hand.R.002 2
+    400228: hand.R.002 2
+    400230: hand.R.002_end
+    400232: hand.R.002_end 1
+    400234: hand.R.002_end 2
+    400236: Hand.R.003
+    400238: hand.R.003
+    400240: Hand.R.003 1
+    400242: hand.R.003 1
+    400244: Hand.R.003 2
+    400246: hand.R.003 2
+    400248: hand.R.003_end
+    400250: hand.R.003_end 1
+    400252: hand.R.003_end 2
+    400254: Hand.R.004
+    400256: hand.R.004
+    400258: Hand.R.004 1
+    400260: hand.R.004 1
+    400262: Hand.R.004 2
+    400264: hand.R.004 2
+    400266: hand.R.004_end
+    400268: hand.R.004_end 1
+    400270: hand.R.004_end 2
+    400272: hand.R.005
+    400274: hand.R.005 1
+    400276: hand.R.005 2
+    400278: hand.R.005_end
+    400280: hand.R.005_end 1
+    400282: hand.R.005_end 2
+    400284: hand.R_end
+    400286: hand.R_end 1
+    400288: hand.R_end 2
+    400290: handik.L
+    400292: handik.L 1
+    400294: handik.L 2
+    400296: handik.L_end
+    400298: handik.L_end 1
+    400300: handik.L_end 2
+    400302: handik.R
+    400304: handik.R 1
+    400306: handik.R 2
+    400308: handik.R_end
+    400310: handik.R_end 1
+    400312: handik.R_end 2
+    400314: handscale.L
+    400316: handscale.L 1
+    400318: handscale.L 2
+    400320: handscale.L_end
+    400322: handscale.L_end 1
+    400324: handscale.L_end 2
+    400326: handscale.R
+    400328: handscale.R 1
+    400330: handscale.R 2
+    400332: handscale.R_end
+    400334: handscale.R_end 1
+    400336: handscale.R_end 2
+    400338: handscale2.L
+    400340: handscale2.L 1
+    400342: handscale2.L 2
+    400344: handscale2.L_end
+    400346: handscale2.L_end 1
+    400348: handscale2.L_end 2
+    400350: handscale2.R
+    400352: handscale2.R 1
+    400354: handscale2.R 2
+    400356: handscale2.R_end
+    400358: handscale2.R_end 1
+    400360: handscale2.R_end 2
+    400362: head
+    400364: head 1
+    400366: head 2
+    400368: head.001
+    400370: head.001 1
+    400372: head.001 2
+    400374: head.001_end
+    400376: head.001_end 1
+    400378: head.001_end 2
+    400380: HumanMale.003
+    400382: Leg.L
+    400384: Leg.L 1
+    400386: Leg.L 2
+    400388: Leg.L.001
+    400390: Leg.L.001 1
+    400392: Leg.L.001 2
+    400394: Leg.L.001_end
+    400396: Leg.L.001_end 1
+    400398: Leg.L.001_end 2
+    400400: Leg.R
+    400402: Leg.R 1
+    400404: Leg.R 2
+    400406: Leg.R.001
+    400408: Leg.R.001 1
+    400410: Leg.R.001 2
+    400412: Leg.R.001_end
+    400414: Leg.R.001_end 1
+    400416: Leg.R.001_end 2
+    400418: legik.L
+    400420: legik.L 1
+    400422: legik.L 2
+    400424: legik.L_end
+    400426: legik.L_end 1
+    400428: legik.L_end 2
+    400430: legik.R
+    400432: legik.R 1
+    400434: legik.R 2
+    400436: legik.R_end
+    400438: legik.R_end 1
+    400440: legik.R_end 2
+    400442: legpole.L
+    400444: legpole.L 1
+    400446: legpole.L 2
+    400448: legpole.L_end
+    400450: legpole.L_end 1
+    400452: legpole.L_end 2
+    400454: legpole.R
+    400456: legpole.R 1
+    400458: legpole.R 2
+    400460: legpole.R_end
+    400462: legpole.R_end 1
+    400464: legpole.R_end 2
+    400466: //RootNode
+    400468: Plane.000
+    400470: shoulder.L
+    400472: shoulder.L 1
+    400474: shoulder.L 2
+    400476: shoulder.R
+    400478: shoulder.R 1
+    400480: shoulder.R 2
+    400482: spine
+    400484: spine 1
+    400486: spine 2
+    400488: spine.001
+    400490: spine.001 1
+    400492: spine.001 2
+    400494: toebone.L
+    400496: toebone.L 1
+    400498: toebone.L 2
+    400500: toebone.L_end
+    400502: toebone.L_end 1
+    400504: toebone.L_end 2
+    400506: toebone.R
+    400508: toebone.R 1
+    400510: toebone.R 2
+    400512: toebone.R_end
+    400514: toebone.R_end 1
+    400516: toebone.R_end 2
+    400518: toes.L
+    400520: toes.L 1
+    400522: toes.L 2
+    400524: toes.L_end
+    400526: toes.L_end 1
+    400528: toes.L_end 2
+    400530: toes.R
+    400532: toes.R 1
+    400534: toes.R 2
+    400536: toes.R_end
+    400538: toes.R_end 1
+    400540: toes.R_end 2
+    2300000: Plane.000
+    3300000: Plane.000
+    4300000: Plane.000
+    4300002: HumanMale.003
+    7400000: Armature.004|Armature.003Action.006
+    7400002: Armature.001|Armature.003Action.005
+    7400004: Armature.002|Armature.003Action.013
+    9500000: //RootNode
+    13700000: HumanMale.003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
