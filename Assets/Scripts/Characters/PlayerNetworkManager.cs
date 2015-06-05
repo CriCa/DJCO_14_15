@@ -27,11 +27,12 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
 
-			// enable movement components
+			// enable general components
 			GetComponent<Rigidbody>().useGravity = true;
 			GetComponent<AudioSource>().enabled = true;
 			GetComponent<AudioListener>().enabled = true;
 			GetComponent<FirstPersonController>().enabled = true;
+			GetComponent<PlayerController>().enabled = true;
 
 			// enable all cameras
 			foreach (Camera cam in GetComponentsInChildren<Camera>()) {
@@ -60,7 +61,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 
 			/* TODO:
 			 * Keep an eye on aScalar lerp error, it's possible we need to clamp the smoothing value.
-			 * UPDATE: Last time it happened was 3 commits and several days ago.
+			 * UPDATE: Last time it happened was around 6 commits ago
 			 * http://forum.unity3d.com/threads/quaternion-lerp-problem-compareapproximately-ascalar-0-0f.154218/
 			 */
 

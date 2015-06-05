@@ -1014,6 +1014,7 @@ GameObject:
   - 82: {fileID: 8222802}
   - 81: {fileID: 8182664}
   - 114: {fileID: 11488582}
+  - 114: {fileID: 11431598}
   - 114: {fileID: 11427986}
   - 114: {fileID: 11425172}
   m_Layer: 0
@@ -2932,6 +2933,17 @@ MonoBehaviour:
   viewIdField: 0
   instantiationId: -1
   isRuntimeInstantiated: 0
+--- !u!114 &11431598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167746}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987aecb3f17d80f4f8426513c4d51223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11459244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2971,7 +2983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impact: {fileID: 191386, guid: 6f6ae5cffcb525a49b8e62b96a264e2e, type: 2}
   cooldown: .100000001
-  maxShootingDistance: 50
+  maxShootingDistance: 4
 --- !u!114 &11488582
 MonoBehaviour:
   m_ObjectHideFlags: 1

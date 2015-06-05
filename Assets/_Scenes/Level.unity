@@ -1304,7 +1304,7 @@ MonoBehaviour:
   roomTypes:
   - {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   - {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
-  - {fileID: 166776, guid: 8707fa24c06cf61479eb7c8858a4e3f0, type: 2}
+  - {fileID: 165166, guid: 8707fa24c06cf61479eb7c8858a4e3f0, type: 2}
   - {fileID: 147366, guid: 93ea01f041688684da0a2e6ec6ce16d5, type: 2}
   bridge: {fileID: 195472, guid: 4249e470fa336f54f901ca70b45464d4, type: 2}
 --- !u!114 &1749685936

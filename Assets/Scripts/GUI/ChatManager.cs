@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using UnityStandardAssets.Characters.FirstPerson;
 using System.Collections.Generic;
 
 /* 
@@ -20,12 +19,12 @@ public class ChatManager : MonoBehaviour
 	public KeyCode activationKey = KeyCode.Y; // keypress needed to activate input
 	
 	PhotonView photonView; // needed for RPC
-	FirstPersonController fpController; // player controls should be disabled when writing a message
-	FlashlightController flController;
+	PlayerController playerController; // player controls should be disabled when writing a message
 
 	Queue<string> messages;
 	string playerName;
 	bool isSelected; // provides more control over input selection
+	int maxMessageLength = 80;
 	string infoColor = "#2EE62E";
 	string warningColor = "#F72929";
 
@@ -40,8 +39,7 @@ public class ChatManager : MonoBehaviour
 	
 	void Start () {
 		photonView = GetComponent<PhotonView>();
-		fpController = NetworkManager.instance.GetPlayer().GetComponent<FirstPersonController>();
-		flController = NetworkManager.instance.GetPlayer().GetComponentInChildren<FlashlightController>();
+		playerController = NetworkManager.instance.GetPlayer().GetComponent<PlayerController>();
 		
 		messages = new Queue<string>();
 		playerName = NetworkManager.instance.GetPlayerName();
@@ -54,7 +52,7 @@ public class ChatManager : MonoBehaviour
 		}
 
 		else if (isSelected && Input.GetKeyDown(KeyCode.Return)) {
-			if (input.text != "" && input.text.Length <= 80) {
+			if (input.text != "" && input.text.Length <= maxMessageLength) {
 				string message = BoldText(playerName) + ": " + input.text;
 				photonView.RPC("AddMessage_RPC", PhotonTargets.All, message);
 			}
@@ -68,8 +66,7 @@ public class ChatManager : MonoBehaviour
 	}
 
 	void SelectInput() {
-		fpController.enabled = false;
-		flController.enabled = false;
+		playerController.DisableControls();
 		input.interactable = true;
 		input.ActivateInputField();
 		input.Select();
@@ -77,8 +74,7 @@ public class ChatManager : MonoBehaviour
 	}
 
 	void DeselectInput() {
-		fpController.enabled = true;
-		flController.enabled = true;
+		playerController.EnableControls();
 		input.text = "";
 		input.interactable = false;
 		input.DeactivateInputField();

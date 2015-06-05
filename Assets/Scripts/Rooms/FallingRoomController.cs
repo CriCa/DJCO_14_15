@@ -8,7 +8,7 @@ using System.Collections;
  */
 public class FallingRoomController : MonoBehaviour 
 {
-	public float fallingTime = 5f;
+	public float secondsToTrigger = 5f;
 
 	bool falling;
 	Rigidbody rigidBody;
@@ -28,7 +28,7 @@ public class FallingRoomController : MonoBehaviour
 	}
 
 	IEnumerator Fall() {
-		yield return new WaitForSeconds(fallingTime);
+		yield return new WaitForSeconds(secondsToTrigger);
 
 		transform.position -= new Vector3(0f, 0.9f, 0f); // floor is "stuck" inside other building blocks, so we need to free it first
 		rigidBody.useGravity = true;
