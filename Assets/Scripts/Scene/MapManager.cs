@@ -56,6 +56,10 @@ public class MapManager : MonoBehaviour
 		mapPositions.RemoveAt(0);
 		map[0,3] = 4;
 
+		// force fourth room to be a chairs game room
+		mapPositions.RemoveAt(0);
+		map[0,4] = 5;
+
 		// force at least three rooms of type 1
 		// FillWithObject(1, 3);
 
