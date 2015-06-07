@@ -5,6 +5,7 @@ using UnityEngine.UI;
 /* 
  * Flashlight Controller
  * Listens to user input in order to toggle a spotlight.
+ * TODO: use time on update
  */
 public class FlashlightController : MonoBehaviour
 {

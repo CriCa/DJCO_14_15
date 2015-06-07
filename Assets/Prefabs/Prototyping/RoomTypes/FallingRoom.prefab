@@ -3772,7 +3772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1869e0c05f8b468a3eb3837214d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToTrigger: 3
+  secondsToTrigger: 10
   smoothing: .800000012
   doors:
   - {fileID: 160098}

@@ -52,6 +52,10 @@ public class MapManager : MonoBehaviour
 		mapPositions.RemoveAt(0);
 		map[0,2] = 3;
 
+		// force fourth room to be a fake monsters room
+		mapPositions.RemoveAt(0);
+		map[0,3] = 4;
+
 		// force at least three rooms of type 1
 		// FillWithObject(1, 3);
 
@@ -71,7 +75,7 @@ public class MapManager : MonoBehaviour
 
 	Vector2 GetRandomPosition () {
 		// grab a random list position (which represents a possible position on the map)
-		int randomIndex = Random.Range (0, mapPositions.Count);
+		int randomIndex = Random.Range(0, mapPositions.Count);
 		Vector2 randomPos = mapPositions[randomIndex];
 
 		// remove position from list so it can't be re-used

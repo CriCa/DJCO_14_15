@@ -8,7 +8,7 @@ using System.Collections;
 public class DoorsController : MonoBehaviour 
 {
 	public float secondsToTrigger = 3f;
-	public float smoothing = 0.5f;
+	public float smoothing = 0.8f;
 	public GameObject[] doors;
 
 	bool triggered;

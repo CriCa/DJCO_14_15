@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3337552}
   - 23: {fileID: 2344916}
   - 65: {fileID: 6571294}
+  - 208: {fileID: 20871020}
   m_Layer: 0
   m_Name: WallClosed
   m_TagString: Untagged
@@ -73,6 +74,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.00002909, y: 6.00006771, z: 1.00000858}
   m_Center: {x: 1.21593475e-05, y: 2.99979687, z: .499987811}
+--- !u!208 &20871020
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125234}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 3.00000024, y: 3.00000024, z: .5}
+  m_MoveThreshold: .100000001
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 3.00000024, z: .5}
+  m_TimeToStationary: .5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
