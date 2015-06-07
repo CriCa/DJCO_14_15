@@ -46,7 +46,7 @@ public class NetworkManager : MonoBehaviour
 		ChatManager.instance.SetPlayerName(PhotonNetwork.playerName);
 
 		RoomOptions ro = new RoomOptions() {isVisible = true, maxPlayers = 5};
-		PhotonNetwork.JoinOrCreateRoom("Default", ro, TypedLobby.Default);
+		PhotonNetwork.JoinOrCreateRoom("Default2", ro, TypedLobby.Default);
 	}
 
 	void OnCreatedRoom() {

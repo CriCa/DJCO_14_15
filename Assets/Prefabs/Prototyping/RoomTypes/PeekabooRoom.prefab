@@ -659,7 +659,7 @@ GameObject:
   - 114: {fileID: 11428972}
   - 114: {fileID: 11451434}
   m_Layer: 0
-  m_Name: FakeMonstersRoom
+  m_Name: PeekabooRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2469,7 +2469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1869e0c05f8b468a3eb3837214d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToTrigger: 3
+  secondsToTrigger: 1
   smoothing: .5
   doors:
   - {fileID: 109538}
@@ -2484,9 +2484,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 191714}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 828662f1531e36c40b9173e052e7a4d5, type: 3}
+  m_Script: {fileID: 11500000, guid: c331ab4d02956fe448da04496946dfe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  secondsToTrigger: 5
+  secondsTransformed: 8
+  monsterTexture: {fileID: 2800000, guid: a336ccf90791f9841b7e680c010d1e88, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

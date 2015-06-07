@@ -24,12 +24,33 @@ public class DoorsController : MonoBehaviour
 		}
 	}
 
+	// provides external access to other scripts
+	public void TriggerDoors(bool open) {
+		Vector3 angle = new Vector3(270f, 0f, 0f);
+		
+		if (open) {
+			angle.y = 90f;
+		}
+		else {
+			angle.y = 180f;
+		}
+
+		// in case the doors are already moving, we should stop them first
+		StopCoroutine("SwingDoors");
+		StartCoroutine("SwingDoors", angle);
+	}
+
+	// used only internally, for the initial event
 	IEnumerator CloseDoors() {
 		yield return new WaitForSeconds(secondsToTrigger);
 
-		Vector3 goal = new Vector3(270f, 180f, 0f);
-		bool reachedGoal = false;
+		TriggerDoors(false);
+	}
 
+	// the actual co-routine moving the doors is private
+	IEnumerator SwingDoors(Vector3 goal) {
+		bool reachedGoal = false;
+		
 		while (!reachedGoal) {
 			foreach (GameObject door in doors) {
 				// rotate locals towards goal
@@ -44,7 +65,7 @@ public class DoorsController : MonoBehaviour
 					reachedGoal = true;
 				}
 			}
-
+			
 			yield return null;
 		}
 	}

@@ -4,9 +4,7 @@ using System.Collections;
 /*
  * Spikes Room Controller
  * Two spiked walls slide down from the ceiling, encircling the players. Players must move quickly to survive.
- * This script must be added to the trigger game object.
  */
-
 public class SpikesRoomController : MonoBehaviour 
 {
 	public Transform rightWall;
@@ -34,28 +32,33 @@ public class SpikesRoomController : MonoBehaviour
 
 		currentPoint = 0;
 	}
-	
-	void FixedUpdate() {
-		if (triggered) {
-			// move walls towards respective point
-			rightWall.position = Vector3.MoveTowards(rightWall.position, rightWallPoints[currentPoint], Time.deltaTime * speed);
-			leftWall.position = Vector3.MoveTowards(leftWall.position, leftWallPoints[currentPoint], Time.deltaTime * speed);
 
-			// once we've arrived at a point, we go towards the next
-			if (rightWall.position == rightWallPoints[currentPoint]) {
-				currentPoint++;
-
-				// once we've moved towards all points, we can stop this script
-				if (currentPoint >= rightWallPoints.Length) {
-					this.enabled = false;
-				}
-			}
+	void OnTriggerEnter(Collider other) {
+		if (!triggered && other.tag == "PlayerBody") {
+			triggered = true;
+			StartCoroutine("MoveWalls");
 		}
 	}
 
-	void OnTriggerEnter(Collider other) {
-		if (other.tag == "PlayerBody") {
-			triggered = true;
+	IEnumerator MoveWalls() {
+		bool reachedGoal = false;
+		
+		while (!reachedGoal) {
+			// move walls towards respective point
+			rightWall.position = Vector3.MoveTowards(rightWall.position, rightWallPoints[currentPoint], Time.deltaTime * speed);
+			leftWall.position = Vector3.MoveTowards(leftWall.position, leftWallPoints[currentPoint], Time.deltaTime * speed);
+			
+			// once we've arrived at a point, we go towards the next
+			if (rightWall.position == rightWallPoints[currentPoint]) {
+				currentPoint++;
+				
+				// once we've moved towards all points, we can stop
+				if (currentPoint >= rightWallPoints.Length) {
+					reachedGoal = true;
+				}
+			}
+
+			yield return null;
 		}
 	}
 }

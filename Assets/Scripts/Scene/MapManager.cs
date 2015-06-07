@@ -42,7 +42,7 @@ public class MapManager : MonoBehaviour
 
 		// force first room to be a regular room
 		mapPositions.RemoveAt(0);
-		map[0,0] = 0;
+		map[0,0] = 1;
 
 		// force second room to be a falling room
 		mapPositions.RemoveAt(0);
@@ -52,7 +52,7 @@ public class MapManager : MonoBehaviour
 		mapPositions.RemoveAt(0);
 		map[0,2] = 3;
 
-		// force fourth room to be a fake monsters room
+		// force fourth room to be a peekaboo room
 		mapPositions.RemoveAt(0);
 		map[0,3] = 4;
 

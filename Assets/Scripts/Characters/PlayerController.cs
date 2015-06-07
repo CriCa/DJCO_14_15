@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 {
 	/* these should probably be moved later */
 	public KeyCode pauseKey = KeyCode.P; // keypress needed to toggle the menu
+
 	Text output; 
 	bool gamePaused;
 
