@@ -2,21 +2,23 @@
 using System.Collections;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 /* 
  * Player Controller
  * General player controls, utilities and communication with other components.
  */
-public class PlayerController : MonoBehaviour 
+public class PlayerControlsManager : MonoBehaviour 
 {
-	/* these should probably be moved later */
+	/* these probably be moved later */
 	public KeyCode pauseKey = KeyCode.P; // keypress needed to toggle the menu
-
 	Text output; 
 	bool gamePaused;
+	/* until here */
 
 	FirstPersonController fpController;
 	FlashlightController flController;
+	List<Camera> fpCameras;
 	
 	void Start() {
 		output = GameObject.FindGameObjectWithTag("GameHint").GetComponent<Text>();
@@ -24,6 +26,11 @@ public class PlayerController : MonoBehaviour
 
 		fpController = GetComponent<FirstPersonController>();
 		flController = NetworkManager.instance.GetPlayer().GetComponentInChildren<FlashlightController>();
+		fpCameras = new List<Camera>();
+
+		foreach (Camera cam in GetComponentsInChildren<Camera>()) {
+			fpCameras.Add(cam);
+		}
 	}
 
 	/* everything pertaining to the pause menu here should also be moved */
@@ -54,5 +61,17 @@ public class PlayerController : MonoBehaviour
 	public void DisableControls() {
 		fpController.enabled = false;
 		flController.enabled = false;
+	}
+
+	public void EnableCameras() {
+		foreach (Camera cam in fpCameras) {
+			cam.enabled = true;
+		}
+	}
+
+	public void DisableCameras() {
+		foreach (Camera cam in fpCameras) {
+			cam.enabled = false;
+		}
 	}
 }

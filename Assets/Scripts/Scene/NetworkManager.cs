@@ -12,11 +12,13 @@ public class NetworkManager : MonoBehaviour
 
 	public string VERSION; // current game version
 	public int secondsToStart = 30; // seconds to start game once enough players have joined
+	public float respawnTime = 5f;
 
 	[SerializeField] Text connText;
 	[SerializeField] Camera spawnCamera;
 
 	GameObject player; // reference to local player
+	PlayerControlsManager playerControls; // reference to local player controls
 
 	void Awake() {
 		if (instance == null) {
@@ -121,27 +123,38 @@ public class NetworkManager : MonoBehaviour
 		// spawn player
 		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 0.98f, 0f);
 		player = PhotonNetwork.Instantiate("PlayerModel", pos, Quaternion.identity, 0);
+		playerControls = player.GetComponent<PlayerControlsManager>();
 		
 		// disable spawn camera
 		spawnCamera.enabled = false;
 	}
 
-	void StartRespawnProcess(float respawnTime) {
-		// enable spawn camere while waiting
+	public void RespawnPlayer() {
+		ChatManager.instance.AddWarningMessage("You died. get gud, scrub.");
 		spawnCamera.enabled = true;
 
-		// do the actual waiting on a coroutine
-		StartCoroutine("RespawnPlayer", respawnTime);
+		playerControls.DisableControls();
+		playerControls.DisableCameras();
+
+		StartCoroutine("StartRespawnProcess");
 	}
 
-	IEnumerator RespawnPlayer(float respawnTime) {
+	IEnumerator StartRespawnProcess() {
 		yield return new WaitForSeconds(respawnTime);
-
+		
 		player.transform.position = new Vector3(0f, 0.98f, 0f);
+		// player.GetComponent<Rigidbody>().isKinematic = false; // useful later, with actual models
+
+		playerControls.EnableCameras();
+		playerControls.EnableControls();
 	}
 
 	public GameObject GetPlayer() {
 		return this.player;
+	}
+
+	public PlayerControlsManager GetPlayerControls() {
+		return this.playerControls;
 	}
 
 	public string GetPlayerName() {

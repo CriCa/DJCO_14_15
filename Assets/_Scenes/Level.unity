@@ -897,6 +897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VERSION: 0.0.03
   secondsToStart: 0
+  respawnTime: 5
   connText: {fileID: 2142205219}
   spawnCamera: {fileID: 397673477}
 --- !u!4 &1749685934

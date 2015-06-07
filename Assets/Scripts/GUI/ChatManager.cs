@@ -19,7 +19,7 @@ public class ChatManager : MonoBehaviour
 	public KeyCode activationKey = KeyCode.Y; // keypress needed to activate input
 	
 	PhotonView photonView; // needed for RPC
-	PlayerController playerController; // player controls should be disabled when writing a message
+	PlayerControlsManager playerControls; // player controls should be disabled when writing a message
 
 	Queue<string> messages;
 	string playerName;
@@ -39,7 +39,7 @@ public class ChatManager : MonoBehaviour
 	
 	void Start () {
 		photonView = GetComponent<PhotonView>();
-		playerController = NetworkManager.instance.GetPlayer().GetComponent<PlayerController>();
+		playerControls = NetworkManager.instance.GetPlayerControls();
 		
 		messages = new Queue<string>();
 		playerName = NetworkManager.instance.GetPlayerName();
@@ -66,7 +66,7 @@ public class ChatManager : MonoBehaviour
 	}
 
 	void SelectInput() {
-		playerController.DisableControls();
+		playerControls.DisableControls();
 		input.interactable = true;
 		input.ActivateInputField();
 		input.Select();
@@ -74,7 +74,7 @@ public class ChatManager : MonoBehaviour
 	}
 
 	void DeselectInput() {
-		playerController.EnableControls();
+		playerControls.EnableControls();
 		input.text = "";
 		input.interactable = false;
 		input.DeactivateInputField();
