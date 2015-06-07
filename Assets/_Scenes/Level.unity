@@ -206,7 +206,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1523764758}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!1 &328056212
@@ -621,6 +622,56 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1204538630}
+--- !u!1001 &1523764757
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 190230880}
+    m_Modifications:
+    - target: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.24000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 10.6099997
+      objectReference: {fileID: 0}
+    - target: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -17.2099991
+      objectReference: {fileID: 0}
+    - target: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_Name
+      value: SpawnRoom
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1523764758 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+  m_PrefabInternal: {fileID: 1523764757}
 --- !u!1 &1544799965
 GameObject:
   m_ObjectHideFlags: 0

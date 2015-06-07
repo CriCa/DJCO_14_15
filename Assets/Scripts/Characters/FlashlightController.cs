@@ -5,13 +5,12 @@ using UnityEngine.UI;
 /* 
  * Flashlight Controller
  * Listens to user input in order to toggle a spotlight.
- * TODO: use time on update
  */
 public class FlashlightController : MonoBehaviour
 {
 	public Light spotlight; // flashlight's light
 	public KeyCode activationKey = KeyCode.E; // keypress needed to toggle the light
-	public float drainSpeed = 0.05f; // speed at which charge is depleted
+	public float drainSpeed = 2.5f; // speed at which charge is depleted
 
 	float maxIntensity; // default spotlight intensity
 	float maxCharge = 100f; // default charge level
@@ -30,7 +29,7 @@ public class FlashlightController : MonoBehaviour
 		}
 
 		if (spotlight.enabled && currentCharge > 0) {
-			currentCharge -= drainSpeed;
+			currentCharge -= drainSpeed * Time.deltaTime;
 
 			spotlight.intensity = (currentCharge * maxIntensity) / maxCharge;
 			chargeGUI.fillAmount = currentCharge / 100;
