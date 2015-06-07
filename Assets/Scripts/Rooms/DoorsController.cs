@@ -8,7 +8,7 @@ using System.Collections;
 public class DoorsController : MonoBehaviour 
 {
 	public float secondsToTrigger = 3f;
-	public float smoothing = 0.8f;
+	public float swingSpeed = 20f; // in degrees per second
 	public GameObject[] doors;
 
 	bool triggered;
@@ -23,8 +23,7 @@ public class DoorsController : MonoBehaviour
 			StartCoroutine("CloseDoors");
 		}
 	}
-
-	// provides external access to other scripts
+	
 	public void TriggerDoors(bool open) {
 		Vector3 angle = new Vector3(270f, 0f, 0f);
 		
@@ -44,23 +43,21 @@ public class DoorsController : MonoBehaviour
 	IEnumerator CloseDoors() {
 		yield return new WaitForSeconds(secondsToTrigger);
 
+		// note that Invoke is not being used because it would not allow passing params to the function below
 		TriggerDoors(false);
 	}
 
-	// the actual co-routine moving the doors is private
+	// the actual coroutine moving the doors is private
 	IEnumerator SwingDoors(Vector3 goal) {
 		bool reachedGoal = false;
 		
 		while (!reachedGoal) {
 			foreach (GameObject door in doors) {
 				// rotate locals towards goal
-				if (Vector3.Distance(door.transform.localEulerAngles, goal) > 0.01f)
-				{
-					door.transform.localEulerAngles = Vector3.Lerp(door.transform.localEulerAngles, goal, Time.deltaTime * smoothing);
-				}
+				door.transform.localEulerAngles = Vector3.MoveTowards(door.transform.localEulerAngles, goal, Time.deltaTime * swingSpeed);
+
 				// once we're close enough, snap to goal and stop
-				else
-				{
+				if (Vector3.Distance(door.transform.localEulerAngles, goal) < 0.01f) {
 					door.transform.localEulerAngles = goal;
 					reachedGoal = true;
 				}

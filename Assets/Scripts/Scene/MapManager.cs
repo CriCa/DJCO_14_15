@@ -39,29 +39,19 @@ public class MapManager : MonoBehaviour
 
 	public void GenerateMap() {
 		InitializeMap();
+	
+		// EXAMPLE: force first room to be of type 1
+		// mapPositions.RemoveAt(0);
+		// map[0,0] = 0;
 
-		// force first room to be a regular room
-		mapPositions.RemoveAt(0);
-		map[0,0] = 1;
-
-		// force second room to be a falling room
-		mapPositions.RemoveAt(0);
-		map[0,1] = 2;
-
-		// force third room to be a spikes room
-		mapPositions.RemoveAt(0);
-		map[0,2] = 3;
-
-		// force fourth room to be a peekaboo room
-		mapPositions.RemoveAt(0);
-		map[0,3] = 4;
-
-		// force fourth room to be a chairs game room
-		mapPositions.RemoveAt(0);
-		map[0,4] = 5;
-
-		// force at least three rooms of type 1
+		// EXAMPLE: force at least three rooms of type 1
 		// FillWithObject(1, 3);
+
+		// forcing one type of each room, in order
+		for (int i = 0; i < roomTypes.Length; i++) {
+			mapPositions.RemoveAt(0);
+			map[i/mapSize, i%mapSize] = i;
+		}
 
 		// all others can be anything
 		FillRemainingPositions();

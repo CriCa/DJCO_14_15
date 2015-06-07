@@ -2,14 +2,14 @@
 using System.Collections;
 
 /* 
- * Spikes Controller
+ * Deadly Object Controller
  * Destroys player on touch. Must have a box collider with "isTrigger" set attached.
  */
-public class SpikesController : MonoBehaviour 
+public class DeadlyObjectController : MonoBehaviour 
 {
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "PlayerBody") {
-			Debug.Log("Player should die now.");
+			Debug.Log("kill player");
 		}
 	}
 }

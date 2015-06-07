@@ -91,7 +91,6 @@ public class NetworkManager : MonoBehaviour
 		}
 		
 		// spawn player
-		spawnCamera.enabled = true;
 		SpawnPlayer();
 
 		// enable chat
@@ -118,16 +117,6 @@ public class NetworkManager : MonoBehaviour
 
 	}
 
-	void StartSpawnProcess(float respawnTime) {
-		spawnCamera.enabled = true;
-		StartCoroutine("SpawnPlayer", respawnTime);
-	}
-	
-	IEnumerator WaitAndSpawn(float respawnTime) {
-		yield return new WaitForSeconds(respawnTime);
-		SpawnPlayer();
-	}
-
 	void SpawnPlayer() {
 		// spawn player
 		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 0.98f, 0f);
@@ -135,6 +124,20 @@ public class NetworkManager : MonoBehaviour
 		
 		// disable spawn camera
 		spawnCamera.enabled = false;
+	}
+
+	void StartRespawnProcess(float respawnTime) {
+		// enable spawn camere while waiting
+		spawnCamera.enabled = true;
+
+		// do the actual waiting on a coroutine
+		StartCoroutine("RespawnPlayer", respawnTime);
+	}
+
+	IEnumerator RespawnPlayer(float respawnTime) {
+		yield return new WaitForSeconds(respawnTime);
+
+		player.transform.position = new Vector3(0f, 0.98f, 0f);
 	}
 
 	public GameObject GetPlayer() {

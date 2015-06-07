@@ -2470,7 +2470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsToTrigger: 1
-  smoothing: .5
+  swingSpeed: 20
   doors:
   - {fileID: 109538}
   - {fileID: 122610}

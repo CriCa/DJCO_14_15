@@ -9,14 +9,14 @@ public class SpikesRoomController : MonoBehaviour
 {
 	public Transform rightWall;
 	public Transform leftWall;
-	public float speed = 3f;
+	public float speed = 3f; // walls movement speed
 
 	bool triggered;
 	int currentPoint;
 	float downDistance = 5.25f;
 	float centerDistance = 6.8f;
 
-	Vector3[] rightWallPoints;
+	Vector3[] rightWallPoints; // each wall moves from point to point
 	Vector3[] leftWallPoints;
 	
 	void Start() {
@@ -49,7 +49,7 @@ public class SpikesRoomController : MonoBehaviour
 			leftWall.position = Vector3.MoveTowards(leftWall.position, leftWallPoints[currentPoint], Time.deltaTime * speed);
 			
 			// once we've arrived at a point, we go towards the next
-			if (rightWall.position == rightWallPoints[currentPoint]) {
+			if (Vector3.Distance(rightWall.position, rightWallPoints[currentPoint]) < 0.01f) {
 				currentPoint++;
 				
 				// once we've moved towards all points, we can stop

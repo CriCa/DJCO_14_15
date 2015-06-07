@@ -1,21 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChairController : MonoBehaviour {
-	
-	private ChairGameRoomController controller;
-	
-	// Use this for initialization
-	void Start ()
-	{
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		
-	}
+/* 
+ * Chair Controller
+ * Represents a chair in the Chair Game Room. Alerts the room's script when a player enters its trigger.
+ */
+public class ChairController : MonoBehaviour 
+{
+	ChairGameRoomController controller;
 	
 	void OnTriggerEnter(Collider other)
 	{
