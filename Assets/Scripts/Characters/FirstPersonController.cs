@@ -240,6 +240,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
+			// trying this to prevent errors on networked players colliding with the falling floor's rigid body
+			if (!this.enabled) {
+				return;
+			}
+
             Rigidbody body = hit.collider.attachedRigidbody;
             //dont move the rigidbody if the character is on top of it
             if (m_CollisionFlags == CollisionFlags.Below)
