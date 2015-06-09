@@ -420,6 +420,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &140448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 417126}
+  - 33: {fileID: 3393782}
+  - 65: {fileID: 6594436}
+  - 114: {fileID: 11497336}
+  m_Layer: 0
+  m_Name: PlayerBounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &141962
 GameObject:
   m_ObjectHideFlags: 1
@@ -1068,6 +1086,7 @@ Transform:
   - {fileID: 410802}
   - {fileID: 436408}
   - {fileID: 488530}
+  - {fileID: 417126}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &407680
@@ -1122,6 +1141,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 446762}
   m_RootOrder: 2
+--- !u!4 &417126
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140448}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -20, z: 0}
+  m_LocalScale: {x: 22, y: 1, z: 22}
+  m_Children: []
+  m_Father: {fileID: 404542}
+  m_RootOrder: 6
 --- !u!4 &418968
 Transform:
   m_ObjectHideFlags: 1
@@ -3225,6 +3256,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 198390}
   m_Mesh: {fileID: 4300002, guid: df4796b594b970842b69211cb0078c5d, type: 3}
+--- !u!33 &3393782
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140448}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &3394632
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -3645,6 +3683,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!65 &6594436
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6594778
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -3774,7 +3824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secondsToTrigger: 1
-  smoothing: .800000012
+  swingSpeed: 20
   doors:
   - {fileID: 146444}
   - {fileID: 104062}
@@ -3792,6 +3842,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tip: A journey of a thousand miles begins with a single step
+--- !u!114 &11497336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0536a5a88e1844c9683ad9a9af1e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &13510486
 SphereCollider:
   m_ObjectHideFlags: 1

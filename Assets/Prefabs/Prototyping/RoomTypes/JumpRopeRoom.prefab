@@ -2547,7 +2547,7 @@ MonoBehaviour:
   secondsToTrigger: 2
   rope: {fileID: 160828}
   ropeSpeed: 3
-  jumpsNeeded: 99
+  jumpsNeeded: 5
 --- !u!114 &11454452
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -34,5 +34,11 @@ public class FallingRoomController : MonoBehaviour
 
 		GetComponent<DoorsController>().TriggerDoors(true);
 		this.enabled = false; // disable script, as everything has already been done
+
+		Invoke ("DestroyFloor", 5f);
+	}
+
+	void DestroyFloor() {
+		Destroy(floor);
 	}
 }

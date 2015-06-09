@@ -21,6 +21,7 @@ public class NetworkManager : MonoBehaviour
 
 	GameObject player; // reference to local player
 	PlayerControlsManager playerControls; // reference to local player controls
+	bool playerAlive = true;
 
 
 	void Awake() {
@@ -99,8 +100,6 @@ public class NetworkManager : MonoBehaviour
 			int[] map = (int[]) roomProperties["map"];
 			roomSeed = (int) roomProperties["seed"];
 
-			Debug.Log(roomSeed);
-
 			// we have the map info, so we can instantiate the rooms
 			MapManager.instance.FillMap(map);
 			MapManager.instance.SpawnMap();
@@ -153,8 +152,15 @@ public class NetworkManager : MonoBehaviour
 
 
 	public void RespawnPlayer() {
+		// if the player is already being spawned, we should ignore new requests
+		if (!playerAlive) {
+			return;
+		}
+
 		ChatManager.instance.AddWarningMessage("You died. get gud, scrub.");
+
 		spawnCamera.enabled = true;
+		playerAlive = false;
 
 		playerControls.DisableControls();
 		playerControls.DisableCameras();
@@ -165,7 +171,8 @@ public class NetworkManager : MonoBehaviour
 
 	IEnumerator StartRespawnProcess() {
 		yield return new WaitForSeconds(respawnTime);
-		
+
+		playerAlive = true;
 		player.transform.position = new Vector3(0f, 0.98f, 0f);
 		// player.GetComponent<Rigidbody>().isKinematic = false; // useful later, with actual models
 

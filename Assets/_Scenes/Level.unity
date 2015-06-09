@@ -668,7 +668,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1523764758
+--- !u!4 &1523764758 stripped
 Transform:
   m_PrefabParentObject: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   m_PrefabInternal: {fileID: 1523764757}
@@ -931,6 +931,7 @@ MonoBehaviour:
   - {fileID: 191714, guid: e2fb9393c0a64e04282aa0cbe871fd86, type: 2}
   - {fileID: 151610, guid: b1c8e30c679c9024387b9b1dd5d6da49, type: 2}
   - {fileID: 139626, guid: 55d5ab3f9d019754bb3bb1a57d713d58, type: 2}
+  - {fileID: 184226, guid: d7a8ba808c4cf044aa0cbb9d2f5964af, type: 2}
   bridge: {fileID: 195472, guid: 4249e470fa336f54f901ca70b45464d4, type: 2}
 --- !u!114 &1749685936
 MonoBehaviour:
