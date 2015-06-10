@@ -208,6 +208,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1523764758}
+  - {fileID: 594448153}
+  - {fileID: 1837561553}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!1 &328056212
@@ -427,6 +429,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &594448152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 594448153}
+  m_Layer: 0
+  m_Name: Bridges
+  m_TagString: WorldBridges
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &594448153
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 594448152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 190230880}
+  m_RootOrder: 1
 --- !u!1 &1046862697
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +692,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
       propertyPath: m_Name
-      value: SpawnRoom
+      value: SpectRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_TagString
+      value: SpectRoom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
@@ -926,13 +959,15 @@ MonoBehaviour:
   mapSize: 5
   roomTypes:
   - {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
-  - {fileID: 110356, guid: 1759121eae58f4e44918f1df1a7b28b9, type: 2}
+  - {fileID: 115164, guid: bfa6b91b47af6ab46a04748cc8371179, type: 2}
+  - {fileID: 159766, guid: 6347410db08e75046b6bf54a38af0472, type: 2}
   - {fileID: 147366, guid: 93ea01f041688684da0a2e6ec6ce16d5, type: 2}
   - {fileID: 191714, guid: e2fb9393c0a64e04282aa0cbe871fd86, type: 2}
   - {fileID: 151610, guid: b1c8e30c679c9024387b9b1dd5d6da49, type: 2}
   - {fileID: 139626, guid: 55d5ab3f9d019754bb3bb1a57d713d58, type: 2}
   - {fileID: 184226, guid: d7a8ba808c4cf044aa0cbb9d2f5964af, type: 2}
   - {fileID: 163906, guid: 54eb2c39480255641b107e7fea54d04a, type: 2}
+  - {fileID: 110356, guid: 1759121eae58f4e44918f1df1a7b28b9, type: 2}
   bridge: {fileID: 195472, guid: 4249e470fa336f54f901ca70b45464d4, type: 2}
 --- !u!114 &1749685936
 MonoBehaviour:
@@ -1035,6 +1070,33 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1826758206}
+--- !u!1 &1837561552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1837561553}
+  m_Layer: 0
+  m_Name: Rooms
+  m_TagString: WorldRooms
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1837561553
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1837561552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 190230880}
+  m_RootOrder: 2
 --- !u!1 &1867460033
 GameObject:
   m_ObjectHideFlags: 0

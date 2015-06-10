@@ -96,6 +96,7 @@ public class NetworkManager : MonoBehaviour
 		connText.text = "Instantiating map";
 
 		// player that created room could join before creating, so we need to check for null
+		// should place a failsafe here
 		if (roomProperties["map"] != null && roomProperties["seed"] != null) {
 			int[] map = (int[]) roomProperties["map"];
 			roomSeed = (int) roomProperties["seed"];
@@ -157,14 +158,15 @@ public class NetworkManager : MonoBehaviour
 			return;
 		}
 
+		// otherwise, disable all controls
 		ChatManager.instance.AddWarningMessage("You died. get gud, scrub.");
 
 		spawnCamera.enabled = true;
 		playerAlive = false;
-
 		playerControls.DisableControls();
 		playerControls.DisableCameras();
 
+		// and start the actual spawn process
 		StartCoroutine("StartRespawnProcess");
 	}
 
@@ -172,10 +174,13 @@ public class NetworkManager : MonoBehaviour
 	IEnumerator StartRespawnProcess() {
 		yield return new WaitForSeconds(respawnTime);
 
-		playerAlive = true;
-		player.transform.position = new Vector3(0f, 0.98f, 0f);
+		// get current spawn point and use it to spawn player
+		Vector3 spawnRoom = GameObject.FindGameObjectWithTag("SpawnRoom").transform.position;
+		player.transform.position = spawnRoom + new Vector3(0f, 0.98f, 0f);
 		// player.GetComponent<Rigidbody>().isKinematic = false; // useful later, with actual models
+		playerAlive = true;
 
+		// re-enable controls
 		playerControls.EnableCameras();
 		playerControls.EnableControls();
 	}

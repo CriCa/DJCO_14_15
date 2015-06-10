@@ -21,23 +21,27 @@ public class SpikesRoomController : MonoBehaviour
 	
 	void Start() {
 		triggered = false;
-
-		rightWallPoints = new Vector3[2];
-		rightWallPoints[0] = rightWall.position + new Vector3(0f, -downDistance, 0f);
-		rightWallPoints[1] = rightWall.position + new Vector3(0f, -downDistance, centerDistance);
-
-		leftWallPoints = new Vector3[2];
-		leftWallPoints[0] = leftWall.position + new Vector3(0f, -downDistance, 0f);
-		leftWallPoints[1] = leftWall.position + new Vector3(0f, -downDistance, -centerDistance);
-
 		currentPoint = 0;
+		rightWallPoints = new Vector3[2];
+		leftWallPoints = new Vector3[2];
 	}
 
 	void OnTriggerEnter(Collider other) {
 		if (!triggered && other.tag == "PlayerBody") {
 			triggered = true;
+
+			SetupPoints();
 			StartCoroutine("MoveWalls");
 		}
+	}
+
+	// doing this here and not on start because we're using real world coordinates (not local) and the room's pos may change
+	void SetupPoints() {
+		rightWallPoints[0] = rightWall.position + new Vector3(0f, -downDistance, 0f);
+		rightWallPoints[1] = rightWall.position + new Vector3(0f, -downDistance, centerDistance);
+
+		leftWallPoints[0] = leftWall.position + new Vector3(0f, -downDistance, 0f);
+		leftWallPoints[1] = leftWall.position + new Vector3(0f, -downDistance, -centerDistance);
 	}
 
 	IEnumerator MoveWalls() {

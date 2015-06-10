@@ -25,6 +25,7 @@ public class StatuesRoomController : MonoBehaviour
 	}
 	
 	void OnTriggerEnter(Collider other) {
+		// using "Player", and not "PlayerBody", because we want to access the charactercontroller script on the parent object
 		if (other.tag == "Player") {
 			playersTr.Add(other.gameObject.transform);
 			playersCC.Add(other.gameObject.GetComponent<CharacterController>());

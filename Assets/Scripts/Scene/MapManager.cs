@@ -16,7 +16,8 @@ public class MapManager : MonoBehaviour
 	public GameObject[] roomTypes;
 	public GameObject bridge;
 
-	GameObject world; // where to instantiate the rooms
+	GameObject worldRooms; // where to instantiate the rooms
+	GameObject worldBridges; // where to instantiate the bridges
 	float roomSpacement = 38.2f; // space between each room
 	float bridgesSpacement = 19f; // space between bridge and room origin
 	List<Vector2> mapPositions; // list of all possible positions on the map
@@ -32,7 +33,8 @@ public class MapManager : MonoBehaviour
 	}
 
 	void Start () {
-		world = GameObject.FindGameObjectWithTag("World");
+		worldRooms = GameObject.FindGameObjectWithTag("WorldRooms");
+		worldBridges = GameObject.FindGameObjectWithTag("WorldBridges");
 		mapPositions = new List<Vector2>();
 		map = new int[mapSize, mapSize];
 	}
@@ -48,9 +50,9 @@ public class MapManager : MonoBehaviour
 		// FillWithObject(1, 3);
 
 		// forcing one type of each room, in order
-		for (int i = 0; i < roomTypes.Length; i++) {
+		for (int i = 0; i < roomTypes.Length - 1; i++) {
 			mapPositions.RemoveAt(0);
-			map[i/mapSize, i%mapSize] = i;
+			map[i/mapSize, i%mapSize] = i+1;
 		}
 
 		// all others can be anything
@@ -131,19 +133,19 @@ public class MapManager : MonoBehaviour
 				GameObject bridgeObj;
 
 				GameObject roomObj = Instantiate(roomTypes[type], pos, Quaternion.identity) as GameObject;
-				roomObj.transform.parent = world.transform;
+				roomObj.transform.parent = worldRooms.transform;
 
 				if (j != mapSize - 1) {
 					pos = new Vector3 (i * roomSpacement, floorHeight, j * roomSpacement + bridgesSpacement);
 					Quaternion rot = Quaternion.Euler(0, 90, 0);
 					bridgeObj = Instantiate(bridge, pos, rot) as GameObject;
-					bridgeObj.transform.parent = world.transform;
+					bridgeObj.transform.parent = worldBridges.transform;
 				}
 
 				if (i != mapSize - 1) {
 					pos = new Vector3 (i * roomSpacement + bridgesSpacement, floorHeight, j * roomSpacement);
 					bridgeObj = Instantiate(bridge, pos, Quaternion.identity) as GameObject;
-					bridgeObj.transform.parent = world.transform;
+					bridgeObj.transform.parent = worldBridges.transform;
 				}
 			}
 		}	     

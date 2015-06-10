@@ -10,6 +10,10 @@ TagManager:
   - PlayerBody
   - FlashlightCharge
   - Fire
+  - WorldRooms
+  - WorldBridges
+  - SpectRoom
+  - SpawnRoom
   layers:
   - Default
   - TransparentFX
