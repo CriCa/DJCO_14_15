@@ -23,13 +23,13 @@ public class PeekabooRoomController : MonoBehaviour
 
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "PlayerBody") {
+			players.Add(other.gameObject);
+
 			// when the first player enters, start process
 			if (!triggered) {
 				triggered = true;
 				StartCoroutine("TransformIntoMonsters");
 			}
-
-			players.Add(other.gameObject);
 		}
 	}
 
@@ -57,7 +57,7 @@ public class PeekabooRoomController : MonoBehaviour
 			player.GetComponent<Renderer>().material.mainTexture = null;
 		}
 
-		players.Clear();
 		GetComponent<DoorsController>().TriggerDoors(true);
+		Destroy(this);
 	}
 }

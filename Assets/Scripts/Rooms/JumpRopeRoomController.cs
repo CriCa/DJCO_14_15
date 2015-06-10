@@ -10,6 +10,7 @@ public class JumpRopeRoomController : MonoBehaviour
 	public float secondsToTrigger = 6f;
 	public GameObject rope;
 	public float ropeSpeed = 3f; // rope movement speed
+	public float ropeSpeedIncrement = 0.7f; // how much the speed increases after every "jump"
 	public int jumpsNeeded = 8; // number of jumps needed before the doors open
 	
 	bool triggered;
@@ -45,7 +46,7 @@ public class JumpRopeRoomController : MonoBehaviour
 			if (Vector3.Distance(rope.transform.localPosition, goal) < 0.01f) {
 				goal.z = -goal.z;
 				jumpsTaken++;
-				ropeSpeed += 0.7f; // slightly increasing speed each time
+				ropeSpeed += ropeSpeedIncrement; // slightly increasing speed each time
 			}
 
 			// once the rope has moved enough times, it can stop
@@ -59,5 +60,6 @@ public class JumpRopeRoomController : MonoBehaviour
 		// disable rope object and open doors
 		rope.SetActive(false);
 		GetComponent<DoorsController>().TriggerDoors(true);
+		Destroy(this);
 	}
 }

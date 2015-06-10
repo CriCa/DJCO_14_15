@@ -60,5 +60,7 @@ public class SpikesRoomController : MonoBehaviour
 
 			yield return null;
 		}
+
+		Destroy(this);
 	}
 }

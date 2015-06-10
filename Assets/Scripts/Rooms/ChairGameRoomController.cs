@@ -58,6 +58,7 @@ public class ChairGameRoomController : MonoBehaviour
 		
 		if (playersSit == playersInside) {
 			GetComponent<DoorsController>().TriggerDoors(true);
+			Destroy(this);
 		}
 	}
 	
