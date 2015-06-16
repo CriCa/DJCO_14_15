@@ -13,6 +13,7 @@ public class NetworkManager : MonoBehaviour
 	public string VERSION; // current game version
 	public int secondsToStart = 30; // seconds to start game once enough players have joined
 	public float respawnTime = 5f; // interval between player death and respawn
+	public int minPlayers = 4;
 
 	int roomSeed; // stored on the server, used as the seed for random values
 
@@ -143,8 +144,9 @@ public class NetworkManager : MonoBehaviour
 
 	void SpawnPlayer() {
 		// spawn player
+		int playerNum = PhotonNetwork.room.playerCount;
 		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 0.98f, 0f);
-		player = PhotonNetwork.Instantiate("PlayerModel", pos, Quaternion.identity, 0);
+		player = PhotonNetwork.Instantiate("Player" + playerNum, pos, Quaternion.identity, 0);
 		playerControls = player.GetComponent<PlayerControlsManager>();
 		
 		// disable spawn camera
