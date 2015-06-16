@@ -182,7 +182,7 @@ ModelImporter:
     400172: toes.R
     400174: toes.R_end
     4300000: Cube.001
-    7400000: Runcyclefatmonster
+    7400000: Run
     7400002: Runcyclefatmonster.001
     7400004: Camera|Walkcyclefatmonster
     7400006: Armature.001|Runcyclefatmonterfinal
@@ -203,7 +203,815 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Runcyclefatmonster
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/Bone
+        weight: 1
+      - path: Armature.001/Bone/handscale.L
+        weight: 1
+      - path: Armature.001/Bone/handscale.L/handscale.L_end
+        weight: 1
+      - path: Armature.001/Bone/handscale.R
+        weight: 1
+      - path: Armature.001/Bone/handscale.R/handscale.R_end
+        weight: 1
+      - path: Armature.001/Bone/handscale2.L
+        weight: 1
+      - path: Armature.001/Bone/handscale2.L/handscale2.L_end
+        weight: 1
+      - path: Armature.001/Bone/handscale2.R
+        weight: 1
+      - path: Armature.001/Bone/handscale2.R/handscale2.R_end
+        weight: 1
+      - path: Armature.001/Bone/legpole.L
+        weight: 1
+      - path: Armature.001/Bone/legpole.L/legpole.L_end
+        weight: 1
+      - path: Armature.001/Bone/legpole.R
+        weight: 1
+      - path: Armature.001/Bone/legpole.R/legpole.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L/Leg.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L/Leg.L.001/Leg.L.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R/Leg.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R/Leg.R.001/Leg.R.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.006
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.006/hand.L.006_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007/hand.L.008
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007/hand.L.008/hand.L.008_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005/hand.L.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/armpole.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/armpole.L/armpole.L_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/handik.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/handik.L/handik.L_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R.001/hand.R.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002/hand.R.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002/hand.R.003/hand.R.003_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004/hand.R.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004/hand.R.005/hand.R.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/armpole.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/armpole.R/armpole.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/handik.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/handik.R/handik.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.005/spine.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.006
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.006/spine.006_end
+        weight: 1
+      - path: Armature.001/footik.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L/legik.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L/legik.L/legik.L_end
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L/toebone.L
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L/toebone.L/toebone.L_end
+        weight: 1
+      - path: Armature.001/footik.L/toes.L
+        weight: 1
+      - path: Armature.001/footik.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature.001/footik.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R/legik.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R/legik.R/legik.R_end
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R/toebone.R
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R/toebone.R/toebone.R_end
+        weight: 1
+      - path: Armature.001/footik.R/toes.R
+        weight: 1
+      - path: Armature.001/footik.R/toes.R/toes.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Runcyclefatmonster.001
+      takeName: Runcyclefatmonster.001
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/Bone
+        weight: 1
+      - path: Armature.001/Bone/handscale.L
+        weight: 1
+      - path: Armature.001/Bone/handscale.L/handscale.L_end
+        weight: 1
+      - path: Armature.001/Bone/handscale.R
+        weight: 1
+      - path: Armature.001/Bone/handscale.R/handscale.R_end
+        weight: 1
+      - path: Armature.001/Bone/handscale2.L
+        weight: 1
+      - path: Armature.001/Bone/handscale2.L/handscale2.L_end
+        weight: 1
+      - path: Armature.001/Bone/handscale2.R
+        weight: 1
+      - path: Armature.001/Bone/handscale2.R/handscale2.R_end
+        weight: 1
+      - path: Armature.001/Bone/legpole.L
+        weight: 1
+      - path: Armature.001/Bone/legpole.L/legpole.L_end
+        weight: 1
+      - path: Armature.001/Bone/legpole.R
+        weight: 1
+      - path: Armature.001/Bone/legpole.R/legpole.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L/Leg.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L/Leg.L.001/Leg.L.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R/Leg.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R/Leg.R.001/Leg.R.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.006
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.006/hand.L.006_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007/hand.L.008
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007/hand.L.008/hand.L.008_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005/hand.L.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/armpole.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/armpole.L/armpole.L_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/handik.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/handik.L/handik.L_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R.001/hand.R.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002/hand.R.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002/hand.R.003/hand.R.003_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004/hand.R.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004/hand.R.005/hand.R.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/armpole.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/armpole.R/armpole.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/handik.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/handik.R/handik.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.005/spine.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.006
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.006/spine.006_end
+        weight: 1
+      - path: Armature.001/footik.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L/legik.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L/legik.L/legik.L_end
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L/toebone.L
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L/toebone.L/toebone.L_end
+        weight: 1
+      - path: Armature.001/footik.L/toes.L
+        weight: 1
+      - path: Armature.001/footik.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature.001/footik.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R/legik.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R/legik.R/legik.R_end
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R/toebone.R
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R/toebone.R/toebone.R_end
+        weight: 1
+      - path: Armature.001/footik.R/toes.R
+        weight: 1
+      - path: Armature.001/footik.R/toes.R/toes.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Camera|Walkcyclefatmonster
+      takeName: Camera|Walkcyclefatmonster
+      firstFrame: 0
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/Bone
+        weight: 1
+      - path: Armature.001/Bone/handscale.L
+        weight: 1
+      - path: Armature.001/Bone/handscale.L/handscale.L_end
+        weight: 1
+      - path: Armature.001/Bone/handscale.R
+        weight: 1
+      - path: Armature.001/Bone/handscale.R/handscale.R_end
+        weight: 1
+      - path: Armature.001/Bone/handscale2.L
+        weight: 1
+      - path: Armature.001/Bone/handscale2.L/handscale2.L_end
+        weight: 1
+      - path: Armature.001/Bone/handscale2.R
+        weight: 1
+      - path: Armature.001/Bone/handscale2.R/handscale2.R_end
+        weight: 1
+      - path: Armature.001/Bone/legpole.L
+        weight: 1
+      - path: Armature.001/Bone/legpole.L/legpole.L_end
+        weight: 1
+      - path: Armature.001/Bone/legpole.R
+        weight: 1
+      - path: Armature.001/Bone/legpole.R/legpole.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L/Leg.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L/Leg.L.001/Leg.L.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R/Leg.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R/Leg.R.001/Leg.R.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.006
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.006/hand.L.006_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007/hand.L.008
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007/hand.L.008/hand.L.008_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005/hand.L.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/armpole.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/armpole.L/armpole.L_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/handik.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/handik.L/handik.L_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R.001/hand.R.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002/hand.R.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002/hand.R.003/hand.R.003_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004/hand.R.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004/hand.R.005/hand.R.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/armpole.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/armpole.R/armpole.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/handik.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/handik.R/handik.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.005/spine.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.006
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.006/spine.006_end
+        weight: 1
+      - path: Armature.001/footik.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L/legik.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L/legik.L/legik.L_end
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L/toebone.L
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L/toebone.L/toebone.L_end
+        weight: 1
+      - path: Armature.001/footik.L/toes.L
+        weight: 1
+      - path: Armature.001/footik.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature.001/footik.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R/legik.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R/legik.R/legik.R_end
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R/toebone.R
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R/toebone.R/toebone.R_end
+        weight: 1
+      - path: Armature.001/footik.R/toes.R
+        weight: 1
+      - path: Armature.001/footik.R/toes.R/toes.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Armature.001|Runcyclefatmonterfinal
+      takeName: Armature.001|Runcyclefatmonterfinal
+      firstFrame: 0
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature.001
+        weight: 1
+      - path: Armature.001/Bone
+        weight: 1
+      - path: Armature.001/Bone/handscale.L
+        weight: 1
+      - path: Armature.001/Bone/handscale.L/handscale.L_end
+        weight: 1
+      - path: Armature.001/Bone/handscale.R
+        weight: 1
+      - path: Armature.001/Bone/handscale.R/handscale.R_end
+        weight: 1
+      - path: Armature.001/Bone/handscale2.L
+        weight: 1
+      - path: Armature.001/Bone/handscale2.L/handscale2.L_end
+        weight: 1
+      - path: Armature.001/Bone/handscale2.R
+        weight: 1
+      - path: Armature.001/Bone/handscale2.R/handscale2.R_end
+        weight: 1
+      - path: Armature.001/Bone/legpole.L
+        weight: 1
+      - path: Armature.001/Bone/legpole.L/legpole.L_end
+        weight: 1
+      - path: Armature.001/Bone/legpole.R
+        weight: 1
+      - path: Armature.001/Bone/legpole.R/legpole.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L/Leg.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.L/Leg.L.001/Leg.L.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R/Leg.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/Leg.R/Leg.R.001/Leg.R.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.006
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.006/hand.L.006_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007/hand.L.008
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.007/hand.L.008/hand.L.008_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005/hand.L.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/armpole.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/armpole.L/armpole.L_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/handik.L
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.L/handik.L/handik.L_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R.001
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R.001/hand.R.001_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002/hand.R.003
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/hand.R.002/hand.R.003/hand.R.003_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004/hand.R.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.004/hand.R.005/hand.R.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/armpole.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/armpole.R/armpole.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/handik.R
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/shoulder.R/handik.R/handik.R_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.005
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.005/spine.005_end
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.006
+        weight: 1
+      - path: Armature.001/Bone/spine/spine.003/spine.001/spine.002/spine.004/spine.006/spine.006_end
+        weight: 1
+      - path: Armature.001/footik.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L/legik.L
+        weight: 1
+      - path: Armature.001/footik.L/foot.L/legik.L/legik.L_end
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L/toebone.L
+        weight: 1
+      - path: Armature.001/footik.L/footbone.L/toebone.L/toebone.L_end
+        weight: 1
+      - path: Armature.001/footik.L/toes.L
+        weight: 1
+      - path: Armature.001/footik.L/toes.L/toes.L_end
+        weight: 1
+      - path: Armature.001/footik.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R/legik.R
+        weight: 1
+      - path: Armature.001/footik.R/foot.R/legik.R/legik.R_end
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R/toebone.R
+        weight: 1
+      - path: Armature.001/footik.R/footbone.R/toebone.R/toebone.R_end
+        weight: 1
+      - path: Armature.001/footik.R/toes.R
+        weight: 1
+      - path: Armature.001/footik.R/toes.R/toes.R_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []

@@ -51,7 +51,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 			}
 
 			// hide own model
-			// transform.Find("Model").GetComponent<SkinnedMeshRenderer>().enabled = false;
+			transform.Find("Model").GetComponent<SkinnedMeshRenderer>().enabled = false;
 
 			// draw items on top of everything (hud-like)
 			transform.Find("Items/Flashlight/FlashlightModel").gameObject.layer = 8;
