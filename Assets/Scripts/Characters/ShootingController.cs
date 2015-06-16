@@ -15,6 +15,7 @@ public class ShootingController : MonoBehaviour
 	bool shooting;
 	float nextShot;
 
+
 	void Start() {
 		shooting = false;
 		nextShot = 0f;
@@ -23,12 +24,14 @@ public class ShootingController : MonoBehaviour
 		impactObj = Instantiate(impact, new Vector3(3f, 12f, 18f), Quaternion.identity) as GameObject;
 	}
 
+
 	void Update() {
 		if (Input.GetButtonDown("Fire1") && Time.time > nextShot) {
 			shooting = true;
 			nextShot = Time.time + cooldown;
 		}
 	}
+
 
 	void FixedUpdate() {
 		if (shooting) {

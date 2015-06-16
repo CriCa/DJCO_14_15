@@ -34,4 +34,5 @@ MonoBehaviour:
   - RequestForPickupTimes
   - TaggedPlayer
   - AddMessage_RPC
+  - TriggerAnimation_RPC
   DisableAutoOpenWizard: 0

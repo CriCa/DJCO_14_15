@@ -17,21 +17,25 @@ public class PlayerControlsManager : MonoBehaviour
 	/* until here */
 
 	FirstPersonController fpController;
-	FlashlightController flController;
+	FlashlightController flashController;
+	ShootingController shootController;
 	List<Camera> fpCameras;
-	
+
+
 	void Start() {
 		output = GameObject.FindGameObjectWithTag("GameHint").GetComponent<Text>();
 		gamePaused = false;
 
 		fpController = GetComponent<FirstPersonController>();
-		flController = NetworkManager.instance.GetPlayer().GetComponentInChildren<FlashlightController>();
+		flashController = GetComponentInChildren<FlashlightController>();
+		shootController = GetComponentInChildren<ShootingController>();
 		fpCameras = new List<Camera>();
 
 		foreach (Camera cam in GetComponentsInChildren<Camera>()) {
 			fpCameras.Add(cam);
 		}
 	}
+
 
 	/* everything pertaining to the pause menu here should also be moved */
 	void Update () {
@@ -47,27 +51,45 @@ public class PlayerControlsManager : MonoBehaviour
 				EnableControls();
 				output.enabled = false;
 				output.text = "";
+				Cursor.lockState = CursorLockMode.Locked;
+				Cursor.visible = false;
 			}
 		}
 	}
 
+	void OnApplicationFocus(bool focusStatus) {
+		if (!focusStatus) {
+			gamePaused = true;
+			DisableControls();
+			output.enabled = true;
+			output.text = "Currently paused....";
+		}
+	}
+	/* until here */ 
+
+
 	public void EnableControls() {
 		if (!gamePaused) {
 			fpController.enabled = true;
-			flController.enabled = true;
+			flashController.enabled = true;
+			shootController.enabled = true;
 		}
 	}
-	
+
+
 	public void DisableControls() {
 		fpController.enabled = false;
-		flController.enabled = false;
+		flashController.enabled = false;
+		shootController.enabled = false;
 	}
+
 
 	public void EnableCameras() {
 		foreach (Camera cam in fpCameras) {
 			cam.enabled = true;
 		}
 	}
+
 
 	public void DisableCameras() {
 		foreach (Camera cam in fpCameras) {

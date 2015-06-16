@@ -2843,7 +2843,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: .300000012
+  near clip plane: .100000001
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -3051,8 +3051,8 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197622}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 6d7e07473b4c7664c8c6c32d3e9b16c3, type: 3}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 4cf9dbc98d092904f9973f22abe298be, type: 3}
+  m_Controller: {fileID: 22100000, guid: 0fa1697cf0e3e804f85f2f8fca614771, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3194,9 +3194,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_WalkSpeed: 5
-  m_RunSpeed: 10
-  m_RunstepLenghten: .699999988
+  m_WalkSpeed: 2.5
+  m_RunSpeed: 7
+  m_RunstepLenghten: .25999999
   m_JumpSpeed: 7
   m_StickToGroundForce: 10
   m_GravityMultiplier: 2
@@ -3268,7 +3268,7 @@ MonoBehaviour:
   m_JumpBob:
     BobDuration: .200000003
     BobAmount: .100000001
-  m_StepInterval: 5
+  m_StepInterval: 3.20000005
   m_FootstepSounds:
   - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}

@@ -42,6 +42,7 @@ public class NetworkManager : MonoBehaviour
 		StartCoroutine("UpdateConnectionText");
 	}
 
+
 	IEnumerator UpdateConnectionText() {
 		while (true) {
 			connText.text = PhotonNetwork.connectionStateDetailed.ToString();
@@ -55,7 +56,7 @@ public class NetworkManager : MonoBehaviour
 		ChatManager.instance.SetPlayerName(PhotonNetwork.playerName);
 
 		RoomOptions ro = new RoomOptions() {isVisible = true, maxPlayers = 5};
-		PhotonNetwork.JoinOrCreateRoom("Default2", ro, TypedLobby.Default);
+		PhotonNetwork.JoinOrCreateRoom("Default", ro, TypedLobby.Default);
 	}
 
 

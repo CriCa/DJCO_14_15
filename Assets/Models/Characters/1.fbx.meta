@@ -1047,8 +1047,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Jump
       takeName: luis|Walkcycle
-      firstFrame: 361
-      lastFrame: 433
+      firstFrame: 384
+      lastFrame: 410
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

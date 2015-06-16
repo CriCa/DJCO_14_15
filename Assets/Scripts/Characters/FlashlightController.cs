@@ -17,11 +17,13 @@ public class FlashlightController : MonoBehaviour
 	float currentCharge; // current charge level
 	Image chargeGUI; // charge level bar
 
+
 	void Start() {
 		maxIntensity = spotlight.intensity;
 		currentCharge = maxCharge;
 		chargeGUI = GameObject.FindGameObjectWithTag("FlashlightCharge").GetComponent<Image>();
 	}
+
 
 	void Update () {
 		if (Input.GetKeyDown(activationKey)) {

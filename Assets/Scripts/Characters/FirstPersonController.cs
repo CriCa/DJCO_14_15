@@ -42,6 +42,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+		private Animator anim;
+		private PlayerNetworkManager playerNetManager;
+
         // Use this for initialization
         private void Start()
         {
@@ -55,6 +58,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+
+			anim = GetComponent<Animator>();
+			playerNetManager = GetComponent<PlayerNetworkManager>();
         }
 
 
@@ -119,6 +125,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     PlayJumpSound();
                     m_Jump = false;
                     m_Jumping = true;
+
+					// since this is is trigger, not a bool, we need to alert the network manager to rpc it
+					playerNetManager.TriggerAnimation("Jump");
                 }
             }
             else
@@ -214,6 +223,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
 #endif
             // set the desired speed to be walking or running
             speed = m_IsWalking ? m_WalkSpeed : m_RunSpeed;
+
+			// Handle movement animations
+			bool animIsWalking = (m_CharacterController.velocity != Vector3.zero) && (speed == m_WalkSpeed);
+			bool animIsRunning = (m_CharacterController.velocity != Vector3.zero) && (speed == m_RunSpeed);
+
+			anim.SetBool("Walking", animIsWalking);
+			anim.SetBool("Running", animIsRunning);
+			//
+
             m_Input = new Vector2(horizontal, vertical);
 
             // normalize input if it exceeds 1 in combined length:

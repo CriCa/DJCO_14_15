@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PlayerFemaleAC
+  m_Controller: {fileID: 9100000, guid: 975055ced60507349b4f2d7a297d5ed7, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400010, guid: 6d7e07473b4c7664c8c6c32d3e9b16c3, type: 3}
+    m_OverrideClip: {fileID: 7400010, guid: 4cf9dbc98d092904f9973f22abe298be, type: 3}
+  - m_OriginalClip: {fileID: 7400002, guid: 6d7e07473b4c7664c8c6c32d3e9b16c3, type: 3}
+    m_OverrideClip: {fileID: 7400002, guid: 4cf9dbc98d092904f9973f22abe298be, type: 3}
+  - m_OriginalClip: {fileID: 7400004, guid: 6d7e07473b4c7664c8c6c32d3e9b16c3, type: 3}
+    m_OverrideClip: {fileID: 7400004, guid: 4cf9dbc98d092904f9973f22abe298be, type: 3}
+  - m_OriginalClip: {fileID: 7400008, guid: 6d7e07473b4c7664c8c6c32d3e9b16c3, type: 3}
+    m_OverrideClip: {fileID: 7400008, guid: 4cf9dbc98d092904f9973f22abe298be, type: 3}

@@ -28,6 +28,7 @@ public class ChatManager : MonoBehaviour
 	string infoColor = "#2EE62E";
 	string warningColor = "#F72929";
 
+
 	void Awake() {
 		if (instance == null) {
 			instance = this;
@@ -36,7 +37,8 @@ public class ChatManager : MonoBehaviour
 			Destroy(gameObject); 
 		}
 	}
-	
+
+
 	void Start () {
 		photonView = GetComponent<PhotonView>();
 		playerControls = NetworkManager.instance.GetPlayerControls();
@@ -45,6 +47,7 @@ public class ChatManager : MonoBehaviour
 		playerName = NetworkManager.instance.GetPlayerName();
 		isSelected = false;
 	}
+
 
 	void Update () {
 		if (!isSelected && Input.GetKeyDown(activationKey)) {
@@ -65,6 +68,7 @@ public class ChatManager : MonoBehaviour
 		}
 	}
 
+
 	void SelectInput() {
 		playerControls.DisableControls();
 		input.interactable = true;
@@ -72,6 +76,7 @@ public class ChatManager : MonoBehaviour
 		input.Select();
 		isSelected = true;
 	}
+
 
 	void DeselectInput() {
 		playerControls.EnableControls();
@@ -81,10 +86,12 @@ public class ChatManager : MonoBehaviour
 		isSelected = false;
 	}
 
+
 	[RPC]
 	void AddMessage_RPC(string message) {
 		AddMessage(message);
 	}
+
 
 	public void AddMessage(string message) {
 		messages.Enqueue(message);
@@ -100,11 +107,13 @@ public class ChatManager : MonoBehaviour
 		}
 	}	
 
+
 	public void AddInfoMessage(string message) {
 		message = ColorText(message, infoColor);
 		message = BoldText(message);
 		AddMessage(message);
 	}
+
 
 	public void AddWarningMessage(string message) {
 		message = ColorText(message, warningColor);
@@ -112,17 +121,21 @@ public class ChatManager : MonoBehaviour
 		AddMessage(message);
 	}
 
+
 	public void SetPlayerName(string playerName) {
 		this.playerName = playerName;
 	}
+
 
 	string BoldText(string text) {
 		return "<b>" + text + "</b>";
 	}
 
+
 	string ColorText(string text, string color) {
 		return "<color=" + color + ">" + text + "</color>";
 	}
+
 
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info) {
 
