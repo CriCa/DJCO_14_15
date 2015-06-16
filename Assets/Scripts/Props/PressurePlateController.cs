@@ -23,7 +23,7 @@ public class PressurePlateController : MonoBehaviour {
 
 		if (pos > 0) 
 		{
-			Debug.Log ("Pos: " + pos);
+			// Debug.Log ("Pos: " + pos);
 			//mat.SetColor("_RimColor", selectedColor);
 			transform.position += new Vector3(0, 1, 0);
 		}

@@ -190,6 +190,10 @@ ModelImporter:
     4300000: Plane.000
     7400000: AnimationCycle
     7400002: Walk
+    7400004: Run
+    7400006: Attack
+    7400008: Jump
+    7400010: Idle
     9500000: //RootNode
     13700000: Plane.000
   materials:
@@ -420,13 +424,845 @@ ModelImporter:
       name: Walk
       takeName: luis|Walkcycle
       firstFrame: 0
-      lastFrame: 520
+      lastFrame: 42
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: luis
+        weight: 1
+      - path: luis/Bone
+        weight: 1
+      - path: luis/Bone/footik.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L/legik.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L/legik.L/legik.L_end
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L/toebone.L
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L/toebone.L/toebone.L_end
+        weight: 1
+      - path: luis/Bone/footik.L/toes.L
+        weight: 1
+      - path: luis/Bone/footik.L/toes.L/toes.L_end
+        weight: 1
+      - path: luis/Bone/footik.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R/legik.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R/legik.R/legik.R_end
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R/toebone.R
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R/toebone.R/toebone.R_end
+        weight: 1
+      - path: luis/Bone/footik.R/toes.R
+        weight: 1
+      - path: luis/Bone/footik.R/toes.R/toes.R_end
+        weight: 1
+      - path: luis/Bone/handscale.L
+        weight: 1
+      - path: luis/Bone/handscale.L/handscale.L_end
+        weight: 1
+      - path: luis/Bone/handscale.R
+        weight: 1
+      - path: luis/Bone/handscale.R/handscale.R_end
+        weight: 1
+      - path: luis/Bone/handscale2.L
+        weight: 1
+      - path: luis/Bone/handscale2.L/handscale2.L_end
+        weight: 1
+      - path: luis/Bone/handscale2.R
+        weight: 1
+      - path: luis/Bone/handscale2.R/handscale2.R_end
+        weight: 1
+      - path: luis/Bone/legpole.L
+        weight: 1
+      - path: luis/Bone/legpole.L/legpole.L_end
+        weight: 1
+      - path: luis/Bone/legpole.R
+        weight: 1
+      - path: luis/Bone/legpole.R/legpole.R_end
+        weight: 1
+      - path: luis/Bone/spine
+        weight: 1
+      - path: luis/Bone/spine/Leg.L
+        weight: 1
+      - path: luis/Bone/spine/Leg.L/Leg.L.001
+        weight: 1
+      - path: luis/Bone/spine/Leg.L/Leg.L.001/Leg.L.001_end
+        weight: 1
+      - path: luis/Bone/spine/Leg.R
+        weight: 1
+      - path: luis/Bone/spine/Leg.R/Leg.R.001
+        weight: 1
+      - path: luis/Bone/spine/Leg.R/Leg.R.001/Leg.R.001_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head/head.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head/head.001/head.001_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.003_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.006
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.006/hand.L.006_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005/hand.L.005_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004/hand.L.007
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004/hand.L.007/hand.L.007_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005/hand.L.008
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005/hand.L.008/hand.L.008_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001/hand.R.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001/hand.R.002/hand.R.002_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.003/hand.R.003_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003/hand.R.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003/hand.R.004/hand.R.004_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004/hand.R.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004/hand.R.005/hand.R.005_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/armpole.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/armpole.L/armpole.L_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.L/handik.L_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.R/handik.R_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R/armpole.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R/armpole.R/armpole.R_end
+        weight: 1
+      - path: Plane.000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Run
+      takeName: luis|Walkcycle
+      firstFrame: 83
+      lastFrame: 106
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: luis
+        weight: 1
+      - path: luis/Bone
+        weight: 1
+      - path: luis/Bone/footik.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L/legik.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L/legik.L/legik.L_end
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L/toebone.L
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L/toebone.L/toebone.L_end
+        weight: 1
+      - path: luis/Bone/footik.L/toes.L
+        weight: 1
+      - path: luis/Bone/footik.L/toes.L/toes.L_end
+        weight: 1
+      - path: luis/Bone/footik.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R/legik.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R/legik.R/legik.R_end
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R/toebone.R
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R/toebone.R/toebone.R_end
+        weight: 1
+      - path: luis/Bone/footik.R/toes.R
+        weight: 1
+      - path: luis/Bone/footik.R/toes.R/toes.R_end
+        weight: 1
+      - path: luis/Bone/handscale.L
+        weight: 1
+      - path: luis/Bone/handscale.L/handscale.L_end
+        weight: 1
+      - path: luis/Bone/handscale.R
+        weight: 1
+      - path: luis/Bone/handscale.R/handscale.R_end
+        weight: 1
+      - path: luis/Bone/handscale2.L
+        weight: 1
+      - path: luis/Bone/handscale2.L/handscale2.L_end
+        weight: 1
+      - path: luis/Bone/handscale2.R
+        weight: 1
+      - path: luis/Bone/handscale2.R/handscale2.R_end
+        weight: 1
+      - path: luis/Bone/legpole.L
+        weight: 1
+      - path: luis/Bone/legpole.L/legpole.L_end
+        weight: 1
+      - path: luis/Bone/legpole.R
+        weight: 1
+      - path: luis/Bone/legpole.R/legpole.R_end
+        weight: 1
+      - path: luis/Bone/spine
+        weight: 1
+      - path: luis/Bone/spine/Leg.L
+        weight: 1
+      - path: luis/Bone/spine/Leg.L/Leg.L.001
+        weight: 1
+      - path: luis/Bone/spine/Leg.L/Leg.L.001/Leg.L.001_end
+        weight: 1
+      - path: luis/Bone/spine/Leg.R
+        weight: 1
+      - path: luis/Bone/spine/Leg.R/Leg.R.001
+        weight: 1
+      - path: luis/Bone/spine/Leg.R/Leg.R.001/Leg.R.001_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head/head.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head/head.001/head.001_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.003_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.006
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.006/hand.L.006_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005/hand.L.005_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004/hand.L.007
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004/hand.L.007/hand.L.007_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005/hand.L.008
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005/hand.L.008/hand.L.008_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001/hand.R.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001/hand.R.002/hand.R.002_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.003/hand.R.003_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003/hand.R.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003/hand.R.004/hand.R.004_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004/hand.R.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004/hand.R.005/hand.R.005_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/armpole.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/armpole.L/armpole.L_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.L/handik.L_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.R/handik.R_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R/armpole.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R/armpole.R/armpole.R_end
+        weight: 1
+      - path: Plane.000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack
+      takeName: luis|Walkcycle
+      firstFrame: 162
+      lastFrame: 308
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: luis
+        weight: 1
+      - path: luis/Bone
+        weight: 1
+      - path: luis/Bone/footik.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L/legik.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L/legik.L/legik.L_end
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L/toebone.L
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L/toebone.L/toebone.L_end
+        weight: 1
+      - path: luis/Bone/footik.L/toes.L
+        weight: 1
+      - path: luis/Bone/footik.L/toes.L/toes.L_end
+        weight: 1
+      - path: luis/Bone/footik.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R/legik.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R/legik.R/legik.R_end
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R/toebone.R
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R/toebone.R/toebone.R_end
+        weight: 1
+      - path: luis/Bone/footik.R/toes.R
+        weight: 1
+      - path: luis/Bone/footik.R/toes.R/toes.R_end
+        weight: 1
+      - path: luis/Bone/handscale.L
+        weight: 1
+      - path: luis/Bone/handscale.L/handscale.L_end
+        weight: 1
+      - path: luis/Bone/handscale.R
+        weight: 1
+      - path: luis/Bone/handscale.R/handscale.R_end
+        weight: 1
+      - path: luis/Bone/handscale2.L
+        weight: 1
+      - path: luis/Bone/handscale2.L/handscale2.L_end
+        weight: 1
+      - path: luis/Bone/handscale2.R
+        weight: 1
+      - path: luis/Bone/handscale2.R/handscale2.R_end
+        weight: 1
+      - path: luis/Bone/legpole.L
+        weight: 1
+      - path: luis/Bone/legpole.L/legpole.L_end
+        weight: 1
+      - path: luis/Bone/legpole.R
+        weight: 1
+      - path: luis/Bone/legpole.R/legpole.R_end
+        weight: 1
+      - path: luis/Bone/spine
+        weight: 1
+      - path: luis/Bone/spine/Leg.L
+        weight: 1
+      - path: luis/Bone/spine/Leg.L/Leg.L.001
+        weight: 1
+      - path: luis/Bone/spine/Leg.L/Leg.L.001/Leg.L.001_end
+        weight: 1
+      - path: luis/Bone/spine/Leg.R
+        weight: 1
+      - path: luis/Bone/spine/Leg.R/Leg.R.001
+        weight: 1
+      - path: luis/Bone/spine/Leg.R/Leg.R.001/Leg.R.001_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head/head.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head/head.001/head.001_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.003_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.006
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.006/hand.L.006_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005/hand.L.005_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004/hand.L.007
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004/hand.L.007/hand.L.007_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005/hand.L.008
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005/hand.L.008/hand.L.008_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001/hand.R.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001/hand.R.002/hand.R.002_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.003/hand.R.003_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003/hand.R.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003/hand.R.004/hand.R.004_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004/hand.R.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004/hand.R.005/hand.R.005_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/armpole.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/armpole.L/armpole.L_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.L/handik.L_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.R/handik.R_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R/armpole.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R/armpole.R/armpole.R_end
+        weight: 1
+      - path: Plane.000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Jump
+      takeName: luis|Walkcycle
+      firstFrame: 361
+      lastFrame: 433
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: luis
+        weight: 1
+      - path: luis/Bone
+        weight: 1
+      - path: luis/Bone/footik.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L/legik.L
+        weight: 1
+      - path: luis/Bone/footik.L/foot.L/legik.L/legik.L_end
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L/toebone.L
+        weight: 1
+      - path: luis/Bone/footik.L/footbone.L/toebone.L/toebone.L_end
+        weight: 1
+      - path: luis/Bone/footik.L/toes.L
+        weight: 1
+      - path: luis/Bone/footik.L/toes.L/toes.L_end
+        weight: 1
+      - path: luis/Bone/footik.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R/legik.R
+        weight: 1
+      - path: luis/Bone/footik.R/foot.R/legik.R/legik.R_end
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R/toebone.R
+        weight: 1
+      - path: luis/Bone/footik.R/footbone.R/toebone.R/toebone.R_end
+        weight: 1
+      - path: luis/Bone/footik.R/toes.R
+        weight: 1
+      - path: luis/Bone/footik.R/toes.R/toes.R_end
+        weight: 1
+      - path: luis/Bone/handscale.L
+        weight: 1
+      - path: luis/Bone/handscale.L/handscale.L_end
+        weight: 1
+      - path: luis/Bone/handscale.R
+        weight: 1
+      - path: luis/Bone/handscale.R/handscale.R_end
+        weight: 1
+      - path: luis/Bone/handscale2.L
+        weight: 1
+      - path: luis/Bone/handscale2.L/handscale2.L_end
+        weight: 1
+      - path: luis/Bone/handscale2.R
+        weight: 1
+      - path: luis/Bone/handscale2.R/handscale2.R_end
+        weight: 1
+      - path: luis/Bone/legpole.L
+        weight: 1
+      - path: luis/Bone/legpole.L/legpole.L_end
+        weight: 1
+      - path: luis/Bone/legpole.R
+        weight: 1
+      - path: luis/Bone/legpole.R/legpole.R_end
+        weight: 1
+      - path: luis/Bone/spine
+        weight: 1
+      - path: luis/Bone/spine/Leg.L
+        weight: 1
+      - path: luis/Bone/spine/Leg.L/Leg.L.001
+        weight: 1
+      - path: luis/Bone/spine/Leg.L/Leg.L.001/Leg.L.001_end
+        weight: 1
+      - path: luis/Bone/spine/Leg.R
+        weight: 1
+      - path: luis/Bone/spine/Leg.R/Leg.R.001
+        weight: 1
+      - path: luis/Bone/spine/Leg.R/Leg.R.001/Leg.R.001_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head/head.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/head/head.001/head.001_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.002/hand.L.003/hand.L.003_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.006
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.003/hand.L.006/hand.L.006_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/hand.L.004/hand.L.005/hand.L.005_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004/hand.L.007
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.004/hand.L.007/hand.L.007_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005/hand.L.008
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.L/arm.L.001/Hand.L.001/Hand.L.005/hand.L.008/hand.L.008_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.001/hand.R/hand.R_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001/hand.R.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/hand.R.001/hand.R.002/hand.R.002_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.002/hand.R.003/hand.R.003_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003/hand.R.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.003/hand.R.004/hand.R.004_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004/hand.R.005
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/arm.R/arm.R.001/Hand.R/Hand.R.004/hand.R.005/hand.R.005_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/armpole.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/armpole.L/armpole.L_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.L
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.L/handik.L_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.L/handik.R/handik.R_end
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R/armpole.R
+        weight: 1
+      - path: luis/Bone/spine/spine.001/shoulder.R/armpole.R/armpole.R_end
+        weight: 1
+      - path: Plane.000
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: luis|Walkcycle
+      firstFrame: 459
+      lastFrame: 520
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
