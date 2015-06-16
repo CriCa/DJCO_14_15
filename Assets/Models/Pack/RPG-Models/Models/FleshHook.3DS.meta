@@ -3,7 +3,12 @@ guid: 2135b79586142f54b8488c3f2aab208a
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: FleshHook
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3

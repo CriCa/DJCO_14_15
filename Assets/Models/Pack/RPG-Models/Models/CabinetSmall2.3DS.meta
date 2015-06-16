@@ -3,7 +3,12 @@ guid: 0dd86c366be3b76429fe7f8a97c8a046
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: CabinetSma
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3

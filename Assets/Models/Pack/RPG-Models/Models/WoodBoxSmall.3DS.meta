@@ -3,8 +3,19 @@ guid: f4ec79aa683f74f4c864705a4c2a3847
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: WoodenBox0
+    100004: WoodenBoxS
+    400000: //RootNode
+    400002: WoodenBox0
+    400004: WoodenBoxS
+    2300000: WoodenBox0
+    2300002: WoodenBoxS
+    3300000: WoodenBox0
+    3300002: WoodenBoxS
     4300000: WoodenBoxS
     4300002: WoodenBox0
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3

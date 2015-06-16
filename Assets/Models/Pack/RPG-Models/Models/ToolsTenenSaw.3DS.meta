@@ -3,7 +3,12 @@ guid: b54ab2c630151104c8bf30f82f6c1e21
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: ToolsTenen
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3

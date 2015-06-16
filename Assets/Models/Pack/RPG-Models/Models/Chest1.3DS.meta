@@ -3,9 +3,24 @@ guid: f506240bd3443ca43bbfede2ae41ce98
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: ChestBotto
+    100004: ChestLatch
+    100006: ChestTop
+    400000: //RootNode
+    400002: ChestBotto
+    400004: ChestLatch
+    400006: ChestTop
+    2300000: ChestBotto
+    2300002: ChestLatch
+    2300004: ChestTop
+    3300000: ChestBotto
+    3300002: ChestLatch
+    3300004: ChestTop
     4300000: ChestTop
     4300002: ChestBotto
     4300004: ChestLatch
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3

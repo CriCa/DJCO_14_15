@@ -3,7 +3,12 @@ guid: 13a26094cc0f3ff4ba7e9fe688abd513
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: InkWellSpi
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3

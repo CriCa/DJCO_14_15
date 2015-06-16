@@ -3,7 +3,12 @@ guid: 81f0d0547f82c824ebf0078a9feb1501
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: WoodenPlat
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3

@@ -3,7 +3,12 @@ guid: 6140a7504126a2f48a44b9b323db3183
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: RopeBStrai
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3

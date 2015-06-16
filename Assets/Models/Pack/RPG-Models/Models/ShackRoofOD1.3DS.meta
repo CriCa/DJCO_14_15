@@ -3,7 +3,12 @@ guid: 5d9271b7a85d5b24eaa4c473d785ca35
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: ShackRoofO
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3
