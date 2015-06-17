@@ -21,7 +21,7 @@ public class PressurePlateController : MonoBehaviour {
 	{
 		this.pos = pos;
 
-		if (pos > 0) 
+		if (this.pos > 0) 
 		{
 			// Debug.Log ("Pos: " + pos);
 			//mat.SetColor("_RimColor", selectedColor);

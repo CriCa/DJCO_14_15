@@ -28,6 +28,13 @@ public class PlayerControlsManager : MonoBehaviour
 	private ShootingController shootController;
 	private List<Camera> fpCameras;
 
+	private Transform playerModel;
+	private Transform monsterModel;
+	private SkinnedMeshRenderer playerMeshRenderer; // all these are necessary for when turning into a monster
+	private SkinnedMeshRenderer monsterMeshRenderer;
+	private Animator playerAnimator;
+	private Animator monsterAnimator;
+
 
 	void Start() {
 		// pause controls
@@ -138,5 +145,57 @@ public class PlayerControlsManager : MonoBehaviour
 
 	public void ResetCurrentHP() {
 		currentHP = maxHP;
+	}
+
+
+	public void TransformIntoMonster() {
+		// if this is null, this is the first time the player is transforming and we should grab all references
+		if (playerModel == null) {
+			playerAnimator = GetComponent<Animator>();
+
+			playerModel = transform.Find("PlayerModel");
+			playerMeshRenderer = playerModel.GetComponent<SkinnedMeshRenderer>();
+
+			monsterModel = transform.Find("MonsterModel");
+			monsterModel.gameObject.SetActive(true);
+			monsterAnimator = monsterModel.GetComponent<Animator>();
+			monsterMeshRenderer = monsterModel.GetComponentInChildren<SkinnedMeshRenderer>();
+		}
+
+		// hide player model
+		playerMeshRenderer.enabled = false;
+
+		// set monster visible
+		monsterModel.gameObject.SetActive(true);
+		monsterMeshRenderer.enabled = true;
+		monsterAnimator.enabled = true;
+
+		// start updating monster's animation according to player's
+		StartCoroutine("UpdateMonsterAnimator");//
+	}
+
+
+	public void TransformIntoHuman() {
+		// stop monster's animation
+		StopCoroutine("UpdateMonsterAnimator");
+
+		// hide monster model
+		monsterAnimator.enabled = false;
+		monsterMeshRenderer.enabled = false;
+		monsterModel.gameObject.SetActive(false);
+
+		// set player visible
+		playerMeshRenderer.enabled = true;
+	}
+
+
+	IEnumerator UpdateMonsterAnimator() {
+		while (true) {
+			bool isRunning = playerAnimator.GetBool("Walking") || playerAnimator.GetBool("Running");
+
+			monsterAnimator.SetBool("Running", isRunning);
+
+			yield return null;
+		}
 	}
 }
