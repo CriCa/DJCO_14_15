@@ -57,8 +57,10 @@ public class PlayerControlsManager : MonoBehaviour
 		}
 	}
 
+	// unity event, will run even with this script disabled
+	// as such, before doing anything, we should check if this script is enabled
 	void OnApplicationFocus(bool focusStatus) {
-		if (!focusStatus) {
+		if (this.enabled && !focusStatus) {
 			gamePaused = true;
 			DisableControls();
 			output.enabled = true;
