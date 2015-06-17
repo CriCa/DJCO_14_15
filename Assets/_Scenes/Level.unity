@@ -432,8 +432,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 397673473}
-  m_LocalRotation: {x: .123343773, y: -.474498898, z: .0673516318, w: .868965387}
-  m_LocalPosition: {x: -284.815521, y: 184.672379, z: 493.546265}
+  m_LocalRotation: {x: .0915064439, y: .908272803, z: -.298979789, w: .277989537}
+  m_LocalPosition: {x: 3.87828541, y: 14.771739, z: -20.2818203}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81679763419302d47ab42a288960e36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VERSION: 0.0.03
+  VERSION: 0.0.04
   secondsToStart: 0
   respawnTime: 5
   minPlayers: 4

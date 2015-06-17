@@ -36,4 +36,5 @@ MonoBehaviour:
   - AddMessage_RPC
   - TriggerAnimation_RPC
   - GetShot_RPC
+  - TakeDamage_RPC
   DisableAutoOpenWizard: 0

@@ -10,11 +10,18 @@ using System.Collections.Generic;
  */
 public class PlayerControlsManager : MonoBehaviour 
 {
-	/* these probably be moved later */
+	/* these should probably be moved later */
 	public KeyCode pauseKey = KeyCode.P; // keypress needed to toggle the menu
 	Text output; 
 	bool gamePaused;
 	/* until here */
+
+	public float maxHP = 3f;
+	public float healInterval = 2f;
+	public float healIncrement = 1f;
+
+	private float currentHP;
+	private HudDamageController hudDamageCtrl; // flash indication when player gets shot
 
 	private FirstPersonController fpController;
 	private FlashlightController flashController;
@@ -23,6 +30,7 @@ public class PlayerControlsManager : MonoBehaviour
 
 
 	void Start() {
+		// pause controls
 		output = GameObject.FindGameObjectWithTag("GameHint").GetComponent<Text>();
 		gamePaused = false;
 
@@ -34,6 +42,15 @@ public class PlayerControlsManager : MonoBehaviour
 		foreach (Camera cam in GetComponentsInChildren<Camera>()) {
 			fpCameras.Add(cam);
 		}
+
+		// lock cursor and hide it
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
+
+		// health controls
+		hudDamageCtrl = GameObject.FindGameObjectWithTag("HudDamage").GetComponent<HudDamageController>();
+		currentHP = maxHP;
+		StartCoroutine("UpdateHealth");
 	}
 
 
@@ -57,6 +74,7 @@ public class PlayerControlsManager : MonoBehaviour
 		}
 	}
 
+
 	// unity event, will run even with this script disabled
 	// as such, before doing anything, we should check if this script is enabled
 	void OnApplicationFocus(bool focusStatus) {
@@ -67,7 +85,15 @@ public class PlayerControlsManager : MonoBehaviour
 			output.text = "Currently paused....";
 		}
 	}
-	/* until here */ 
+	/* until here */
+
+
+	IEnumerator UpdateHealth() {
+		while (true)  {
+			yield return new WaitForSeconds(healInterval);
+			currentHP = Mathf.Min(++currentHP, maxHP);
+		}
+	}
 
 
 	public void EnableControls() {
@@ -97,5 +123,20 @@ public class PlayerControlsManager : MonoBehaviour
 		foreach (Camera cam in fpCameras) {
 			cam.enabled = false;
 		}
+	}
+
+
+	public void TakeDamage(float damage) {
+		hudDamageCtrl.FlashDamage();
+		currentHP -= damage;
+
+		if (currentHP <= 0) {
+			NetworkManager.instance.RespawnPlayer();
+		}
+	}
+
+
+	public void ResetCurrentHP() {
+		currentHP = maxHP;
 	}
 }

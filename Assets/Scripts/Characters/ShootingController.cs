@@ -10,6 +10,7 @@ public class ShootingController : MonoBehaviour
 	public GameObject impact;
 	public float cooldown = 1f;
 	public float maxShootingDistance = 50f;
+	public float damage = 1f;
 
 	private PlayerNetworkManager playerNetManager;
 	private GameObject impactObj;
@@ -47,7 +48,7 @@ public class ShootingController : MonoBehaviour
 			if(Physics.Raycast(ray, out hit, maxShootingDistance)) {
 				// if player is hit, should take damage
 				if (hit.transform.tag == "Player") {
-					hit.transform.GetComponent<PlayerNetworkManager>().GetShot();
+					hit.transform.GetComponent<PlayerNetworkManager>().TakeDamage(damage);
 				}
 				// otherwise, draw impact particles
 				else {

@@ -55,7 +55,7 @@ public class NetworkManager : MonoBehaviour
 		ChatManager.instance.SetPlayerName(PhotonNetwork.playerName);
 
 		RoomOptions ro = new RoomOptions() {isVisible = true, maxPlayers = 5};
-		PhotonNetwork.JoinOrCreateRoom("Default2", ro, TypedLobby.Default);
+		PhotonNetwork.JoinOrCreateRoom("Default", ro, TypedLobby.Default);
 	}
 
 
@@ -160,13 +160,17 @@ public class NetworkManager : MonoBehaviour
 			return;
 		}
 
-		// otherwise, disable all controls
-		ChatManager.instance.AddWarningMessage("You died. get gud, scrub.");
+		// move player model to a temporary location
+		player.transform.position = new Vector3(0f, -2000f, 0f);
 
+		// disable all controls
 		spawnCamera.enabled = true;
 		playerAlive = false;
 		playerControls.DisableControls();
 		playerControls.DisableCameras();
+
+		// warn player, if needed
+		ChatManager.instance.AddWarningMessage("You died. get gud, scrub.");
 
 		// and start the actual spawn process
 		StartCoroutine("StartRespawnProcess");
@@ -178,11 +182,13 @@ public class NetworkManager : MonoBehaviour
 
 		// get current spawn point and use it to spawn player
 		Vector3 spawnRoom = GameObject.FindGameObjectWithTag("SpawnRoom").transform.position;
-		player.transform.position = spawnRoom + new Vector3(0f, 0.98f, 0f);
-		// player.GetComponent<Rigidbody>().isKinematic = false; // useful later, with actual models
-		playerAlive = true;
+		player.transform.position = spawnRoom + new Vector3(-3 + 2 * PhotonNetwork.room.playerCount, 0.98f, 0f);
+
+		// reset HP
+		playerControls.ResetCurrentHP();
 
 		// re-enable controls
+		playerAlive = true;
 		playerControls.EnableCameras();
 		playerControls.EnableControls();
 	}
