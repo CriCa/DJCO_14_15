@@ -15,14 +15,13 @@ public class NetworkManager : MonoBehaviour
 	public float respawnTime = 5f; // interval between player death and respawn
 	public int minPlayers = 4;
 
-	int roomSeed; // stored on the server, used as the seed for random values
+	[SerializeField] private Text connText;
+	[SerializeField] private Camera spawnCamera;
 
-	[SerializeField] Text connText;
-	[SerializeField] Camera spawnCamera;
-
-	GameObject player; // reference to local player
-	PlayerControlsManager playerControls; // reference to local player controls
-	bool playerAlive = true;
+	private int roomSeed; // stored on the server, used as the seed for random values
+	private GameObject player; // reference to local player
+	private PlayerControlsManager playerControls; // reference to local player controls
+	private bool playerAlive = true;
 
 
 	void Awake() {
@@ -56,7 +55,7 @@ public class NetworkManager : MonoBehaviour
 		ChatManager.instance.SetPlayerName(PhotonNetwork.playerName);
 
 		RoomOptions ro = new RoomOptions() {isVisible = true, maxPlayers = 5};
-		PhotonNetwork.JoinOrCreateRoom("Default", ro, TypedLobby.Default);
+		PhotonNetwork.JoinOrCreateRoom("Default2", ro, TypedLobby.Default);
 	}
 
 

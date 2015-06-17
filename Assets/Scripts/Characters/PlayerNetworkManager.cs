@@ -129,16 +129,28 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 
 
 	public void TriggerAnimation(string animation) {
-		// trigger locally first, so we don't waste time waiting for the rpc
-		anim.SetTrigger(animation);
+		photonView.RPC("TriggerAnimation_RPC", PhotonTargets.All, animation);
+	}
 
-		// warn all others
-		photonView.RPC("TriggerAnimation_RPC", PhotonTargets.Others, animation);
+
+	public void GetShot() {
+		photonView.RPC("GetShot_RPC", PhotonTargets.All);
 	}
 
 
 	[RPC]
 	void TriggerAnimation_RPC(string animation) {
-		anim.SetTrigger(animation);
+		// if a trigger animation is already running, we shouldn't queue up another one
+		if (anim.GetCurrentAnimatorStateInfo(1).IsName("Triggers.Empty")) {
+			anim.SetTrigger(animation);
+		}
+	}
+
+
+	[RPC]
+	void GetShot_RPC() {
+		if (photonView.isMine) {
+			ChatManager.instance.AddMessage("I just got shot");
+		}
 	}
 }

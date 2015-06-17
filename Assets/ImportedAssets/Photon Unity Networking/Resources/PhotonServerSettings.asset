@@ -35,4 +35,5 @@ MonoBehaviour:
   - TaggedPlayer
   - AddMessage_RPC
   - TriggerAnimation_RPC
+  - GetShot_RPC
   DisableAutoOpenWizard: 0

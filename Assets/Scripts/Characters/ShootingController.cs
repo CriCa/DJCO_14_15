@@ -11,12 +11,15 @@ public class ShootingController : MonoBehaviour
 	public float cooldown = 1f;
 	public float maxShootingDistance = 50f;
 
-	GameObject impactObj;
-	bool shooting;
-	float nextShot;
+	private PlayerNetworkManager playerNetManager;
+	private GameObject impactObj;
+	private bool shooting;
+	private float nextShot;
 
 
 	void Start() {
+		playerNetManager = transform.parent.parent.GetComponent<PlayerNetworkManager>();
+
 		shooting = false;
 		nextShot = 0f;
 
@@ -36,6 +39,7 @@ public class ShootingController : MonoBehaviour
 	void FixedUpdate() {
 		if (shooting) {
 			shooting = false;
+			playerNetManager.TriggerAnimation("Attack");
 
 			Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
 			RaycastHit hit;
