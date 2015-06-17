@@ -12,15 +12,17 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 	public float smoothing = 10f; // lerping movement update "speed"
 	public float snappingDistance = 5f; // if distance between updates is too big, we want to snap to the new pos directly
 
-	Vector3 positionGoal = Vector3.zero; // lerping destination
-	Quaternion rotationGoal = Quaternion.identity; // we don't want to go directly to the new pos, we want to move towards it
+	private Vector3 positionGoal = Vector3.zero; // lerping destination
+	private Quaternion rotationGoal = Quaternion.identity; // we don't want to go directly to the new pos, we want to move towards it
 
-	Light spotlight; // light from the flashlight
-	Quaternion spotlightRotationGoal = Quaternion.identity; // flashlight rotation lerping destination
+	private Light spotlight; // light from the flashlight
+	private Quaternion spotlightRotationGoal = Quaternion.identity; // flashlight rotation lerping destination
 
-	Animator anim; // animation controller
-	bool animWalking = false;
-	bool animRunning = false;
+	private Animator anim; // animation controller
+	private bool animWalking = false;
+	private bool animRunning = false;
+
+	private HudDamageController hudDamageCtrl; // flash indication when player gets shot
 
 
 	// using Awake, and not Start, because OnPhotonSerializeView may run before Start has finished
@@ -29,6 +31,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 		// global references (for both local and networked player instances)
 		anim = GetComponent<Animator>();
 		spotlight = GetComponentInChildren<Light>();
+		hudDamageCtrl = GameObject.FindGameObjectWithTag("HudDamage").GetComponent<HudDamageController>();
 
 		// if it's a local object, we want to enable all controls
 		if(photonView.isMine) 
@@ -150,7 +153,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 	[RPC]
 	void GetShot_RPC() {
 		if (photonView.isMine) {
-			ChatManager.instance.AddMessage("I just got shot");
+			hudDamageCtrl.FlashDamage();
 		}
 	}
 }

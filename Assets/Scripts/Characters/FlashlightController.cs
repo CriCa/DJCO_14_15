@@ -12,10 +12,10 @@ public class FlashlightController : MonoBehaviour
 	public KeyCode activationKey = KeyCode.E; // keypress needed to toggle the light
 	public float drainSpeed = 2.5f; // speed at which charge is depleted
 
-	float maxIntensity; // default spotlight intensity
-	float maxCharge = 100f; // default charge level
-	float currentCharge; // current charge level
-	Image chargeGUI; // charge level bar
+	private float maxIntensity; // default spotlight intensity
+	private float maxCharge = 100f; // default charge level
+	private float currentCharge; // current charge level
+	private Image chargeGUI; // charge level bar
 
 
 	void Start() {

@@ -16,10 +16,10 @@ public class PlayerControlsManager : MonoBehaviour
 	bool gamePaused;
 	/* until here */
 
-	FirstPersonController fpController;
-	FlashlightController flashController;
-	ShootingController shootController;
-	List<Camera> fpCameras;
+	private FirstPersonController fpController;
+	private FlashlightController flashController;
+	private ShootingController shootController;
+	private List<Camera> fpCameras;
 
 
 	void Start() {

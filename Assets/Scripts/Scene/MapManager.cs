@@ -16,12 +16,13 @@ public class MapManager : MonoBehaviour
 	public GameObject[] roomTypes;
 	public GameObject bridge;
 
-	GameObject worldRooms; // where to instantiate the rooms
-	GameObject worldBridges; // where to instantiate the bridges
-	float roomSpacement = 38.2f; // space between each room
-	float bridgesSpacement = 19f; // space between bridge and room origin
-	List<Vector2> mapPositions; // list of all possible positions on the map
-	int[,] map; // grid with all rooms
+	private GameObject worldRooms; // where to instantiate the rooms
+	private GameObject worldBridges; // where to instantiate the bridges
+	private float roomSpacement = 38.2f; // space between each room
+	private float bridgesSpacement = 19f; // space between bridge and room origin
+	private List<Vector2> mapPositions; // list of all possible positions on the map
+	private int[,] map; // grid with all rooms
+
 
 	void Awake() {
 		if (instance == null) {
@@ -32,12 +33,14 @@ public class MapManager : MonoBehaviour
 		}
 	}
 
+
 	void Start () {
 		worldRooms = GameObject.FindGameObjectWithTag("WorldRooms");
 		worldBridges = GameObject.FindGameObjectWithTag("WorldBridges");
 		mapPositions = new List<Vector2>();
 		map = new int[mapSize, mapSize];
 	}
+
 
 	public void GenerateMap() {
 		InitializeMap();
@@ -59,6 +62,7 @@ public class MapManager : MonoBehaviour
 		FillRemainingPositions();
 	}
 
+
 	void InitializeMap() {
 		mapPositions.Clear();
 
@@ -68,6 +72,7 @@ public class MapManager : MonoBehaviour
 			}
 		}
 	}
+
 
 	Vector2 GetRandomPosition () {
 		// grab a random list position (which represents a possible position on the map)
@@ -81,6 +86,7 @@ public class MapManager : MonoBehaviour
 		return randomPos;
 	}
 
+
 	// fills map with numberNeeded instances of objectType
 	void FillWithObject(int objectType, int numberNeeded) {
 		for (int i = 0; i < numberNeeded; i++) {
@@ -89,6 +95,7 @@ public class MapManager : MonoBehaviour
 			map[(int)randomPos.x, (int)randomPos.y] = objectType;
 		}
 	}
+
 
 	void FillRemainingPositions() {
 		// for each remaining position in the list, fill map with (TODO) random object
@@ -99,6 +106,7 @@ public class MapManager : MonoBehaviour
 		// all positions have been filled at this point, so we can clear the positions list
 		mapPositions.Clear();
 	}
+
 
 	// returns a simple array, not a matrix, because Photon is unable to serialize a matrix
 	public int[] GetMinimizedMap() {
@@ -115,6 +123,7 @@ public class MapManager : MonoBehaviour
 		return minimizedMap;
 	}
 
+
 	public void FillMap(int[] newMap) {
 		mapPositions.Clear();
 
@@ -122,6 +131,7 @@ public class MapManager : MonoBehaviour
 			map[i/mapSize, i%mapSize] = newMap[i];
 		}
 	}
+
 
 	public void SpawnMap() {
 		float floorHeight = 0;
@@ -150,6 +160,7 @@ public class MapManager : MonoBehaviour
 			}
 		}	     
 	}
+
 
 	public void PrintMap() {
 		for (int i = 0; i < mapSize; i++) {

@@ -18,15 +18,15 @@ public class ChatManager : MonoBehaviour
 	public int maxMessages = 4; // maximum number of messages on screen at a time
 	public KeyCode activationKey = KeyCode.Y; // keypress needed to activate input
 	
-	PhotonView photonView; // needed for RPC
-	PlayerControlsManager playerControls; // player controls should be disabled when writing a message
+	private PhotonView photonView; // needed for RPC
+	private PlayerControlsManager playerControls; // player controls should be disabled when writing a message
 
-	Queue<string> messages;
-	string playerName;
-	bool isSelected; // provides more control over input selection
-	int maxMessageLength = 80;
-	string infoColor = "#2EE62E";
-	string warningColor = "#F72929";
+	private Queue<string> messages;
+	private string playerName;
+	private bool isSelected; // provides more control over input selection
+	private int maxMessageLength = 80;
+	private string infoColor = "#2EE62E";
+	private string warningColor = "#F72929";
 
 
 	void Awake() {

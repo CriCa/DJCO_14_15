@@ -47,7 +47,7 @@ public class ShootingController : MonoBehaviour
 			if(Physics.Raycast(ray, out hit, maxShootingDistance)) {
 				// if player is hit, should take damage
 				if (hit.transform.tag == "Player") {
-					Debug.Log("Player hurt.");
+					hit.transform.GetComponent<PlayerNetworkManager>().GetShot();
 				}
 				// otherwise, draw impact particles
 				else {

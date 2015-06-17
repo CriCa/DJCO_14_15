@@ -7,6 +7,7 @@ using UnityEngine.UI;
  * Displays info on the screen when the local player approaches an object with this script.
  * Must have a box collider with "isTrigger" set attached. Only one GameHint should ever be displayed at the same time.
  */
+[RequireComponent(typeof (BoxCollider))]
 public class GameHintController : MonoBehaviour 
 {
 	public string tip;
