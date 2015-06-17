@@ -146,7 +146,7 @@ public class NetworkManager : MonoBehaviour
 		// spawn player
 		int playerNum = PhotonNetwork.room.playerCount;
 		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 0.98f, 0f);
-		player = PhotonNetwork.Instantiate("Player" + playerNum, pos, Quaternion.identity, 0);
+		player = PhotonNetwork.Instantiate("HybridPlayer" + playerNum, pos, Quaternion.identity, 0);
 		playerControls = player.GetComponent<PlayerControlsManager>();
 		
 		// disable spawn camera
