@@ -1066,7 +1066,7 @@ GameObject:
   - 65: {fileID: 6551710}
   m_Layer: 0
   m_Name: Model
-  m_TagString: Untagged
+  m_TagString: PlayerBody
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

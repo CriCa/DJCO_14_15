@@ -1,40 +1,41 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &184642
+--- !u!1 &174558
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 453140}
-  - 33: {fileID: 3378432}
-  - 23: {fileID: 2328452}
+  - 4: {fileID: 442428}
+  - 33: {fileID: 3363660}
+  - 23: {fileID: 2346584}
+  - 65: {fileID: 6593242}
   m_Layer: 0
-  m_Name: Cupboard_large
+  m_Name: Movel_grande
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &453140
+--- !u!4 &442428
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184642}
-  m_LocalRotation: {x: -.707106888, y: -6.18172606e-08, z: 1.68587377e-07, w: .707106709}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .31970036, y: .25999999, z: .31970036}
+  m_GameObject: {fileID: 174558}
+  m_LocalRotation: {x: .70710659, y: 0, z: 0, w: -.707106948}
+  m_LocalPosition: {x: 6.41699982, y: 1.45000005, z: -7.9749999}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &2328452
+--- !u!23 &2346584
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184642}
+  m_GameObject: {fileID: 174558}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -53,13 +54,25 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3378432
+--- !u!33 &3363660
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184642}
+  m_GameObject: {fileID: 174558}
   m_Mesh: {fileID: 4300000, guid: 9261c5ca55627e04ba4c371a664cb539, type: 3}
+--- !u!65 &6593242
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.18577766, y: 2.09114289, z: 5.76979017}
+  m_Center: {x: -9.11355019e-05, y: .00194174028, z: -.00251531578}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -69,5 +82,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 184642}
+  m_RootGameObject: {fileID: 174558}
   m_IsPrefabParent: 1

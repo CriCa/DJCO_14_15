@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 471138}
   - 33: {fileID: 3320380}
   - 23: {fileID: 2360916}
+  - 65: {fileID: 6575356}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128000}
   m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106709}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -289.863007, y: 182.104004, z: 494.575012}
   m_LocalScale: {x: .559321284, y: .559321463, z: .559321463}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,6 +61,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128000}
   m_Mesh: {fileID: 4300000, guid: c26f7f4dc624ea44290ea1cc70117f28, type: 3}
+--- !u!65 &6575356
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: .0787932798, z: 1.24301827}
+  m_Center: {x: .00282844901, y: -1.19209275e-07, z: -.0867578909}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

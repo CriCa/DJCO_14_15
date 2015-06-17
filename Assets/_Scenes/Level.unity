@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 0
   m_FogColor: {r: .5, g: .5, b: .5, a: 1}
   m_FogMode: 3
-  m_FogDensity: .00999999978
+  m_FogDensity: .100000001
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: .815686345, g: .811764777, b: .815686345, a: 1}
@@ -68,7 +68,8 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-  m_LightmapSnapshot: {fileID: 0}
+  m_LightmapSnapshot: {fileID: 112000000, guid: fb65c37b652ed4e4cb4ae0fca2722f5e,
+    type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
 NavMeshSettings:
@@ -431,8 +432,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 397673473}
-  m_LocalRotation: {x: .136607021, y: -.712879121, z: .147778869, w: .671791136}
-  m_LocalPosition: {x: 25.6835709, y: 165.610794, z: 277.463776}
+  m_LocalRotation: {x: .123343773, y: -.474498898, z: .0673516318, w: .868965387}
+  m_LocalPosition: {x: -284.815521, y: 184.672379, z: 493.546265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
