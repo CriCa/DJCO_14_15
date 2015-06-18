@@ -21,6 +21,7 @@ public class NetworkManager : MonoBehaviour
 	private int roomSeed; // stored on the server, used as the seed for random values
 	private GameObject player; // reference to local player
 	private PlayerControlsManager playerControls; // reference to local player controls
+	private PlayerNetworkManager playerNetManager;
 	private bool playerAlive = true;
 
 
@@ -155,7 +156,9 @@ public class NetworkManager : MonoBehaviour
 		int playerNum = PhotonNetwork.room.playerCount;
 		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 0.98f, 0f);
 		player = PhotonNetwork.Instantiate("HybridPlayer" + playerNum, pos, Quaternion.identity, 0);
+
 		playerControls = player.GetComponent<PlayerControlsManager>();
+		playerNetManager = player.GetComponent<PlayerNetworkManager>();
 	}
 
 
@@ -164,6 +167,9 @@ public class NetworkManager : MonoBehaviour
 		if (!playerAlive) {
 			return;
 		}
+
+		// transform into monster after death
+		playerNetManager.TransformIntoMonster();
 
 		// move player model to a temporary location
 		player.transform.position = new Vector3(0f, -2000f, 0f);
@@ -197,7 +203,7 @@ public class NetworkManager : MonoBehaviour
 		// disable spawn camera
 		spawnCamera.enabled = false;
 
-		// re-enable controls
+		// re-enable all controls
 		playerAlive = true;
 		playerControls.EnableCameras();
 		playerControls.EnableControls();

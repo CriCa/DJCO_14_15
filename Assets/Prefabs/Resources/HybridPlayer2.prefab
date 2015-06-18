@@ -746,6 +746,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 437884}
   - 95: {fileID: 9562800}
+  - 65: {fileID: 6538326}
+  - 114: {fileID: 11463720}
   m_Layer: 0
   m_Name: MonsterModel
   m_TagString: Untagged
@@ -5376,6 +5378,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &6538326
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1.60000002, y: 2.88000011, z: .200000003}
+  m_Center: {x: 0, y: 1.61000001, z: 3}
 --- !u!65 &6547384
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -5668,6 +5682,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+--- !u!114 &11463720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02fddeabbaa73940b3ae632a9de54c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
 --- !u!114 &11472376
 MonoBehaviour:
   m_ObjectHideFlags: 1
