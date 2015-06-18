@@ -3,7 +3,7 @@ using System.Collections;
 
 public class FlickeringController : MonoBehaviour {
 
-	public float delay = 2f;
+	public int delay = 2;
 	public float amplitude = 1f;
 	public float frequency = 0.5f;
 
