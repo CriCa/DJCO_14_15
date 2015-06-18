@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81679763419302d47ab42a288960e36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VERSION: 0.0.06
+  VERSION: 0.0.07
   secondsToStart: 0
   respawnTime: 5
   minPlayers: 4
@@ -1043,8 +1043,8 @@ MonoBehaviour:
   roomTypes:
   - {fileID: 117888, guid: f47492c181d75844c8bb3f38094c94d3, type: 2}
   - {fileID: 115164, guid: bfa6b91b47af6ab46a04748cc8371179, type: 2}
-  - {fileID: 191714, guid: e2fb9393c0a64e04282aa0cbe871fd86, type: 2}
-  - {fileID: 110356, guid: 1759121eae58f4e44918f1df1a7b28b9, type: 2}
+  - {fileID: 139626, guid: 55d5ab3f9d019754bb3bb1a57d713d58, type: 2}
+  - {fileID: 159766, guid: 6347410db08e75046b6bf54a38af0472, type: 2}
   - {fileID: 139626, guid: 55d5ab3f9d019754bb3bb1a57d713d58, type: 2}
   - {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   bridge: {fileID: 195472, guid: 4249e470fa336f54f901ca70b45464d4, type: 2}

@@ -11,19 +11,22 @@ public class DoorsController : MonoBehaviour
 	public float swingSpeed = 20f; // in degrees per second
 	public GameObject[] doors;
 
-	bool triggered;
+	private bool triggered;
+
 
 	void Start() {
 		triggered = false;
 	}
-	
+
+
 	void OnTriggerEnter(Collider other) {
 		if (!triggered && other.tag == "PlayerBody") {
 			triggered = true;
 			StartCoroutine("CloseDoors");
 		}
 	}
-	
+
+
 	public void TriggerDoors(bool open) {
 		Vector3 angle = new Vector3(270f, 0f, 0f);
 		
@@ -39,6 +42,7 @@ public class DoorsController : MonoBehaviour
 		StartCoroutine("SwingDoors", angle);
 	}
 
+
 	// used only internally, for the initial event
 	IEnumerator CloseDoors() {
 		yield return new WaitForSeconds(secondsToTrigger);
@@ -46,6 +50,7 @@ public class DoorsController : MonoBehaviour
 		// note that Invoke is not being used because it would not allow passing params to the function below
 		TriggerDoors(false);
 	}
+
 
 	// the actual coroutine moving the doors is private
 	IEnumerator SwingDoors(Vector3 goal) {

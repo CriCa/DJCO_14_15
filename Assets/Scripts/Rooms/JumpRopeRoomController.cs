@@ -9,16 +9,19 @@ public class JumpRopeRoomController : MonoBehaviour
 {
 	public float secondsToTrigger = 6f;
 	public GameObject rope;
-	public float ropeSpeed = 3f; // rope movement speed
-	public float ropeSpeedIncrement = 0.7f; // how much the speed increases after every "jump"
+
+	public float baseRopeSpeed = 3f;
+	public AnimationCurve speedCurve;
 	public int jumpsNeeded = 8; // number of jumps needed before the doors open
 
 	private bool triggered;
+	private float currentRopeSpeed;
 	private int jumpsTaken; // number of times the rope has already moved
 	
 
 	void Start() {
 		triggered = false;
+		currentRopeSpeed = baseRopeSpeed;
 		jumpsTaken = 0;
 	}
 	
@@ -39,17 +42,22 @@ public class JumpRopeRoomController : MonoBehaviour
 
 		// the initial goal is to move towards the opposite wall
 		bool reachedGoal = false;
+		float percentage = 0f;
+
 		Vector3 goal = rope.transform.localPosition;
 		goal.z = -goal.z;
 
 		while (!reachedGoal) {
-			rope.transform.localPosition = Vector3.MoveTowards(rope.transform.localPosition, goal, Time.deltaTime * ropeSpeed);
+			rope.transform.localPosition = Vector3.MoveTowards(rope.transform.localPosition, goal, Time.deltaTime * currentRopeSpeed);
 
 			// once we've arrived at the opposite wall, we want to go back
 			if (Vector3.Distance(rope.transform.localPosition, goal) < 0.01f) {
 				goal.z = -goal.z;
 				jumpsTaken++;
-				ropeSpeed += ropeSpeedIncrement; // slightly increasing speed each time
+
+				// increase speed based on base speed and animation curve
+				percentage = (float)jumpsTaken/(float)jumpsNeeded;
+				currentRopeSpeed = baseRopeSpeed * speedCurve.Evaluate(percentage);
 			}
 
 			// once the rope has moved enough times, it can stop

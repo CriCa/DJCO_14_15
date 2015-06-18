@@ -107,8 +107,6 @@ public class NetworkManager : MonoBehaviour
 			// set seed for room generation
 			Random.seed = roomSeed;
 
-			Debug.Log("current seed is " + roomSeed);
-
 			// we have the map info, so we can instantiate the rooms
 			MapManager.instance.FillMap(map);
 			MapManager.instance.SpawnMap();

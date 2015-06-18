@@ -11019,8 +11019,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   secondsToTrigger: 2
   rope: {fileID: 103738}
-  ropeSpeed: 3
-  ropeSpeedIncrement: .699999988
+  baseRopeSpeed: 3
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .185829967
+      value: 2.19441056
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .316310465
+      value: 1.72321272
+      inSlope: -.694990158
+      outSlope: -.694990158
+      tangentMode: 0
+    - time: .401803344
+      value: 2.78183174
+      inSlope: -.766515732
+      outSlope: -.766515732
+      tangentMode: 0
+    - time: .535693109
+      value: 2.12320948
+      inSlope: -2.30669975
+      outSlope: -2.30669975
+      tangentMode: 0
+    - time: .598004818
+      value: 3.58880305
+      inSlope: -2.15530396
+      outSlope: -2.15530396
+      tangentMode: 0
+    - time: .943759203
+      value: 3.06998634
+      inSlope: -7.19666481
+      outSlope: -7.19666481
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
   jumpsNeeded: 8
 --- !u!114 &11454452
 MonoBehaviour:
