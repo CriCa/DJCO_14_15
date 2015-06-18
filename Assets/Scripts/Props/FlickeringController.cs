@@ -6,12 +6,12 @@ public class FlickeringController : MonoBehaviour {
 	public float amplitude = 1f;
 	public float frequency = 0.5f;
 
-	private Light light;
+	private Light pointLight;
 	private Color originalColor;
 
 	void Start () {
-		light = GetComponent<Light>(); 
-		originalColor = light.color;
+		pointLight = GetComponent<Light>(); 
+		originalColor = pointLight.color;
 	}
 	
 	// Update is called once per frame
@@ -24,6 +24,6 @@ public class FlickeringController : MonoBehaviour {
 
 		float oscilation = y * amplitude + 1f;
 
-		light.color = originalColor * oscilation;
+		pointLight.color = originalColor * oscilation;
 	}
 }

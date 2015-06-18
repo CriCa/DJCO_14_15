@@ -3147,6 +3147,7 @@ MonoBehaviour:
   impact: {fileID: 191386, guid: 6f6ae5cffcb525a49b8e62b96a264e2e, type: 2}
   cooldown: .100000001
   maxShootingDistance: 4
+  damage: 1
 --- !u!114 &11450892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3159,6 +3160,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseKey: 112
+  maxHP: 3
+  healInterval: 8
+  healIncrement: 1
 --- !u!114 &11488668
 MonoBehaviour:
   m_ObjectHideFlags: 1

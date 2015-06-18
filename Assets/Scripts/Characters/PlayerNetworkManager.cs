@@ -22,7 +22,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 	private bool animWalking = false;
 	private bool animRunning = false;
 
-	private HudDamageController hudDamageCtrl; // flash indication when player gets shot
+	private PlayerControlsManager playerControls;
 
 
 	// using Awake, and not Start, because OnPhotonSerializeView may run before Start has finished
@@ -31,21 +31,19 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 		// global references (for both local and networked player instances)
 		anim = GetComponent<Animator>();
 		spotlight = GetComponentInChildren<Light>();
-		hudDamageCtrl = GameObject.FindGameObjectWithTag("HudDamage").GetComponent<HudDamageController>();
 
 		// if it's a local object, we want to enable all controls
 		if(photonView.isMine) 
 		{
-			// lock cursor and hide it
-			Cursor.lockState = CursorLockMode.Locked;
-			Cursor.visible = false;
-
 			// enable general components
 			GetComponent<Rigidbody>().useGravity = true;
 			GetComponent<AudioSource>().enabled = true;
 			GetComponent<AudioListener>().enabled = true;
 			GetComponent<FirstPersonController>().enabled = true;
-			GetComponent<PlayerControlsManager>().enabled = true;
+
+			// get reference to general player script
+			playerControls = GetComponent<PlayerControlsManager>();
+			playerControls.enabled = true;
 
 			// enable all cameras
 			foreach (Camera cam in GetComponentsInChildren<Camera>()) 
@@ -54,7 +52,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 			}
 
 			// hide own model
-			transform.Find("Model").GetComponent<SkinnedMeshRenderer>().enabled = false;
+			transform.Find("PlayerModel").GetComponent<SkinnedMeshRenderer>().enabled = false;
 
 			// draw items on top of everything (hud-like)
 			transform.Find("Items/Flashlight/FlashlightModel").gameObject.layer = 8;
@@ -77,7 +75,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 	IEnumerator UpdateData() 
 	{
 		// continuously update the positions of all players in the game
-		while(true) 
+		while (true) 
 		{
 			if (Vector3.Distance(transform.position, positionGoal) > snappingDistance) 
 			{
@@ -131,29 +129,34 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 	}
 
 
-	public void TriggerAnimation(string animation) {
+	public void TriggerAnimation(string animation) 
+	{
 		photonView.RPC("TriggerAnimation_RPC", PhotonTargets.All, animation);
 	}
 
 
-	public void GetShot() {
-		photonView.RPC("GetShot_RPC", PhotonTargets.All);
+	public void TakeDamage(float damage) 
+	{
+		photonView.RPC("TakeDamage_RPC", PhotonTargets.All, damage);
 	}
 
 
 	[RPC]
-	void TriggerAnimation_RPC(string animation) {
+	void TriggerAnimation_RPC(string animation) 
+	{
 		// if a trigger animation is already running, we shouldn't queue up another one
-		if (anim.GetCurrentAnimatorStateInfo(1).IsName("Triggers.Empty")) {
+		if (anim.GetCurrentAnimatorStateInfo(1).IsName("Triggers.Empty")) 
+		{
 			anim.SetTrigger(animation);
 		}
 	}
 
 
 	[RPC]
-	void GetShot_RPC() {
-		if (photonView.isMine) {
-			hudDamageCtrl.FlashDamage();
+	void TakeDamage_RPC(float damage) {
+		if (photonView.isMine) 
+		{
+			playerControls.TakeDamage(damage);
 		}
 	}
 }
