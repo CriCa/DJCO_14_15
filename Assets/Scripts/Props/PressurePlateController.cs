@@ -3,29 +3,49 @@ using System.Collections;
 
 public class PressurePlateController : MonoBehaviour {
 
-	public Color selectedColor = new Color(1.0f, 0.0f, 0.0f, 1.0f);
-	int pos;
-	Material mat;
+	public Color selectedColor;
+	
+	private int value;
+	private Material material;
+	private Color originalColor;
+
+	private HopscotchRoomController controller;
+	private static int downCount;
 
 	// Use this for initialization
-	void Start () {
-		//mat = GetComponent<Renderer>().materials[0];
+	void Awake () {
+		material = GetComponent<Renderer>().material;
+		originalColor = material.GetColor("_Color");
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void Update ()
+	{
+		if (this.value <= 0)
+			return;
+
+		if (downCount > 0) //at least 1 pressure plate is down
+			material.SetColor ("_Color", originalColor);
+		else //if no pressure plates are down, show path
+			material.SetColor ("_Color", selectedColor);
 	}
 
-	public void SetPosition(int pos)
+	public void SetInfo(HopscotchRoomController controller, int value)
 	{
-		this.pos = pos;
+		this.controller = controller;
+		this.value = value;
+	}
 
-		if (this.pos > 0) 
-		{
-			// Debug.Log ("Pos: " + pos);
-			//mat.SetColor("_RimColor", selectedColor);
-			transform.position += new Vector3(0, 1, 0);
-		}
+	public void OnTriggerEnter(Collider other)
+	{
+		downCount++;
+
+		if(controller != null)
+			controller.PlatePressed(value);
+	}
+
+	public void OnTriggerExit(Collider other)
+	{
+		downCount--;
 	}
 }
