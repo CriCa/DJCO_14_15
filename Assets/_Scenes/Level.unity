@@ -2356,7 +2356,7 @@ MonoBehaviour:
   roomTypes:
   - {fileID: 117888, guid: f47492c181d75844c8bb3f38094c94d3, type: 2}
   - {fileID: 115164, guid: bfa6b91b47af6ab46a04748cc8371179, type: 2}
-  - {fileID: 139626, guid: 55d5ab3f9d019754bb3bb1a57d713d58, type: 2}
+  - {fileID: 197480, guid: b7c5a399d88b71647b327a22f8ca2d86, type: 2}
   - {fileID: 159766, guid: 6347410db08e75046b6bf54a38af0472, type: 2}
   - {fileID: 139626, guid: 55d5ab3f9d019754bb3bb1a57d713d58, type: 2}
   - {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
