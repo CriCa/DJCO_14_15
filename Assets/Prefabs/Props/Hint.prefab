@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 425032}
   - 33: {fileID: 3307458}
   - 23: {fileID: 2316230}
-  - 122: {fileID: 12229962}
   m_Layer: 0
   m_Name: Scroll
   m_TagString: Untagged
@@ -53,6 +52,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &183960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 486566}
+  - 108: {fileID: 10800332}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &425032
 Transform:
   m_ObjectHideFlags: 1
@@ -61,23 +76,36 @@ Transform:
   m_GameObject: {fileID: 142206}
   m_LocalRotation: {x: -1.62920685e-07, y: -1.62920685e-07, z: -1, w: 2.65431496e-14}
   m_LocalPosition: {x: .145999998, y: 0, z: 0}
-  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
+  m_LocalScale: {x: .00499999989, y: .00499999989, z: .00499999989}
   m_Children: []
   m_Father: {fileID: 450650}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &450650
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175438}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -2.30404638e-07, y: -.707106709, z: 1.42108547e-14, w: .707106829}
+  m_LocalPosition: {x: -4.5999999, y: 1.5, z: -8.55000019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 486566}
   - {fileID: 425032}
   - {fileID: 494520}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &486566
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183960}
+  m_LocalRotation: {x: 2.30404638e-07, y: .707106709, z: -1.42108547e-14, w: .707106829}
+  m_LocalPosition: {x: .287999988, y: .0199999996, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 450650}
   m_RootOrder: 0
 --- !u!4 &494520
 Transform:
@@ -86,11 +114,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161008}
   m_LocalRotation: {x: 0, y: 0, z: .342020184, w: .939692616}
-  m_LocalPosition: {x: .661000013, y: .178000003, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .400999993, y: .063000001, z: 0}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 450650}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!23 &2316230
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -160,11 +188,43 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175438}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: 1, y: 0, z: 0}
+  m_Size: {x: 1.5, y: 3, z: 1}
+  m_Center: {x: .800000012, y: 0, z: 0}
+--- !u!108 &10800332
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183960}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.73000002
+  m_Range: 2
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1.28808594}
 --- !u!111 &11142388
 Animation:
   m_ObjectHideFlags: 1
@@ -190,18 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8021672d60937d4d80c3a1ef4b0cc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tip: 
---- !u!122 &12229962
-Halo:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142206}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278190155
-  m_Size: 1.45000005
+  tip: Jump Rope
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
