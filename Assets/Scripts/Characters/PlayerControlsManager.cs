@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 
 /* 
- * Player Controller
+ * Player Controls Manager
  * General player controls, utilities and communication with other components.
  */
 public class PlayerControlsManager : MonoBehaviour 
@@ -58,6 +58,8 @@ public class PlayerControlsManager : MonoBehaviour
 		hudDamageCtrl = GameObject.FindGameObjectWithTag("HudDamage").GetComponent<HudDamageController>();
 		currentHP = maxHP;
 		StartCoroutine("UpdateHealth");
+
+		TransformIntoMonster();
 	}
 
 
@@ -149,6 +151,34 @@ public class PlayerControlsManager : MonoBehaviour
 
 
 	public void TransformIntoMonster() {
+		// change appearance
+		TransformIntoMonsterAppearance();
+
+		// edit colliders' sizes
+		BoxCollider playerCollider = playerModel.GetComponent<BoxCollider>();
+		Vector3 colliderCenter = playerCollider.center;
+		Vector3 colliderSize = playerCollider.size;
+
+		colliderCenter.y = -0.62f;
+		colliderSize.y = 3.29f;
+
+		playerCollider.center = colliderCenter;
+		playerCollider.size = colliderSize;
+
+		// hide all items and disable respective controllers
+		Transform items = transform.Find("Items");
+		items.GetComponentInChildren<Camera>().enabled = false;
+		items.GetComponentInChildren<Light>().enabled = false;
+		items.GetComponentInChildren<FlashlightController>().enabled = false;
+		items.GetComponentInChildren<ShootingController>().enabled = false;
+
+		// disable item mesh renderers; losi
+		items.Find("Flashlight/FlashlightModel").GetComponent<MeshRenderer>().enabled = false;
+		items.Find("Weapon/WeaponModel").GetComponent<MeshRenderer>().enabled = false;
+	}
+
+
+	public void TransformIntoMonsterAppearance() {
 		// if this is null, this is the first time the player is transforming and we should grab all references
 		if (playerModel == null) {
 			playerAnimator = GetComponent<Animator>();
@@ -175,7 +205,7 @@ public class PlayerControlsManager : MonoBehaviour
 	}
 
 
-	public void TransformIntoHuman() {
+	public void TransformIntoHumanAppearance() {
 		// stop monster's animation
 		StopCoroutine("UpdateMonsterAnimator");
 
