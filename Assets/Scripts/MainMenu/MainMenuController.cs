@@ -7,6 +7,11 @@ public class MainMenuController : MonoBehaviour {
 	public string VERSION;
 
 	public Text connState;
+	public InstantGuiElement RoomName;
+	public InstantGuiList RoomsList;
+
+	private bool connected;
+
 	
 	// Use this for initialization
 	void Start () {
@@ -19,53 +24,62 @@ public class MainMenuController : MonoBehaviour {
 	}
 	
 	public void Play() {
-		PhotonNetwork.ConnectUsingSettings(VERSION);
+		if(!connected)
+			connected = PhotonNetwork.ConnectUsingSettings(VERSION);
 		
 		// show rooms menu
 		
 	}
 	
 	void OnJoinedLobby() {
-		Debug.Log ("in lobby");
-		
 		RoomInfo[] list = PhotonNetwork.GetRoomList ();
 
-		Debug.Log (list);
+		Debug.Log (PhotonNetwork.countOfRooms);
 
-		PopulateList ();
+		PopulateList (list);
 	}
 	
 	void OnReceivedRoomListUpdate()
 	{
+		Debug.Log ("Received room list update");
+
+		Debug.Log (PhotonNetwork.countOfRooms);
+
 		RoomInfo[] list = PhotonNetwork.GetRoomList ();
-		
-		PopulateList ();
+		PopulateList (list);
 	}
 	
 	void OnJoinedRoom() {
-		Debug.Log ("joined room");
-		PhotonNetwork.LeaveRoom ();
+		Debug.Log ("load other level");
 	}
 	
-	void PopulateList() {
-		Debug.Log ("populate list");
+	void PopulateList(RoomInfo[] list) {
+		//RoomsList.labels.Initialize();
+
+		for (int i = 0; i < list.Length; i++) {
+			RoomsList.labels[i] = list[i].name;
+			Debug.Log (list[i].name);
+		}
+
 	}
 	
 	public void Refresh() {
 		RoomInfo[] list = PhotonNetwork.GetRoomList ();
-		
-		PopulateList ();
+		PopulateList (list);
 	}
 	
 	public void Create() {
-		//RoomOptions op = new RoomOptions () { isVisible = true, maxPlayers = 5 };
+		Debug.Log (RoomName.GetComponent<InstantGuiElement> ().text);
+
+		RoomOptions op = new RoomOptions () { isVisible = true, maxPlayers = 4 };
 		
-		//if(roomName.text != "")
-		//	PhotonNetwork.CreateRoom (roomName.text, op, TypedLobby.Default);
+		if(RoomName.text != "")
+			PhotonNetwork.JoinOrCreateRoom (RoomName.text, op, TypedLobby.Default);
 	}
 	
-	public void JoinRoom(string roomName) {
-		Debug.Log ("joined " + roomName);
+	public void JoinRoom() {
+		string roomName = RoomsList.labels [RoomsList.selected];
+		PhotonNetwork.JoinRoom(roomName);
 	}
 	
 	public void Exit() {

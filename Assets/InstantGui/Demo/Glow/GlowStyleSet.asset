@@ -1175,12 +1175,12 @@ MonoBehaviour:
       m_Top: 1
       m_Bottom: 0
     blendSpeed: 2
-    font: {fileID: 12800000, guid: debe8a50832fec8408b216ac64b774a7, type: 3}
+    font: {fileID: 12800000, guid: 57cdba702d624a943b72d40b17d0fc9f, type: 3}
     oldFont: {fileID: 0}
     fontSize: 22
-    textAligment: 0
-    textOffsetX: 0
-    textOffsetY: 0
+    textAligment: 1
+    textOffsetX: 10
+    textOffsetY: 5
     textEffect: 0
     textEffectSize: 1
     textEffectColor: {r: 0, g: 0, b: 0, a: 0}
