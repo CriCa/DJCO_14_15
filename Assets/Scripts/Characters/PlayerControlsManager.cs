@@ -150,7 +150,7 @@ public class PlayerControlsManager : MonoBehaviour
 
 	public void TransformIntoMonster() {
 		// change appearance
-		TransformIntoMonsterAppearance();
+		TransformIntoMonsterAppearance(true);
 
 		// edit colliders' sizes
 		BoxCollider playerCollider = playerModel.GetComponent<BoxCollider>();
@@ -176,7 +176,8 @@ public class PlayerControlsManager : MonoBehaviour
 	}
 
 
-	public void TransformIntoMonsterAppearance() {
+	// bool sets whether local player sees own model changes
+	public void TransformIntoMonsterAppearance(bool applyLocally) {
 		// if this is null, this is the first time the player is transforming and we should grab all references
 		if (playerModel == null) {
 			playerAnimator = GetComponent<Animator>();
@@ -193,17 +194,20 @@ public class PlayerControlsManager : MonoBehaviour
 		// hide player model
 		playerMeshRenderer.enabled = false;
 
-		// set monster visible
-		monsterModel.gameObject.SetActive(true);
-		monsterMeshRenderer.enabled = true;
-		monsterAnimator.enabled = true;
+		// we should only make visible changes on networked players (not own player), or when we want to force it
+		if (!this.enabled || applyLocally) {
+			// set monster visible
+			monsterModel.gameObject.SetActive(true);
+			monsterMeshRenderer.enabled = true;
+			monsterAnimator.enabled = true;
 
-		// start updating monster's animation according to player's
-		StartCoroutine("UpdateMonsterAnimator");//
+			// start updating monster's animation according to player's
+			StartCoroutine("UpdateMonsterAnimator");
+		}
 	}
 
 
-	public void TransformIntoHumanAppearance() {
+	public void TransformIntoHumanAppearance(bool applyLocally) {
 		// stop monster's animation
 		StopCoroutine("UpdateMonsterAnimator");
 
@@ -212,8 +216,11 @@ public class PlayerControlsManager : MonoBehaviour
 		monsterMeshRenderer.enabled = false;
 		monsterModel.gameObject.SetActive(false);
 
-		// set player visible
-		playerMeshRenderer.enabled = true;
+		// we should only force visible changes on networked players (not own player) or when we want to force it
+		if (!this.enabled || applyLocally) {
+			// set player visible
+			playerMeshRenderer.enabled = true;
+		}
 	}
 
 

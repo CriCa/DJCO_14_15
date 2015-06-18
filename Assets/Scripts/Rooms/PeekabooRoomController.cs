@@ -16,13 +16,15 @@ public class PeekabooRoomController : MonoBehaviour
 	bool triggered;
 	List<GameObject> players; // reference to players currently inside the room
 
+
 	void Start() {
 		players = new List<GameObject>();
 		triggered = false;
 	}
 
+
 	void OnTriggerEnter(Collider other) {
-		if (other.tag == "PlayerBody") {
+		if (other.tag == "Player") {
 			players.Add(other.gameObject);
 
 			// when the first player enters, start process
@@ -33,28 +35,31 @@ public class PeekabooRoomController : MonoBehaviour
 		}
 	}
 
+
 	void OnTriggerExit(Collider other) {
-		if (other.tag == "PlayerBody") {
+		if (other.tag == "Player") {
 			players.Remove(other.gameObject);
 		}
 	}
+
 
 	IEnumerator TransformIntoMonsters() {
 		yield return new WaitForSeconds(secondsToTrigger);
 
 		foreach (GameObject player in players) {
-			player.GetComponent<Renderer>().material.mainTexture = monsterTexture;
+			player.GetComponent<PlayerControlsManager>().TransformIntoMonsterAppearance(false);
 		}
 
 		StartCoroutine("TransformIntoPlayers");
 	}
+
 
 	// although similar to the above for now, leaving it like this because they'll probably be different later
 	IEnumerator TransformIntoPlayers() {
 		yield return new WaitForSeconds(secondsTransformed);
 		
 		foreach (GameObject player in players) {
-			player.GetComponent<Renderer>().material.mainTexture = null;
+			player.GetComponent<PlayerControlsManager>().TransformIntoHumanAppearance(false);
 		}
 
 		GetComponent<DoorsController>().TriggerDoors(true);

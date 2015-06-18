@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81679763419302d47ab42a288960e36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VERSION: 0.0.04
+  VERSION: 0.0.05
   secondsToStart: 0
   respawnTime: 5
   minPlayers: 4
