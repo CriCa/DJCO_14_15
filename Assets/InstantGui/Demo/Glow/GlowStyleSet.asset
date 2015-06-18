@@ -1156,8 +1156,8 @@ MonoBehaviour:
       textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
-      enabled: 0
-      texture: {fileID: 0}
+      enabled: 1
+      texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
       textColor: {r: 1, g: 1, b: 1, a: 1}

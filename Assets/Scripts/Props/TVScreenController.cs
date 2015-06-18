@@ -13,7 +13,7 @@ public class TVScreenController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float offset = (float)rndGenerator.Next();
+		float offset = (float)rndGenerator.NextDouble();
 		tvRenderer.material.SetTextureOffset ("_MainTex", new Vector2 (offset, 0));
 	}
 }
