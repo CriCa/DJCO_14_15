@@ -53,9 +53,6 @@ public class HopscotchRoomController : MonoBehaviour {
 
 	private void GeneratePath()
 	{
-		int seed = NetworkManager.instance.getRoomSeed ();
-		Random.seed = seed;
-
 		Stack<Vector2> path = new Stack<Vector2>();
 
 		Vector2 goalLeft = new Vector2(goal.x - 1, goal.y);

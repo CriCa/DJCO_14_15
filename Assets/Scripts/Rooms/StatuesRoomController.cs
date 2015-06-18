@@ -72,7 +72,7 @@ public class StatuesRoomController : MonoBehaviour
 
 	// since a character controller is being used to check for movement, calculations can only be done locally (as in, each player is responsible for himself)
 	bool IsPlayerMoving(Transform playerTr, CharacterController playerCC) {
-		var direction = playerTr.position - monster.transform.position;
+		Vector3 direction = playerTr.position - monster.transform.position;
 		float angle = Vector3.Angle(direction, monster.transform.forward);
 
 		// if player is within field of view and currently moving

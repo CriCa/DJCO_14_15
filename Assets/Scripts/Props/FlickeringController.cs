@@ -10,10 +10,13 @@ public class FlickeringController : MonoBehaviour {
 	private Light pointLight;
 	private Color originalColor;
 
+	private System.Random rndGenerator;
+
 	void Start () {
 		pointLight = GetComponent<Light>(); 
 		originalColor = pointLight.color;
 
+		rndGenerator = new System.Random();
 		StartCoroutine ("Flicker");
 	}
 
@@ -21,20 +24,18 @@ public class FlickeringController : MonoBehaviour {
 	{
 		while (true)
 		{
-			yield return new WaitForSeconds(Random.Range(0, delay));
+			yield return new WaitForSeconds(rndGenerator.Next(0, delay));
 
 			float x = Time.time * frequency;
 			x = x - Mathf.Floor (x); //normalize
-			
-			float y = 1 - (Random.value * 2);
-			
+
+			float rnd = (float)rndGenerator.NextDouble();
+
+			float y = 1 - (rnd * 2);
+
 			float oscilation = y * amplitude + 1f;
-			
+
 			pointLight.color = originalColor * oscilation;
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
 	}
 }

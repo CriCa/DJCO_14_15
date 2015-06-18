@@ -13,8 +13,8 @@ public class PeekabooRoomController : MonoBehaviour
 	public float secondsTransformed = 15f;
 	public Texture monsterTexture; // testing purposes only
 
-	bool triggered;
-	List<GameObject> players; // reference to players currently inside the room
+	private bool triggered;
+	private List<GameObject> players; // reference to players currently inside the room
 
 
 	void Start() {
@@ -47,7 +47,7 @@ public class PeekabooRoomController : MonoBehaviour
 		yield return new WaitForSeconds(secondsToTrigger);
 
 		foreach (GameObject player in players) {
-			player.GetComponent<PlayerControlsManager>().TransformIntoMonsterAppearance(false);
+			player.GetComponent<PlayerControlsManager>().TransformIntoMonsterAppearance();
 		}
 
 		StartCoroutine("TransformIntoPlayers");
@@ -59,7 +59,7 @@ public class PeekabooRoomController : MonoBehaviour
 		yield return new WaitForSeconds(secondsTransformed);
 		
 		foreach (GameObject player in players) {
-			player.GetComponent<PlayerControlsManager>().TransformIntoHumanAppearance(false);
+			player.GetComponent<PlayerControlsManager>().TransformIntoHumanAppearance();
 		}
 
 		GetComponent<DoorsController>().TriggerDoors(true);
