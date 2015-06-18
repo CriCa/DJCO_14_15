@@ -26,44 +26,28 @@ MonoBehaviour:
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -79,11 +63,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -102,7 +82,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 57696e646f77
+  - name: Window
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -116,44 +96,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: c96a737cf8bbd654fbbd8c331a7daf10, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .889705896
-        g: .949797153
-        b: 1
-        a: 1
+      textColor: {r: .889705896, g: .949797153, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 81
@@ -169,11 +133,7 @@ MonoBehaviour:
     textOffsetY: 21
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 10
       right: 90
@@ -192,7 +152,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 57696e646f775f436c6f7365427574746f6e
+  - name: Window_CloseButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -206,44 +166,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: c3be6f2438f13b24f9114ad32325833c, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 7651a419249e17143b74414f21234c73, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: c9e928d4c6db16849add4b8f9495fb9b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -259,11 +203,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 100
       right: 100
@@ -282,7 +222,7 @@ MonoBehaviour:
       m_Right: 3
       m_Top: 0
       m_Bottom: 5
-  - name: 427574746f6e
+  - name: Button
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -296,44 +236,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: e1656f6c7bf34454fb9bedae453da3f2, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .879271209
-        g: .951157451
-        b: 1
-        a: 1
+      textColor: {r: .879271209, g: .951157451, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 49e2ca0bbc5de3f4e92e4c44efb1a662, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 8860ac3c57d08404aa896cae37511b57, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 4bc7ef8657a574b4f8af79349bc03380, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .625
-        g: .625
-        b: .625
-        a: 1
+      textColor: {r: .625, g: .625, b: .625, a: 1}
       guiBorders: 0
     borders:
       m_Left: 40
@@ -349,11 +273,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -372,7 +292,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 546f67676c65
+  - name: Toggle
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -386,44 +306,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: a55d48a689650bd4db5fa85f996b6d3c, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .911764681
-        g: .959837735
-        b: 1
-        a: 1
+      textColor: {r: .911764681, g: .959837735, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 9be71c276a49dd84bbd8d84ff79d5b8f, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: d89fd0fe5b85fec428e8da467da047c5, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: bd1afe9474b7af347a48e0405363c978, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 8
@@ -439,11 +343,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 0
@@ -462,7 +362,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 496e70757454657874
+  - name: InputText
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -476,44 +376,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 60b1436144a30634697c9e18915f81ed, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 50709574ba0d4314794b2a80a9508ab9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 26e75b503851dcd468fabfadc30634f9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: ec5a33dc3676c144eb233d341a46cf7b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 45
@@ -529,11 +413,7 @@ MonoBehaviour:
     textOffsetY: 10
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -552,7 +432,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 5465787441726561
+  - name: TextArea
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -566,44 +446,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 60b1436144a30634697c9e18915f81ed, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 50709574ba0d4314794b2a80a9508ab9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 26e75b503851dcd468fabfadc30634f9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: ec5a33dc3676c144eb233d341a46cf7b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 45
@@ -619,11 +483,7 @@ MonoBehaviour:
     textOffsetY: 10
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -642,7 +502,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 486f72697a6f6e74616c536c696465725f4469616d6f6e64
+  - name: HorizontalSlider_Diamond
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -656,44 +516,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: f25736ba3f62c0a44a768a64bc8e7f09, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: ab6b08d74f2fdd542b096acf825b6567, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 720ed35f4a31ded48a16f874f4cc9d38, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: cea31e1260ee6fc4ab2d8d59965f973d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 10
@@ -709,11 +553,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -732,7 +572,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 486f72697a6f6e74616c536c696465725f44656372656d656e74427574746f6e
+  - name: HorizontalSlider_DecrementButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -746,44 +586,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 56ba58d9375273545aa2570860bf1092, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: f9a00b40669186c498b0d9db1d97f852, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 92a3d660edfa65949a94a9fab4da30ee, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 0bba2578b04576c429f2b13888c48088, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -799,11 +623,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 0
@@ -822,7 +642,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 486f72697a6f6e74616c536c69646572
+  - name: HorizontalSlider
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -836,44 +656,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 01d1f1cc985d12b44996020e892a2a60, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .875
-        g: .963793099
-        b: 1
-        a: 1
+      textColor: {r: .875, g: .963793099, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 5
@@ -889,11 +693,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -912,7 +712,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 486f72697a6f6e74616c536c696465725f496e6372656d656e74427574746f6e
+  - name: HorizontalSlider_IncrementButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -926,44 +726,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: cbd0e25c219f80247b81e4f61dbff4d1, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: eb09c4ec7bb1ab843b1a4c7072108639, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 9766750e55937154887732748b76b4b8, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: fb0ab6d415e437d44b32398cc34b6213, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -979,11 +763,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 100
       right: 100
@@ -1002,7 +782,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 566572746963616c536c69646572
+  - name: VerticalSlider
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -1016,44 +796,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 01d1f1cc985d12b44996020e892a2a60, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 5
@@ -1069,11 +833,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 100
       right: 100
@@ -1092,7 +852,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 566572746963616c536c696465725f496e6372656d656e74427574746f6e
+  - name: VerticalSlider_IncrementButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -1106,44 +866,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: c4a29f1dcb559a24ea42bfbcf03e6841, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 568a788e3a327a340a998cc7716e3b2b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: fd10b25e4c8b95047823c5aece3385b8, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: f7074887571c36343a038bbfa6fd162e, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -1159,11 +903,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -1182,7 +922,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 566572746963616c536c696465725f44656372656d656e74427574746f6e
+  - name: VerticalSlider_DecrementButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -1196,44 +936,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 53adcb699817100408c455a3add9b57f, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 7dfc662ed44558743a8b0f6cd5b6e66b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 7bbefd65bccbf1a4faf1c8823c6f60d9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: c703898849b59ab4d954d8836acc4924, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -1249,11 +973,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -1272,7 +992,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 566572746963616c536c696465725f4469616d6f6e64
+  - name: VerticalSlider_Diamond
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -1286,44 +1006,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: f25736ba3f62c0a44a768a64bc8e7f09, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: ab6b08d74f2fdd542b096acf825b6567, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 720ed35f4a31ded48a16f874f4cc9d38, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: cea31e1260ee6fc4ab2d8d59965f973d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 10
@@ -1339,11 +1043,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -1362,7 +1062,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 4c697374
+  - name: List
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -1376,44 +1076,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: e6f2b5ececf90b843b27129fdc732291, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 2
@@ -1429,11 +1113,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -1452,7 +1132,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 4c6973745f456c656d656e74
+  - name: List_Element
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -1466,44 +1146,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .739619374
-        g: .823290765
-        b: .882352948
-        a: 1
+      textColor: {r: .739619374, g: .823290765, b: .882352948, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -1519,11 +1183,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -1542,7 +1202,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 506f707570
+  - name: Popup
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -1556,44 +1216,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 137cd5f84a25ba341bcf13b3ee7cb826, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 7421cbb82fe53af4787e882e4234e2d7, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 96a9ffa8e6713cd4095fcba661be8511, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 7494db76c6fd15f498a9d3815fb02f5b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 15
@@ -1609,11 +1253,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -1632,7 +1272,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 546162
+  - name: Tab
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -1646,44 +1286,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 3842014515938c74f9d0cbd8aab985ed, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .867647052
-        g: .934279919
-        b: 1
-        a: 1
+      textColor: {r: .867647052, g: .934279919, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 0e07c36f289809a47856e5dc6cfbf3cf, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: f4e3871d89e88324a97b99290405714f, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 75a813ec8016df348977148a2d4de74e, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 55
@@ -1699,11 +1323,7 @@ MonoBehaviour:
     textOffsetY: 5
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 0
@@ -1722,7 +1342,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 54616247726f7570
+  - name: TabGroup
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -1736,44 +1356,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: b61e9a5d44527e341a56d4721e5e4cca, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 15
@@ -1789,11 +1393,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -1812,7 +1412,7 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-  - name: 4c6162656c
+  - name: Label
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -1826,44 +1426,28 @@ MonoBehaviour:
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .92344296
-        g: .994332433
-        b: 1
-        a: 1
+      textColor: {r: .92344296, g: .994332433, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -1879,11 +1463,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50

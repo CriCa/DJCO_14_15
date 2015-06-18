@@ -287,7 +287,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 53657474696e6773
+  text: Settings
   mainGuiTexture: {fileID: 1251488117}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -296,9 +296,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 427574746f6e
+  styleName: Button
   style:
-    name: 427574746f6e
+    name: Button
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -312,44 +312,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: e1656f6c7bf34454fb9bedae453da3f2, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .879271209
-        g: .951157451
-        b: 1
-        a: 1
+      textColor: {r: .879271209, g: .951157451, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 49e2ca0bbc5de3f4e92e4c44efb1a662, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 8860ac3c57d08404aa896cae37511b57, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 4bc7ef8657a574b4f8af79349bc03380, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .625
-        g: .625
-        b: .625
-        a: 1
+      textColor: {r: .625, g: .625, b: .625, a: 1}
       guiBorders: 0
     borders:
       m_Left: 40
@@ -365,11 +349,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -394,9 +374,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 1251488116}
   - {fileID: 610610849}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -619,44 +597,28 @@ MonoBehaviour:
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -672,11 +634,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -705,11 +663,7 @@ MonoBehaviour:
   - {fileID: 773924337}
   - {fileID: 1774075600}
   - {fileID: 380390679}
-  childTfmsActive:
-  - 1
-  - 1
-  - 0
-  - 0
+  childTfmsActive: 01010000
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -823,9 +777,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 54616247726f7570
+  styleName: TabGroup
   style:
-    name: 54616247726f7570
+    name: TabGroup
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -839,44 +793,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: b61e9a5d44527e341a56d4721e5e4cca, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 15
@@ -892,11 +830,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -930,14 +864,7 @@ MonoBehaviour:
   - {fileID: 1243132081}
   - {fileID: 509507797}
   - {fileID: 1335760337}
-  childTfmsActive:
-  - 0
-  - 0
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  childTfmsActive: 00000101010101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -1392,9 +1319,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 4c697374
+  styleName: List
   style:
-    name: 4c697374
+    name: List
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -1408,44 +1335,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: e6f2b5ececf90b843b27129fdc732291, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 2
@@ -1461,11 +1372,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -1499,7 +1406,7 @@ MonoBehaviour:
   - {fileID: 999620144}
   - {fileID: 1585452373}
   - {fileID: 1321621907}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -1510,11 +1417,11 @@ MonoBehaviour:
   guiType: 0
   useStylePlacement: 0
   labels:
-  - 5475746f72
-  - 45617379
-  - 4e6f726d616c
-  - 48617264
-  - 4e696768746d617265
+  - Tutor
+  - Easy
+  - Normal
+  - Hard
+  - Nightmare
   elements:
   - {fileID: 1200519825}
   - {fileID: 914419717}
@@ -1529,7 +1436,7 @@ MonoBehaviour:
   slider: {fileID: 0}
   sliderMargin: 0
   elementCustomStyle: 0
-  elementStyleName: 4c6973745f456c656d656e74
+  elementStyleName: List_Element
   elementStyle:
     name: 
     show: 0
@@ -1545,44 +1452,28 @@ MonoBehaviour:
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -1598,11 +1489,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -1805,9 +1692,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 486f72697a6f6e74616c536c696465725f44656372656d656e74427574746f6e
+  styleName: HorizontalSlider_DecrementButton
   style:
-    name: 486f72697a6f6e74616c536c696465725f44656372656d656e74427574746f6e
+    name: HorizontalSlider_DecrementButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -1821,44 +1708,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 56ba58d9375273545aa2570860bf1092, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: f9a00b40669186c498b0d9db1d97f852, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 92a3d660edfa65949a94a9fab4da30ee, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 0bba2578b04576c429f2b13888c48088, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -1874,11 +1745,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 0
@@ -1902,8 +1769,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 1568073232}
-  childTfmsActive:
-  - 1
+  childTfmsActive: 01
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -2021,7 +1887,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 43726564697473
+  text: Credits
   mainGuiTexture: {fileID: 1594011679}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -2030,9 +1896,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 57696e646f77
+  styleName: Window
   style:
-    name: 57696e646f77
+    name: Window
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -2046,44 +1912,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: c96a737cf8bbd654fbbd8c331a7daf10, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .889705896
-        g: .949797153
-        b: 1
-        a: 1
+      textColor: {r: .889705896, g: .949797153, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 75
@@ -2099,11 +1949,7 @@ MonoBehaviour:
     textOffsetY: 21
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 10
       right: 90
@@ -2132,7 +1978,7 @@ MonoBehaviour:
   - {fileID: 1826877507}
   - {fileID: 689513438}
   - {fileID: 1594011678}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -2436,9 +2282,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 486f72697a6f6e74616c536c696465725f4469616d6f6e64
+  styleName: HorizontalSlider_Diamond
   style:
-    name: 486f72697a6f6e74616c536c696465725f4469616d6f6e64
+    name: HorizontalSlider_Diamond
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -2452,44 +2298,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: f25736ba3f62c0a44a768a64bc8e7f09, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: ab6b08d74f2fdd542b096acf825b6567, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 720ed35f4a31ded48a16f874f4cc9d38, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: cea31e1260ee6fc4ab2d8d59965f973d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 10
@@ -2505,11 +2335,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -2533,8 +2359,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 1190938987}
-  childTfmsActive:
-  - 1
+  childTfmsActive: 01
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -2650,44 +2475,28 @@ MonoBehaviour:
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -2703,11 +2512,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -2740,12 +2545,7 @@ MonoBehaviour:
   - {fileID: 1713119444}
   - {fileID: 1147578147}
   - {fileID: 734530104}
-  childTfmsActive:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  childTfmsActive: 0101010101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -2885,7 +2685,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 51756974
+  text: Quit
   mainGuiTexture: {fileID: 599816897}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -2894,9 +2694,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 427574746f6e
+  styleName: Button
   style:
-    name: 427574746f6e
+    name: Button
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -2910,44 +2710,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: e1656f6c7bf34454fb9bedae453da3f2, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .879271209
-        g: .951157451
-        b: 1
-        a: 1
+      textColor: {r: .879271209, g: .951157451, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 49e2ca0bbc5de3f4e92e4c44efb1a662, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 8860ac3c57d08404aa896cae37511b57, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 4bc7ef8657a574b4f8af79349bc03380, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .625
-        g: .625
-        b: .625
-        a: 1
+      textColor: {r: .625, g: .625, b: .625, a: 1}
       guiBorders: 0
     borders:
       m_Left: 40
@@ -2963,11 +2747,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -2992,9 +2772,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 599816896}
   - {fileID: 1165058844}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -3354,9 +3132,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 566572746963616c536c696465725f4469616d6f6e64
+  styleName: VerticalSlider_Diamond
   style:
-    name: 566572746963616c536c696465725f4469616d6f6e64
+    name: VerticalSlider_Diamond
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -3370,44 +3148,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: f25736ba3f62c0a44a768a64bc8e7f09, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: ab6b08d74f2fdd542b096acf825b6567, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 720ed35f4a31ded48a16f874f4cc9d38, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: cea31e1260ee6fc4ab2d8d59965f973d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 10
@@ -3423,11 +3185,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -3451,7 +3209,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 1555749105}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -3710,44 +3468,28 @@ MonoBehaviour:
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -3763,11 +3505,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -3790,7 +3528,7 @@ MonoBehaviour:
   forceAlign: 0
   childElements: []
   childTfms: []
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -3886,9 +3624,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 57696e646f775f436c6f7365427574746f6e
+  styleName: Window_CloseButton
   style:
-    name: 57696e646f775f436c6f7365427574746f6e
+    name: Window_CloseButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -3902,44 +3640,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: c3be6f2438f13b24f9114ad32325833c, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 7651a419249e17143b74414f21234c73, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: c9e928d4c6db16849add4b8f9495fb9b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -3955,11 +3677,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 100
       right: 100
@@ -3983,7 +3701,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 668431883}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -4118,7 +3836,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 50617373776f72643a
+  text: 'Password:'
   mainGuiTexture: {fileID: 0}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -4127,9 +3845,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 4c6162656c
+  styleName: Label
   style:
-    name: 4c6162656c
+    name: Label
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -4143,44 +3861,28 @@ MonoBehaviour:
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .92344296
-        g: .994332433
-        b: 1
-        a: 1
+      textColor: {r: .92344296, g: .994332433, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -4196,11 +3898,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -4224,8 +3922,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 1681257460}
-  childTfmsActive:
-  - 1
+  childTfmsActive: 01
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -4314,7 +4011,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 496e76657274204d6f7573652059
+  text: Invert Mouse Y
   mainGuiTexture: {fileID: 1788224488}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -4323,9 +4020,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 1
-  styleName: 546f67676c65
+  styleName: Toggle
   style:
-    name: 546f67676c65
+    name: Toggle
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -4339,44 +4036,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: a55d48a689650bd4db5fa85f996b6d3c, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .911764681
-        g: .959837735
-        b: 1
-        a: 1
+      textColor: {r: .911764681, g: .959837735, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 9be71c276a49dd84bbd8d84ff79d5b8f, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: d89fd0fe5b85fec428e8da467da047c5, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: bd1afe9474b7af347a48e0405363c978, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 8
@@ -4392,11 +4073,7 @@ MonoBehaviour:
     textOffsetY: 1
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 0
@@ -4421,9 +4098,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 1134095987}
   - {fileID: 1788224487}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -4583,7 +4258,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 4d61696e204d656e75
+  text: Main Menu
   mainGuiTexture: {fileID: 1848486527}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -4592,9 +4267,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 57696e646f77
+  styleName: Window
   style:
-    name: 57696e646f77
+    name: Window
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -4608,44 +4283,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: c96a737cf8bbd654fbbd8c331a7daf10, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .889705896
-        g: .949797153
-        b: 1
-        a: 1
+      textColor: {r: .889705896, g: .949797153, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 81
@@ -4661,11 +4320,7 @@ MonoBehaviour:
     textOffsetY: 21
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 10
       right: 90
@@ -4701,15 +4356,7 @@ MonoBehaviour:
   - {fileID: 794361685}
   - {fileID: 1233892550}
   - {fileID: 1848486526}
-  childTfmsActive:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
-  - 0
-  - 1
+  childTfmsActive: 0101010101010001
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -4803,7 +4450,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 5374617274204e6577
+  text: Start New
   mainGuiTexture: {fileID: 170183484}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -4812,9 +4459,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 427574746f6e
+  styleName: Button
   style:
-    name: 427574746f6e
+    name: Button
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -4828,44 +4475,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: e1656f6c7bf34454fb9bedae453da3f2, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .879271209
-        g: .951157451
-        b: 1
-        a: 1
+      textColor: {r: .879271209, g: .951157451, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 49e2ca0bbc5de3f4e92e4c44efb1a662, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 8860ac3c57d08404aa896cae37511b57, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 4bc7ef8657a574b4f8af79349bc03380, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .625
-        g: .625
-        b: .625
-        a: 1
+      textColor: {r: .625, g: .625, b: .625, a: 1}
       guiBorders: 0
     borders:
       m_Left: 40
@@ -4881,11 +4512,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -4910,9 +4537,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 170183483}
   - {fileID: 540915118}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -5009,7 +4634,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 52657475726e
+  text: Return
   mainGuiTexture: {fileID: 1939083676}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -5018,9 +4643,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 427574746f6e
+  styleName: Button
   style:
-    name: 427574746f6e
+    name: Button
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -5034,44 +4659,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: e1656f6c7bf34454fb9bedae453da3f2, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .879271209
-        g: .951157451
-        b: 1
-        a: 1
+      textColor: {r: .879271209, g: .951157451, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 49e2ca0bbc5de3f4e92e4c44efb1a662, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 8860ac3c57d08404aa896cae37511b57, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 4bc7ef8657a574b4f8af79349bc03380, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .625
-        g: .625
-        b: .625
-        a: 1
+      textColor: {r: .625, g: .625, b: .625, a: 1}
       guiBorders: 0
     borders:
       m_Left: 40
@@ -5087,11 +4696,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -5116,9 +4721,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 1939083675}
   - {fileID: 76118745}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -5223,9 +4826,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 566572746963616c536c696465725f44656372656d656e74427574746f6e
+  styleName: VerticalSlider_DecrementButton
   style:
-    name: 566572746963616c536c696465725f44656372656d656e74427574746f6e
+    name: VerticalSlider_DecrementButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -5239,44 +4842,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 53adcb699817100408c455a3add9b57f, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 7dfc662ed44558743a8b0f6cd5b6e66b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 7bbefd65bccbf1a4faf1c8823c6f60d9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: c703898849b59ab4d954d8836acc4924, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -5292,11 +4879,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -5320,7 +4903,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 1988078487}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -5456,7 +5039,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 45617379
+  text: Easy
   mainGuiTexture: {fileID: 2146938505}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -5465,9 +5048,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 4c6973745f456c656d656e74
+  styleName: List_Element
   style:
-    name: 4c6973745f456c656d656e74
+    name: List_Element
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -5481,44 +5064,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .739619374
-        g: .823290765
-        b: .882352948
-        a: 1
+      textColor: {r: .739619374, g: .823290765, b: .882352948, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -5534,11 +5101,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -5563,7 +5126,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 2146938504}
   - {fileID: 209987627}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -5834,7 +5397,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 436f6e74696e7565
+  text: Continue
   mainGuiTexture: {fileID: 2062249272}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -5843,9 +5406,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 427574746f6e
+  styleName: Button
   style:
-    name: 427574746f6e
+    name: Button
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -5859,44 +5422,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: e1656f6c7bf34454fb9bedae453da3f2, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .879271209
-        g: .951157451
-        b: 1
-        a: 1
+      textColor: {r: .879271209, g: .951157451, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 49e2ca0bbc5de3f4e92e4c44efb1a662, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 8860ac3c57d08404aa896cae37511b57, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 4bc7ef8657a574b4f8af79349bc03380, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .625
-        g: .625
-        b: .625
-        a: 1
+      textColor: {r: .625, g: .625, b: .625, a: 1}
       guiBorders: 0
     borders:
       m_Left: 40
@@ -5912,11 +5459,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -5941,9 +5484,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 2062249271}
   - {fileID: 276759141}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -6054,7 +5595,7 @@ MonoBehaviour:
   check: 1
   instant: 1
   password: 0
-  text: 4e6f726d616c
+  text: Normal
   mainGuiTexture: {fileID: 135960198}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -6063,9 +5604,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 4c6973745f456c656d656e74
+  styleName: List_Element
   style:
-    name: 4c6973745f456c656d656e74
+    name: List_Element
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -6079,44 +5620,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .739619374
-        g: .823290765
-        b: .882352948
-        a: 1
+      textColor: {r: .739619374, g: .823290765, b: .882352948, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -6132,11 +5657,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -6161,7 +5682,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 135960197}
   - {fileID: 1317203420}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -6250,7 +5771,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 43726564697473
+  text: Credits
   mainGuiTexture: {fileID: 1943233224}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -6259,9 +5780,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 427574746f6e
+  styleName: Button
   style:
-    name: 427574746f6e
+    name: Button
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -6275,44 +5796,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: e1656f6c7bf34454fb9bedae453da3f2, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .879271209
-        g: .951157451
-        b: 1
-        a: 1
+      textColor: {r: .879271209, g: .951157451, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 49e2ca0bbc5de3f4e92e4c44efb1a662, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 8860ac3c57d08404aa896cae37511b57, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 4bc7ef8657a574b4f8af79349bc03380, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .625
-        g: .625
-        b: .625
-        a: 1
+      textColor: {r: .625, g: .625, b: .625, a: 1}
       guiBorders: 0
     borders:
       m_Left: 40
@@ -6328,11 +5833,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -6357,9 +5858,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 1943233223}
   - {fileID: 1705164592}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -6564,7 +6063,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 4e6f726d616c
+  text: Normal
   mainGuiTexture: {fileID: 1403178625}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -6573,9 +6072,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 506f707570
+  styleName: Popup
   style:
-    name: 506f707570
+    name: Popup
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -6589,44 +6088,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 137cd5f84a25ba341bcf13b3ee7cb826, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 7421cbb82fe53af4787e882e4234e2d7, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 96a9ffa8e6713cd4095fcba661be8511, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 7494db76c6fd15f498a9d3815fb02f5b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 15
@@ -6642,11 +6125,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -6674,11 +6153,7 @@ MonoBehaviour:
   - {fileID: 278186439}
   - {fileID: 1403178624}
   - {fileID: 2124275173}
-  childTfmsActive:
-  - 1
-  - 0
-  - 1
-  - 1
+  childTfmsActive: 01000101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -6997,13 +6472,13 @@ MonoBehaviour:
   mainGuiTexture: {fileID: 221548951}
   blendGuiTexture: {fileID: 0}
   guiTexts: []
-  textMaterial: {fileID: 0}
+  textMaterial: {fileID: 1882976263}
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 496e70757454657874
+  styleName: InputText
   style:
-    name: 496e70757454657874
+    name: InputText
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -7017,44 +6492,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 60b1436144a30634697c9e18915f81ed, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 50709574ba0d4314794b2a80a9508ab9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 26e75b503851dcd468fabfadc30634f9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: ec5a33dc3676c144eb233d341a46cf7b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 45
@@ -7070,11 +6529,7 @@ MonoBehaviour:
     textOffsetY: 10
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -7100,9 +6555,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 724733073}
   - {fileID: 221548950}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 0
   guiEditor: 0
@@ -7118,11 +6571,7 @@ MonoBehaviour:
   cursorPos: 0
   cursor: {fileID: 0}
   cursorWidth: 2
-  cursorColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  cursorColor: {r: .5, g: .5, b: .5, a: 1}
   cursorTexture: {fileID: 2800000, guid: ada5458ea063f8a4f89470489020067a, type: 3}
 --- !u!1 &1200519823
 GameObject:
@@ -7203,7 +6652,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 5475746f72
+  text: Tutor
   mainGuiTexture: {fileID: 1528679982}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -7212,9 +6661,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 4c6973745f456c656d656e74
+  styleName: List_Element
   style:
-    name: 4c6973745f456c656d656e74
+    name: List_Element
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -7228,44 +6677,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .739619374
-        g: .823290765
-        b: .882352948
-        a: 1
+      textColor: {r: .739619374, g: .823290765, b: .882352948, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -7281,11 +6714,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -7310,7 +6739,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 1528679981}
   - {fileID: 1524741956}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -7453,9 +6882,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 57696e646f775f436c6f7365427574746f6e
+  styleName: Window_CloseButton
   style:
-    name: 57696e646f775f436c6f7365427574746f6e
+    name: Window_CloseButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -7469,44 +6898,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: c3be6f2438f13b24f9114ad32325833c, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 7651a419249e17143b74414f21234c73, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: c9e928d4c6db16849add4b8f9495fb9b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -7522,11 +6935,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 100
       right: 100
@@ -7550,8 +6959,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 1926042004}
-  childTfmsActive:
-  - 1
+  childTfmsActive: 01
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -7640,7 +7048,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 417564696f
+  text: Audio
   mainGuiTexture: {fileID: 921213183}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -7649,9 +7057,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 546162
+  styleName: Tab
   style:
-    name: 546162
+    name: Tab
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -7665,44 +7073,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 3842014515938c74f9d0cbd8aab985ed, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .867647052
-        g: .934279919
-        b: 1
-        a: 1
+      textColor: {r: .867647052, g: .934279919, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 0e07c36f289809a47856e5dc6cfbf3cf, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: f4e3871d89e88324a97b99290405714f, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 75a813ec8016df348977148a2d4de74e, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 55
@@ -7718,11 +7110,7 @@ MonoBehaviour:
     textOffsetY: 5
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 0
@@ -7747,9 +7135,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 345924510}
   - {fileID: 921213182}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -7892,9 +7278,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 566572746963616c536c696465725f496e6372656d656e74427574746f6e
+  styleName: VerticalSlider_IncrementButton
   style:
-    name: 566572746963616c536c696465725f496e6372656d656e74427574746f6e
+    name: VerticalSlider_IncrementButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -7908,44 +7294,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: c4a29f1dcb559a24ea42bfbcf03e6841, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 568a788e3a327a340a998cc7716e3b2b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: fd10b25e4c8b95047823c5aece3385b8, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: f7074887571c36343a038bbfa6fd162e, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -7961,11 +7331,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -7989,7 +7355,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 332832882}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -8210,7 +7576,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 4e696768746d617265
+  text: Nightmare
   mainGuiTexture: {fileID: 1208944050}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -8219,9 +7585,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 4c6973745f456c656d656e74
+  styleName: List_Element
   style:
-    name: 4c6973745f456c656d656e74
+    name: List_Element
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -8235,44 +7601,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .739619374
-        g: .823290765
-        b: .882352948
-        a: 1
+      textColor: {r: .739619374, g: .823290765, b: .882352948, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -8288,11 +7638,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -8317,7 +7663,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 1208944049}
   - {fileID: 2114081508}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -8463,9 +7809,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 566572746963616c536c69646572
+  styleName: VerticalSlider
   style:
-    name: 566572746963616c536c69646572
+    name: VerticalSlider
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -8479,44 +7825,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 01d1f1cc985d12b44996020e892a2a60, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 5
@@ -8532,11 +7862,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 100
       right: 100
@@ -8566,7 +7892,7 @@ MonoBehaviour:
   - {fileID: 648751004}
   - {fileID: 1257116541}
   - {fileID: 1157582954}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -8719,9 +8045,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 486f72697a6f6e74616c536c696465725f496e6372656d656e74427574746f6e
+  styleName: HorizontalSlider_IncrementButton
   style:
-    name: 486f72697a6f6e74616c536c696465725f496e6372656d656e74427574746f6e
+    name: HorizontalSlider_IncrementButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -8735,44 +8061,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: cbd0e25c219f80247b81e4f61dbff4d1, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: eb09c4ec7bb1ab843b1a4c7072108639, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 9766750e55937154887732748b76b4b8, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: fb0ab6d415e437d44b32398cc34b6213, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -8788,11 +8098,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 100
       right: 100
@@ -8816,8 +8122,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 874010983}
-  childTfmsActive:
-  - 1
+  childTfmsActive: 01
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -8932,7 +8237,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 446966666963756c74793a
+  text: 'Difficulty:'
   mainGuiTexture: {fileID: 0}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -8941,9 +8246,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 4c6162656c
+  styleName: Label
   style:
-    name: 4c6162656c
+    name: Label
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -8957,44 +8262,28 @@ MonoBehaviour:
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .92344296
-        g: .994332433
-        b: 1
-        a: 1
+      textColor: {r: .92344296, g: .994332433, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -9010,11 +8299,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -9038,8 +8323,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 1169856509}
-  childTfmsActive:
-  - 1
+  childTfmsActive: 01
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -9394,7 +8678,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 48617264
+  text: Hard
   mainGuiTexture: {fileID: 386178306}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -9403,9 +8687,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 4c6973745f456c656d656e74
+  styleName: List_Element
   style:
-    name: 4c6973745f456c656d656e74
+    name: List_Element
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -9419,44 +8703,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .739619374
-        g: .823290765
-        b: .882352948
-        a: 1
+      textColor: {r: .739619374, g: .823290765, b: .882352948, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 0f1699fba84ccbb49b17db459177c68d, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -9472,11 +8740,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -9501,7 +8765,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 386178305}
   - {fileID: 915956663}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -9691,7 +8955,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 4d6f757365205370656564
+  text: Mouse Speed
   mainGuiTexture: {fileID: 751866979}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -9700,9 +8964,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 486f72697a6f6e74616c536c69646572
+  styleName: HorizontalSlider
   style:
-    name: 486f72697a6f6e74616c536c69646572
+    name: HorizontalSlider
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -9716,44 +8980,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 01d1f1cc985d12b44996020e892a2a60, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .875
-        g: .963793099
-        b: 1
-        a: 1
+      textColor: {r: .875, g: .963793099, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 5
@@ -9769,11 +9017,7 @@ MonoBehaviour:
     textOffsetY: 2
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -9804,12 +9048,7 @@ MonoBehaviour:
   - {fileID: 497998657}
   - {fileID: 1429381861}
   - {fileID: 751866978}
-  childTfmsActive:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  childTfmsActive: 0101010101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -10014,13 +9253,13 @@ MonoBehaviour:
   mainGuiTexture: {fileID: 597101723}
   blendGuiTexture: {fileID: 0}
   guiTexts: []
-  textMaterial: {fileID: 0}
+  textMaterial: {fileID: 1882976263}
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 496e70757454657874
+  styleName: InputText
   style:
-    name: 496e70757454657874
+    name: InputText
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -10034,44 +9273,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 60b1436144a30634697c9e18915f81ed, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 50709574ba0d4314794b2a80a9508ab9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 26e75b503851dcd468fabfadc30634f9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: ec5a33dc3676c144eb233d341a46cf7b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 45
@@ -10087,11 +9310,7 @@ MonoBehaviour:
     textOffsetY: 10
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -10117,9 +9336,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 2073316365}
   - {fileID: 597101722}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 0
   guiEditor: 0
@@ -10135,11 +9352,7 @@ MonoBehaviour:
   cursorPos: 0
   cursor: {fileID: 0}
   cursorWidth: 2
-  cursorColor:
-    r: .5
-    g: .5
-    b: .5
-    a: 1
+  cursorColor: {r: .5, g: .5, b: .5, a: 1}
   cursorTexture: {fileID: 2800000, guid: ada5458ea063f8a4f89470489020067a, type: 3}
 --- !u!1 &1714208903
 GameObject:
@@ -10294,44 +9507,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 0ab468bafede94b47b861d6cdd7c254f, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -10347,11 +9544,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -10375,8 +9568,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 669403895}
-  childTfmsActive:
-  - 1
+  childTfmsActive: 01
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -10468,7 +9660,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 53657474696e6773
+  text: Settings
   mainGuiTexture: {fileID: 1524101635}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -10477,9 +9669,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 57696e646f77
+  styleName: Window
   style:
-    name: 57696e646f77
+    name: Window
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -10493,44 +9685,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: c96a737cf8bbd654fbbd8c331a7daf10, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .889705896
-        g: .949797153
-        b: 1
-        a: 1
+      textColor: {r: .889705896, g: .949797153, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 81
@@ -10546,11 +9722,7 @@ MonoBehaviour:
     textOffsetY: 21
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 10
       right: 90
@@ -10581,12 +9753,7 @@ MonoBehaviour:
   - {fileID: 148485307}
   - {fileID: 1898980342}
   - {fileID: 1524101634}
-  childTfmsActive:
-  - 1
-  - 1
-  - 1
-  - 1
-  - 1
+  childTfmsActive: 0101010101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -10728,7 +9895,11 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 496e7374616e7447554920697320612047554920646973706c6179200a73797374656d20616e642047554920656469746f722e204974200a616c6c6f777320746f206372656174652066756c6c206665617475726564200a696e746572666163652073797374656d20666f7220746865200a67616d652077697468206d6178696d756d200a636f6e76656e69656e636520616e642061732066617374206173200a70726f746f747970696e67206974210d0a0d0a475549206372656174696f6e20697320646f6e652077697468206e6f200a736372697074696e672e204e6f7720616e20617274697374206f72200a67616d652064657369676e65722063616e20637265617465200a696e7465726661636520746865207761792074686579206c696b652e204f66200a636f75727365207468657265206120736372697074200a696e746572616374696f6e73207769746820475549207768696368200a61726520646f6e652077697468206576656e7473200a
+  text: "InstantGUI is a GUI display \nsystem and GUI editor. It \nallows to create
+    full featured \ninterface system for the \ngame with maximum \nconvenience and
+    as fast as \nprototyping it!\r\n\r\nGUI creation is done with no \nscripting.
+    Now an artist or \ngame designer can create \ninterface the way they like. Of
+    \ncourse there a script \ninteractions with GUI which \nare done with events \n"
   mainGuiTexture: {fileID: 1842271499}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -10737,9 +9908,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 5465787441726561
+  styleName: TextArea
   style:
-    name: 5465787441726561
+    name: TextArea
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -10753,44 +9924,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 60b1436144a30634697c9e18915f81ed, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 50709574ba0d4314794b2a80a9508ab9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: 26e75b503851dcd468fabfadc30634f9, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: ec5a33dc3676c144eb233d341a46cf7b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 45
@@ -10806,11 +9961,7 @@ MonoBehaviour:
     textOffsetY: 10
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 100
@@ -10837,7 +9988,7 @@ MonoBehaviour:
   - {fileID: 1842271498}
   - {fileID: 2022724954}
   - {fileID: 1393209536}
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -10847,7 +9998,20 @@ MonoBehaviour:
   guiElementProps: 1
   guiType: 0
   useStylePlacement: 0
-  rawText: 496e7374616e7447554920697320612047554920646973706c61792073797374656d20616e642047554920656469746f722e20497420616c6c6f777320746f206372656174652066756c6c20666561747572656420696e746572666163652073797374656d20666f72207468652067616d652077697468206d6178696d756d20636f6e76656e69656e636520616e6420617320666173742061732070726f746f747970696e67206974210d0a0d0a475549206372656174696f6e20697320646f6e652077697468206e6f20736372697074696e672e204e6f7720616e20617274697374206f722067616d652064657369676e65722063616e2063726561746520696e7465726661636520746865207761792074686579206c696b652e204f6620636f7572736520746865726520612073637269707420696e746572616374696f6e732077697468204755492077686963682061726520646f6e652077697468206576656e747320286d6573736167696e672920616e6420646972656374206765742f73657420656c656d656e7420706172616d65746572732e0d0a4e6f207370656369616c206164646974696f6e616c2063616d657261732c207363656e6520706c616e65732c2067697a6d6f7320616e642068656c706572732e20496e7374616e7447554920666f726d7320612073696d706c6520616e64206c6f676963616c20686965726172636879206f6620656c656d656e747320e2809320616e64206f6e6c7920656c656d656e747320e2809320756e646572206f6e6520726f6f74206f626a6563742e0d0a416c6c2074686520776f726b20697320646f6e65206469726563746c7920696e20612047616d6520766965772e204e6f206e65656420746f20706c61636520656c656d656e747320696e2061205363656e652076696577206c6f6f6b696e6720617420726573756c7420696e20612047616d65207669657720e28093206c696b6520696e206f746865722047554920706c7567696e732e2047616d65207669657720697320796f7572206f6e6c792063616e766173210d0a5768617420596f7520536565204973205768617420596f75204765743a20796f757220696e2d67616d6520696e746572666163652077696c6c206c6f6f6b20616e6420616374206469726563746c7920617320796f752073656520697420696e206f6e20796f75722063616e7661732e0d0a496e7374616e7447554920636f6d657320776974682064656d6f20475549207468656d657320746861742068617320677261706869637320666f7220616c6c20626173696320696e7465726661636520656c656d656e74732e204665656c206672656520746f20757365207468656d6520666f722064656d6f20707572706f7365732c2070726f746f747970696e67206f7220696e20612066696e616c2070726f647563742e
+  rawText: "InstantGUI is a GUI display system and GUI editor. It allows to create
+    full featured interface system for the game with maximum convenience and as fast
+    as prototyping it!\r\n\r\nGUI creation is done with no scripting. Now an artist
+    or game designer can create interface the way they like. Of course there a script
+    interactions with GUI which are done with events (messaging) and direct get/set
+    element parameters.\r\nNo special additional cameras, scene planes, gizmos and
+    helpers. InstantGUI forms a simple and logical hierarchy of elements \u2013 and
+    only elements \u2013 under one root object.\r\nAll the work is done directly in
+    a Game view. No need to place elements in a Scene view looking at result in a
+    Game view \u2013 like in other GUI plugins. Game view is your only canvas!\r\nWhat
+    You See Is What You Get: your in-game interface will look and act directly as
+    you see it in on your canvas.\r\nInstantGUI comes with demo GUI themes that has
+    graphics for all basic interface elements. Feel free to use theme for demo purposes,
+    prototyping or in a final product."
   firstLine: 0
   widthAdjust: 50
   heightAdjust: 20
@@ -10947,6 +10111,33 @@ GUITexture:
   m_RightBorder: 105
   m_TopBorder: 108
   m_BottomBorder: 30
+--- !u!21 &1882976263
+Material:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Font Material
+  m_Shader: {fileID: 10101, guid: 0000000000000000e000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: debe8a50832fec8408b216ac64b774a7, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1888257682
 GameObject:
   m_ObjectHideFlags: 1
@@ -11084,9 +10275,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 57696e646f775f436c6f7365427574746f6e
+  styleName: Window_CloseButton
   style:
-    name: 57696e646f775f436c6f7365427574746f6e
+    name: Window_CloseButton
     show: 0
     fixedSize: 0
     fixedWidth: 1
@@ -11100,44 +10291,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: c3be6f2438f13b24f9114ad32325833c, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 7651a419249e17143b74414f21234c73, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: c9e928d4c6db16849add4b8f9495fb9b, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -11153,11 +10328,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 100
       right: 100
@@ -11181,8 +10352,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 40915872}
-  childTfmsActive:
-  - 1
+  childTfmsActive: 01
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -11271,7 +10441,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 566964656f
+  text: Video
   mainGuiTexture: {fileID: 40056898}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -11280,9 +10450,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 546162
+  styleName: Tab
   style:
-    name: 546162
+    name: Tab
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -11296,44 +10466,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 3842014515938c74f9d0cbd8aab985ed, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .867647052
-        g: .934279919
-        b: 1
-        a: 1
+      textColor: {r: .867647052, g: .934279919, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 0e07c36f289809a47856e5dc6cfbf3cf, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: f4e3871d89e88324a97b99290405714f, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 75a813ec8016df348977148a2d4de74e, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 55
@@ -11349,11 +10503,7 @@ MonoBehaviour:
     textOffsetY: 5
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 0
@@ -11378,9 +10528,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 40056897}
   - {fileID: 922793692}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -11686,44 +10834,28 @@ MonoBehaviour:
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -11739,11 +10871,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -11766,7 +10894,7 @@ MonoBehaviour:
   forceAlign: 0
   childElements: []
   childTfms: []
-  childTfmsActive: []
+  childTfmsActive: 
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -12038,7 +11166,7 @@ MonoBehaviour:
   check: 1
   instant: 1
   password: 0
-  text: 47616d65
+  text: Game
   mainGuiTexture: {fileID: 704678374}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -12047,9 +11175,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 546162
+  styleName: Tab
   style:
-    name: 546162
+    name: Tab
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -12063,44 +11191,28 @@ MonoBehaviour:
       texture: {fileID: 2800000, guid: 3842014515938c74f9d0cbd8aab985ed, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .867647052
-        g: .934279919
-        b: 1
-        a: 1
+      textColor: {r: .867647052, g: .934279919, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 1
       texture: {fileID: 2800000, guid: 0e07c36f289809a47856e5dc6cfbf3cf, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 1
       texture: {fileID: 2800000, guid: f4e3871d89e88324a97b99290405714f, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 1
       texture: {fileID: 2800000, guid: 75a813ec8016df348977148a2d4de74e, type: 3}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 55
@@ -12116,11 +11228,7 @@ MonoBehaviour:
     textOffsetY: 5
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 0
       right: 0
@@ -12145,9 +11253,7 @@ MonoBehaviour:
   childTfms:
   - {fileID: 233932173}
   - {fileID: 704678373}
-  childTfmsActive:
-  - 1
-  - 1
+  childTfmsActive: 0101
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0
@@ -12282,7 +11388,7 @@ MonoBehaviour:
   check: 0
   instant: 1
   password: 0
-  text: 506c61796572204e616d653a
+  text: 'Player Name:'
   mainGuiTexture: {fileID: 0}
   blendGuiTexture: {fileID: 0}
   guiTexts:
@@ -12291,9 +11397,9 @@ MonoBehaviour:
   textEffectMaterial: {fileID: 0}
   styleSet: {fileID: 11400000, guid: fa3762748a9cff6429fea97cc8bfb1ac, type: 2}
   customStyle: 0
-  styleName: 4c6162656c
+  styleName: Label
   style:
-    name: 4c6162656c
+    name: Label
     show: 0
     fixedSize: 0
     fixedWidth: 0
@@ -12307,44 +11413,28 @@ MonoBehaviour:
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: .92344296
-        g: .994332433
-        b: 1
-        a: 1
+      textColor: {r: .92344296, g: .994332433, b: 1, a: 1}
       guiBorders: 0
     pointed:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     active:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     disabled:
       enabled: 0
       texture: {fileID: 0}
       textOffsetX: 0
       textOffsetY: 0
-      textColor:
-        r: 1
-        g: 1
-        b: 1
-        a: 1
+      textColor: {r: 1, g: 1, b: 1, a: 1}
       guiBorders: 0
     borders:
       m_Left: 0
@@ -12360,11 +11450,7 @@ MonoBehaviour:
     textOffsetY: 0
     textEffect: 0
     textEffectSize: 1
-    textEffectColor:
-      r: 0
-      g: 0
-      b: 0
-      a: 0
+    textEffectColor: {r: 0, g: 0, b: 0, a: 0}
     relative:
       left: 50
       right: 50
@@ -12388,8 +11474,7 @@ MonoBehaviour:
   childElements: []
   childTfms:
   - {fileID: 439690517}
-  childTfmsActive:
-  - 1
+  childTfmsActive: 01
   deleteChildren: 0
   guiLinkText: 1
   guiEditor: 0

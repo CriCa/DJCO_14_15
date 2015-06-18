@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TVScreenController : MonoBehaviour {
 
-	private float speed = 0.5f;
+	private float speed = 0.1f;
 	private Renderer tvRenderer;
 
 	// Use this for initialization
