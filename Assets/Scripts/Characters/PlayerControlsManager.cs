@@ -58,8 +58,6 @@ public class PlayerControlsManager : MonoBehaviour
 		hudDamageCtrl = GameObject.FindGameObjectWithTag("HudDamage").GetComponent<HudDamageController>();
 		currentHP = maxHP;
 		StartCoroutine("UpdateHealth");
-
-		TransformIntoMonster();
 	}
 
 
