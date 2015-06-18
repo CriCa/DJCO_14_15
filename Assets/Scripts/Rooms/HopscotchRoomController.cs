@@ -18,6 +18,9 @@ public class HopscotchRoomController : MonoBehaviour {
 	//Path progress
 	private int progress = 0;
 
+	//Falling spikes
+	private FallingSpikesController spikesController;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -28,7 +31,7 @@ public class HopscotchRoomController : MonoBehaviour {
 
 		GeneratePath(); //fills matrix
 		
-		for (int i=0; i < matrix.GetLength(0); i++)
+		for (int i=0; i < matrix.GetLength(0); i++) {
 			for (int j=0; j < matrix.GetLength(1); j++)
 			{
 				GameObject pressurePlateObj = Instantiate (pressurePlate, Vector3.zero, transform.rotation) as GameObject;
@@ -49,6 +52,9 @@ public class HopscotchRoomController : MonoBehaviour {
 
 				pressurePlateObj.GetComponent<PressurePlateController>().SetInfo(this, matrix[j, i]);
 			}
+		}
+
+		spikesController = GetComponentInChildren<FallingSpikesController>();
 	}
 
 	private void GeneratePath()
@@ -174,19 +180,11 @@ public class HopscotchRoomController : MonoBehaviour {
 	{
 		return !(pos.x < 0 || pos.y < 0 || pos.x > (matrixSize - 1) || pos.y > (matrixSize - 1));
 	}
-	
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		
-	}
 
 	public void PlatePressed(int value)
 	{
 		if (value == (progress + 1)) //Good Job!
 		{
-			Debug.Log ("Nice");
 			progress++;
 
 			if(progress == goalValue)
@@ -197,7 +195,7 @@ public class HopscotchRoomController : MonoBehaviour {
 		} 
 		else
 		{
-			Debug.Log("You fucked up");
+			spikesController.StartSmashProcess();
 			progress = 0;
 		}
 

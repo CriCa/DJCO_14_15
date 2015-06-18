@@ -1088,6 +1088,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 406434}
+  - 65: {fileID: 6573682}
+  - 114: {fileID: 11420634}
+  - 114: {fileID: 11436090}
   m_Layer: 0
   m_Name: SpikeWall
   m_TagString: Untagged
@@ -4595,7 +4598,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -76.1546173, y: 56.0066071, z: -76.2280121}
+  m_LocalPosition: {x: 16.4052219, y: 1.63310492, z: 5.0122714}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 418086}
@@ -12314,6 +12317,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 64, y: 1.00001037, z: 64}
   m_Center: {x: 0, y: -.500005186, z: 0}
+--- !u!65 &6573682
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15, y: 1.87, z: 15}
+  m_Center: {x: 0, y: -1.07000005, z: 0}
 --- !u!65 &6579416
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -12830,6 +12845,19 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!114 &11420634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db7f253d986a9c64ebbfc8762d79a90f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  distanceToFloor: 3.29999995
 --- !u!114 &11429266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12845,6 +12873,17 @@ MonoBehaviour:
   plateSize: 1.29999995
   planeScale: 9
   spacement: .100000001
+--- !u!114 &11436090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0536a5a88e1844c9683ad9a9af1e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11447156
 MonoBehaviour:
   m_ObjectHideFlags: 1
