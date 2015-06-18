@@ -9,9 +9,12 @@ public class FlickeringController : MonoBehaviour {
 	private Light pointLight;
 	private Color originalColor;
 
+	private System.Random rndGenerator;
+
 	void Start () {
 		pointLight = GetComponent<Light>(); 
 		originalColor = pointLight.color;
+		rndGenerator = new System.Random();
 	}
 	
 	// Update is called once per frame
@@ -20,7 +23,9 @@ public class FlickeringController : MonoBehaviour {
 		float x = Time.time * frequency;
 		x = x - Mathf.Floor (x); //normalize
 
-		float y = 1 - (Random.value * 2);
+		float rnd = (float)rndGenerator.NextDouble();
+
+		float y = 1 - (rnd * 2);
 
 		float oscilation = y * amplitude + 1f;
 
