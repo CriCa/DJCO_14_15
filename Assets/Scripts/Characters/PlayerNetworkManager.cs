@@ -51,8 +51,9 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 				cam.enabled = true;
 			}
 
-			// hide own model
-			transform.Find("PlayerModel").GetComponent<SkinnedMeshRenderer>().enabled = false;
+			// hide own models
+			transform.Find("PlayerModel").gameObject.layer = 10;
+			transform.Find("MonsterModel/Cube.001").gameObject.layer = 10;
 
 			// draw items on top of everything (hud-like)
 			transform.Find("Items/Flashlight/FlashlightModel").gameObject.layer = 8;

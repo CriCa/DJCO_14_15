@@ -47,7 +47,7 @@ public class PeekabooRoomController : MonoBehaviour
 		yield return new WaitForSeconds(secondsToTrigger);
 
 		foreach (GameObject player in players) {
-			player.GetComponent<PlayerControlsManager>().TransformIntoMonsterAppearance(false);
+			player.GetComponent<PlayerControlsManager>().TransformIntoMonsterAppearance();
 		}
 
 		StartCoroutine("TransformIntoPlayers");
@@ -59,7 +59,7 @@ public class PeekabooRoomController : MonoBehaviour
 		yield return new WaitForSeconds(secondsTransformed);
 		
 		foreach (GameObject player in players) {
-			player.GetComponent<PlayerControlsManager>().TransformIntoHumanAppearance(false);
+			player.GetComponent<PlayerControlsManager>().TransformIntoHumanAppearance();
 		}
 
 		GetComponent<DoorsController>().TriggerDoors(true);
