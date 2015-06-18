@@ -36,6 +36,8 @@ public class MainMenuController : MonoBehaviour {
 	void ApplySettings() {
 		PlayerPrefs.SetString (USERNAME_KEY,UsernameInput.text );
 		PlayerPrefs.SetFloat (VOLUME_KEY,VolumeInput.value );
+
+		AudioListener.volume = VolumeInput.value / 100.0f;
 	}
 	
 	// Update is called once per frame
@@ -98,8 +100,6 @@ public class MainMenuController : MonoBehaviour {
 	}
 	
 	public void Exit() {
-		PlayerPrefs.SetString (USERNAME_KEY,UsernameInput.text );
-		PlayerPrefs.SetFloat (VOLUME_KEY,VolumeInput.value );
 		Application.Quit ();
 	}
 }
