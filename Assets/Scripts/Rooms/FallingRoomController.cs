@@ -10,14 +10,16 @@ public class FallingRoomController : MonoBehaviour
 	public float secondsToTrigger = 5f;
 	public GameObject floor;
 
-	bool triggered;
-	Rigidbody floorRigidBody;
-	float secondsToDisappear = 5f;
+	private bool triggered;
+	private Rigidbody floorRigidBody;
+	private float secondsToDisappear = 5f;
+
 
 	void Start() {
 		triggered = false;
 		floorRigidBody = floor.GetComponent<Rigidbody>();
 	}
+
 
 	void OnTriggerEnter(Collider other) {
 		if (!triggered && other.tag == "PlayerBody") {
@@ -25,6 +27,7 @@ public class FallingRoomController : MonoBehaviour
 			StartCoroutine("CollapseFloor");
 		}
 	}
+
 
 	IEnumerator CollapseFloor() {
 		yield return new WaitForSeconds(secondsToTrigger);
@@ -38,6 +41,7 @@ public class FallingRoomController : MonoBehaviour
 
 		Invoke("DestroyFloor", secondsToDisappear);
 	}
+
 
 	void DestroyFloor() {
 		Destroy(floor);

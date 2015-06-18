@@ -15,21 +15,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &101388
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 489308}
-  m_Layer: 0
-  m_Name: Point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &103130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,7 +1761,6 @@ Transform:
   m_Children:
   - {fileID: 434422}
   - {fileID: 482124}
-  - {fileID: 489308}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &435714
@@ -2351,18 +2335,6 @@ Transform:
   - {fileID: 474784}
   m_Father: {fileID: 410702}
   m_RootOrder: 0
---- !u!4 &489308
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101388}
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 7.54979013e-08}
-  m_LocalPosition: {x: -4.34340954, y: 2.66954708, z: 6.78223038}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 434734}
-  m_RootOrder: 2
 --- !u!4 &489566
 Transform:
   m_ObjectHideFlags: 1
@@ -2492,8 +2464,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.44000006, y: 1.33000004, z: 3.33999991}
-  m_Center: {x: .241918564, y: -.493089378, z: 1.64973724}
+  m_Size: {x: 2.04999995, y: 1.64999998, z: 3.33999991}
+  m_Center: {x: .241918564, y: -.330000013, z: 1.64973724}
 --- !u!95 &9546384
 Animator:
   serializedVersion: 3

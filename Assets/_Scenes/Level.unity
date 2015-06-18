@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: .815686345, g: .811764777, b: .815686345, a: 1}
   m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
   m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
-  m_AmbientIntensity: 0
+  m_AmbientIntensity: .808000028
   m_AmbientMode: 0
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: .5
@@ -432,8 +432,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 397673473}
-  m_LocalRotation: {x: -.0926832035, y: .750174582, z: -.107665643, w: -.645798802}
-  m_LocalPosition: {x: 554.820984, y: 742.49707, z: 1079.4469}
+  m_LocalRotation: {x: .037629094, y: .894398987, z: .0766568482, w: -.439042598}
+  m_LocalPosition: {x: -3967.28003, y: 2252.2876, z: -1960.84558}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81679763419302d47ab42a288960e36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VERSION: 0.0.05
+  VERSION: 0.0.06
   secondsToStart: 0
   respawnTime: 5
   minPlayers: 4

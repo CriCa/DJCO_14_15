@@ -150,9 +150,12 @@ public class PlayerControlsManager : MonoBehaviour
 
 	public void TransformIntoMonster() {
 		// change appearance
-		TransformIntoMonsterAppearance(true);
+		TransformIntoMonsterAppearance();
 
-		// edit colliders' sizes
+		// reset monster model back to a visible layer
+		monsterModel.transform.Find("Cube.001").gameObject.layer = 0;
+
+		// update colliders' sizes to fit monster
 		BoxCollider playerCollider = playerModel.GetComponent<BoxCollider>();
 		Vector3 colliderCenter = playerCollider.center;
 		Vector3 colliderSize = playerCollider.size;
@@ -170,14 +173,13 @@ public class PlayerControlsManager : MonoBehaviour
 		items.GetComponentInChildren<FlashlightController>().enabled = false;
 		items.GetComponentInChildren<ShootingController>().enabled = false;
 
-		// disable item mesh renderers; losi
+		// disable item mesh renderers
 		items.Find("Flashlight/FlashlightModel").GetComponent<MeshRenderer>().enabled = false;
 		items.Find("Weapon/WeaponModel").GetComponent<MeshRenderer>().enabled = false;
 	}
 
 
-	// bool sets whether local player sees own model changes
-	public void TransformIntoMonsterAppearance(bool applyLocally) {
+	public void TransformIntoMonsterAppearance() {
 		// if this is null, this is the first time the player is transforming and we should grab all references
 		if (playerModel == null) {
 			playerAnimator = GetComponent<Animator>();
@@ -193,21 +195,18 @@ public class PlayerControlsManager : MonoBehaviour
 
 		// hide player model
 		playerMeshRenderer.enabled = false;
+		
+		// set monster visible
+		monsterModel.gameObject.SetActive(true);
+		monsterMeshRenderer.enabled = true;
+		monsterAnimator.enabled = true;
 
-		// we should only make visible changes on networked players (not own player), or when we want to force it
-		if (!this.enabled || applyLocally) {
-			// set monster visible
-			monsterModel.gameObject.SetActive(true);
-			monsterMeshRenderer.enabled = true;
-			monsterAnimator.enabled = true;
-
-			// start updating monster's animation according to player's
-			StartCoroutine("UpdateMonsterAnimator");
-		}
+		// start updating monster's animation according to player's
+		StartCoroutine("UpdateMonsterAnimator");
 	}
 
 
-	public void TransformIntoHumanAppearance(bool applyLocally) {
+	public void TransformIntoHumanAppearance() {
 		// stop monster's animation
 		StopCoroutine("UpdateMonsterAnimator");
 
@@ -215,12 +214,9 @@ public class PlayerControlsManager : MonoBehaviour
 		monsterAnimator.enabled = false;
 		monsterMeshRenderer.enabled = false;
 		monsterModel.gameObject.SetActive(false);
-
-		// we should only force visible changes on networked players (not own player) or when we want to force it
-		if (!this.enabled || applyLocally) {
-			// set player visible
-			playerMeshRenderer.enabled = true;
-		}
+		
+		// set player visible
+		playerMeshRenderer.enabled = true;
 	}
 
 

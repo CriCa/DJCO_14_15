@@ -5,6 +5,7 @@ using System.Collections;
  * Deadly Object Controller
  * Destroys player on touch. Must have a box collider with "isTrigger" set attached.
  */
+[RequireComponent(typeof (BoxCollider))]
 public class DeadlyObjectController : MonoBehaviour 
 {
 	void OnTriggerEnter(Collider other) {

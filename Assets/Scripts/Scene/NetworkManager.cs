@@ -51,7 +51,9 @@ public class NetworkManager : MonoBehaviour
 
 
 	void OnJoinedLobby() {
-		PhotonNetwork.playerName = "Player " + Random.Range(0, 9999);
+		System.Random rndGenerator = new System.Random();
+
+		PhotonNetwork.playerName = "Player " + rndGenerator.Next(1, 10000);
 		ChatManager.instance.SetPlayerName(PhotonNetwork.playerName);
 
 		RoomOptions ro = new RoomOptions() {isVisible = true, maxPlayers = 5};
@@ -102,6 +104,11 @@ public class NetworkManager : MonoBehaviour
 			int[] map = (int[]) roomProperties["map"];
 			roomSeed = (int) roomProperties["seed"];
 
+			// set seed for room generation
+			Random.seed = roomSeed;
+
+			Debug.Log("current seed is " + roomSeed);
+
 			// we have the map info, so we can instantiate the rooms
 			MapManager.instance.FillMap(map);
 			MapManager.instance.SpawnMap();
@@ -143,14 +150,14 @@ public class NetworkManager : MonoBehaviour
 
 
 	void SpawnPlayer() {
+		// disable spawn camera
+		spawnCamera.enabled = false;
+
 		// spawn player
 		int playerNum = PhotonNetwork.room.playerCount;
 		Vector3 pos = new Vector3 (-3 + 2 * PhotonNetwork.room.playerCount, 0.98f, 0f);
 		player = PhotonNetwork.Instantiate("HybridPlayer" + playerNum, pos, Quaternion.identity, 0);
 		playerControls = player.GetComponent<PlayerControlsManager>();
-		
-		// disable spawn camera
-		spawnCamera.enabled = false;
 	}
 
 
@@ -164,10 +171,12 @@ public class NetworkManager : MonoBehaviour
 		player.transform.position = new Vector3(0f, -2000f, 0f);
 
 		// disable all controls
-		spawnCamera.enabled = true;
 		playerAlive = false;
 		playerControls.DisableControls();
 		playerControls.DisableCameras();
+
+		// enable spawn camera
+		spawnCamera.enabled = true;
 
 		// warn player, if needed
 		ChatManager.instance.AddWarningMessage("You died. get gud, scrub.");
@@ -186,6 +195,9 @@ public class NetworkManager : MonoBehaviour
 
 		// reset HP
 		playerControls.ResetCurrentHP();
+
+		// disable spawn camera
+		spawnCamera.enabled = false;
 
 		// re-enable controls
 		playerAlive = true;

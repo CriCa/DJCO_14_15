@@ -12,21 +12,24 @@ public class JumpRopeRoomController : MonoBehaviour
 	public float ropeSpeed = 3f; // rope movement speed
 	public float ropeSpeedIncrement = 0.7f; // how much the speed increases after every "jump"
 	public int jumpsNeeded = 8; // number of jumps needed before the doors open
+
+	private bool triggered;
+	private int jumpsTaken; // number of times the rope has already moved
 	
-	bool triggered;
-	int jumpsTaken; // number of times the rope has already moved
-	
+
 	void Start() {
 		triggered = false;
 		jumpsTaken = 0;
 	}
 	
+
 	void OnTriggerEnter(Collider other) {
 		if (!triggered && other.tag == "PlayerBody") {
 			triggered = true;
 			StartCoroutine("SwingRope");
 		}
 	}
+
 
 	IEnumerator SwingRope() {
 		yield return new WaitForSeconds(secondsToTrigger);
