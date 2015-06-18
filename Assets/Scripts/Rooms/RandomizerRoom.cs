@@ -14,15 +14,17 @@ public class RandomizerRoom : MonoBehaviour
 	public float secondsInTheDark = 5f;
 	public int requiredSwitches; // number of switches that should take place
 
-	bool triggered;
-	List<Transform> rooms;
-	Transform world;
+	private bool triggered;
+	private List<Transform> rooms;
+	private Transform world;
+
 
 	void Start () {
 		triggered = false;
 		rooms = new List<Transform>();
 		world = GameObject.FindGameObjectWithTag("WorldRooms").transform;
 	}
+
 
 	void OnTriggerEnter(Collider other) {
 		if (!triggered && other.tag == "PlayerBody") {
@@ -31,10 +33,11 @@ public class RandomizerRoom : MonoBehaviour
 		}
 	}
 
+
 	IEnumerator RandomizeRooms() {
 		yield return new WaitForSeconds(secondsToTrigger);
 
-		// getting objects here, rather than on start, to avoid keep all rooms in memory
+		// getting objects here, rather than on start, to avoid keeping all rooms in memory
 		foreach (Transform child in world) {
 			if (child == this.transform) {
 				continue;

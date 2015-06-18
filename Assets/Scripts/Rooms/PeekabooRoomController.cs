@@ -13,8 +13,8 @@ public class PeekabooRoomController : MonoBehaviour
 	public float secondsTransformed = 15f;
 	public Texture monsterTexture; // testing purposes only
 
-	bool triggered;
-	List<GameObject> players; // reference to players currently inside the room
+	private bool triggered;
+	private List<GameObject> players; // reference to players currently inside the room
 
 
 	void Start() {
