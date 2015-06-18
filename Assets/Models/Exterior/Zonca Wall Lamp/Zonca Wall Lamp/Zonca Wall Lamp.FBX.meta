@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 0623efce9c2d5c14bbd4bdb2b6896b8d
+timeCreated: 1434623591
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Box01
+    100002: Circle01
+    100004: Circle02
+    100006: Cone01
+    100008: Cone02
+    100010: Cylinder01
+    100012: Ellipse01
+    100014: Ellipse02
+    100016: Ellipse03
+    100018: Ellipse04
+    100020: Ellipse05
+    100022: Ellipse06
+    100024: Line01
+    100026: Line02
+    100028: Line03
+    100030: Line04
+    100032: Line05
+    100034: Line06
+    100036: Line07
+    100038: Line08
+    100040: Line09
+    100042: Shape
+    100044: Shape01
+    100046: //RootNode
+    400000: Box01
+    400002: Circle01
+    400004: Circle02
+    400006: Cone01
+    400008: Cone02
+    400010: Cylinder01
+    400012: Ellipse01
+    400014: Ellipse02
+    400016: Ellipse03
+    400018: Ellipse04
+    400020: Ellipse05
+    400022: Ellipse06
+    400024: Line01
+    400026: Line02
+    400028: Line03
+    400030: Line04
+    400032: Line05
+    400034: Line06
+    400036: Line07
+    400038: Line08
+    400040: Line09
+    400042: Shape
+    400044: Shape01
+    400046: //RootNode
+    2300000: Box01
+    2300002: Circle01
+    2300004: Circle02
+    2300006: Cone01
+    2300008: Cone02
+    2300010: Cylinder01
+    2300012: Ellipse01
+    2300014: Ellipse02
+    2300016: Ellipse03
+    2300018: Ellipse04
+    2300020: Ellipse05
+    2300022: Ellipse06
+    2300024: Line01
+    2300026: Line02
+    2300028: Line03
+    2300030: Line04
+    2300032: Line05
+    2300034: Line06
+    2300036: Line07
+    2300038: Line08
+    2300040: Line09
+    2300042: Shape
+    2300044: Shape01
+    3300000: Box01
+    3300002: Circle01
+    3300004: Circle02
+    3300006: Cone01
+    3300008: Cone02
+    3300010: Cylinder01
+    3300012: Ellipse01
+    3300014: Ellipse02
+    3300016: Ellipse03
+    3300018: Ellipse04
+    3300020: Ellipse05
+    3300022: Ellipse06
+    3300024: Line01
+    3300026: Line02
+    3300028: Line03
+    3300030: Line04
+    3300032: Line05
+    3300034: Line06
+    3300036: Line07
+    3300038: Line08
+    3300040: Line09
+    3300042: Shape
+    3300044: Shape01
+    4300000: Box01
+    4300002: Line01
+    4300004: Line02
+    4300006: Line03
+    4300008: Line04
+    4300010: Line05
+    4300012: Cylinder01
+    4300014: Line08
+    4300016: Ellipse04
+    4300018: Ellipse05
+    4300020: Ellipse06
+    4300022: Line09
+    4300024: Cone02
+    4300026: Shape01
+    4300028: Circle02
+    4300030: Ellipse02
+    4300032: Ellipse01
+    4300034: Ellipse03
+    4300036: Line07
+    4300038: Line06
+    4300040: Cone01
+    4300042: Shape
+    4300044: Circle01
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
