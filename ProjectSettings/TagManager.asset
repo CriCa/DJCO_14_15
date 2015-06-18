@@ -15,6 +15,7 @@ TagManager:
   - SpectRoom
   - SpawnRoom
   - HudDamage
+  - PauseMenu
   layers:
   - Default
   - TransparentFX
