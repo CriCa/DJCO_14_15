@@ -11017,7 +11017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a5b449633ed894097361dc3dae3589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToTrigger: 2
+  secondsToTrigger: 10
   rope: {fileID: 103738}
   baseRopeSpeed: 3
   speedCurve:
@@ -11077,7 +11077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1869e0c05f8b468a3eb3837214d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToTrigger: 1
+  secondsToTrigger: 3
   swingSpeed: 20
   doors:
   - {fileID: 198898}
@@ -11095,7 +11095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8021672d60937d4d80c3a1ef4b0cc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tip: Jump Rope
+  tip: Rope Jumping Isn't Only For Girls.
 --- !u!114 &11469178
 MonoBehaviour:
   m_ObjectHideFlags: 1

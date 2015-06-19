@@ -617,8 +617,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 397673473}
-  m_LocalRotation: {x: .0582564175, y: .915970385, z: -.149708271, w: .367684454}
-  m_LocalPosition: {x: 2.80545211, y: 13.1896591, z: -19.368454}
+  m_LocalRotation: {x: .0261204019, y: .935501158, z: -.0759067908, w: .344083518}
+  m_LocalPosition: {x: 2.7145381, y: 12.2262611, z: -19.4349575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1583,7 +1583,7 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -75}
   m_SizeDelta: {x: 470, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1046862699
@@ -2090,7 +2090,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1523764758 stripped
+--- !u!4 &1523764758
 Transform:
   m_PrefabParentObject: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   m_PrefabInternal: {fileID: 1523764757}
@@ -2371,7 +2371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81679763419302d47ab42a288960e36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VERSION: 0.0.08
+  VERSION: 0.0.10
   secondsToStart: 0
   respawnTime: 5
   minPlayers: 4
@@ -2404,7 +2404,7 @@ MonoBehaviour:
   roomTypes:
   - {fileID: 117888, guid: f47492c181d75844c8bb3f38094c94d3, type: 2}
   - {fileID: 115164, guid: bfa6b91b47af6ab46a04748cc8371179, type: 2}
-  - {fileID: 197480, guid: b7c5a399d88b71647b327a22f8ca2d86, type: 2}
+  - {fileID: 110356, guid: 1759121eae58f4e44918f1df1a7b28b9, type: 2}
   - {fileID: 147366, guid: 93ea01f041688684da0a2e6ec6ce16d5, type: 2}
   - {fileID: 163906, guid: 54eb2c39480255641b107e7fea54d04a, type: 2}
   - {fileID: 191714, guid: e2fb9393c0a64e04282aa0cbe871fd86, type: 2}

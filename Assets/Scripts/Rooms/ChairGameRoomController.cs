@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 /*
  * Chair Game Controllr
@@ -12,14 +13,20 @@ public class ChairGameRoomController : MonoBehaviour
 	public GameObject chair;
 
 	bool triggered = false;
-	int playersInside = 0;
-	int playersSit = 0;
+	List<GameObject> playersInside;
+	List<GameObject> playersSit;
+
+	void Start()
+	{
+		playersInside = new List<GameObject> ();
+		playersSit = new List<GameObject> ();
+	}
 	
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.tag == "PlayerBody")
+		if (other.tag == "Player")
 		{
-			playersInside++;
+			playersInside.Add(other.gameObject);
 			
 			if(!triggered)
 			{
@@ -31,42 +38,67 @@ public class ChairGameRoomController : MonoBehaviour
 	
 	void OnTriggerExit(Collider other)
 	{
-		if (other.tag == "PlayerBody") 
+		if (other.tag == "Player") 
 		{
-			playersInside = Mathf.Max(0, playersInside - 1);
+			playersInside.Remove(other.gameObject);
 		}
 	}
 	
 	IEnumerator SpawnChairs() 
 	{
 		yield return new WaitForSeconds(secondsToTrigger);
-		
-		for (int i=0; i<playersInside; i++)
+
+		if (playersInside.Count < 2) {
+			GetComponent<DoorsController>().TriggerDoors(true);
+			Destroy(this);
+			return true;
+		}
+
+		for (int i=0; i<playersInside.Count - 1; i++)
 		{
 			Vector3 roomPosition = transform.position;
-			roomPosition.x += i;
+
+			//random X
+			float sideX = Random.value > 0.5 ? 1f : -1f;
+			float sideZ = Random.value > 0.5 ? 1f : -1f;
+
+			float sideXRange = Random.Range(i, i+1);
+			float sideZRange = Random.Range(i, i+1);
+
+			roomPosition.x += sideX * sideXRange;
 			roomPosition.y += 0.5f;
-			roomPosition.z += i;
-			
+			roomPosition.z += sideZ * sideZRange;
+
+			float randomAngle = Random.Range(0, 360);
+
 			GameObject chairObj = Instantiate(chair, roomPosition, transform.rotation) as GameObject;
 			chairObj.transform.parent = transform;
-			chairObj.transform.localEulerAngles = new Vector3(-90f, 0, 0);
+			chairObj.transform.localEulerAngles = new Vector3(-90f, randomAngle, 0);
 			chairObj.GetComponent<ChairController>().SetController(this);
 		}
 	}
 	
-	public void ChairEnter()
+	public void ChairEnter(GameObject player)
 	{
-		playersSit++;
-		
-		if (playersSit == playersInside) {
+		playersSit.Add (player);
+
+		if (playersSit.Count == playersInside.Count - 1)
+		{
+			//Kill left player
+			foreach(GameObject playerInside in playersInside)
+			{
+				if(!playersSit.Contains(playerInside) && playerInside == NetworkManager.instance.GetPlayer()) {
+					playerInside.GetComponent<PlayerNetworkManager>().TakeDamage(1000);
+				}	
+			}
+
 			GetComponent<DoorsController>().TriggerDoors(true);
 			Destroy(this);
 		}
 	}
 	
-	public void ChairExit()
+	public void ChairExit(GameObject player)
 	{
-		playersSit--;
+		playersSit.Remove (player);
 	}
 }

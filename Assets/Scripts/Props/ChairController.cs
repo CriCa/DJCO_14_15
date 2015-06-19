@@ -11,14 +11,14 @@ public class ChairController : MonoBehaviour
 	
 	void OnTriggerEnter(Collider other)
 	{
-		if (controller != null && other.tag == "PlayerBody")
-			controller.ChairEnter();
+		if (controller != null && other.tag == "Player")
+			controller.ChairEnter(other.gameObject);
 	}
 	
 	void OnTriggerExit(Collider other)
 	{
-		if (controller != null && other.tag == "PlayerBody")
-			controller.ChairExit();
+		if (controller != null && other.tag == "Player")
+			controller.ChairExit(other.gameObject);
 	}
 	
 	public void SetController(ChairGameRoomController controller)

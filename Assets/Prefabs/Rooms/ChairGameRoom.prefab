@@ -305,7 +305,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &113472
 GameObject:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -4410,7 +4410,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 493314}
-  - {fileID: 494224}
   m_Father: {fileID: 494180}
   m_RootOrder: 4
 --- !u!4 &478740
@@ -4733,7 +4732,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -77.6478348, y: 57.5337181, z: -84.6381912}
+  m_LocalPosition: {x: -10.9216108, y: 29.7272625, z: -58.1676178}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 436912}
@@ -4741,6 +4740,7 @@ Transform:
   - {fileID: 405794}
   - {fileID: 486398}
   - {fileID: 478522}
+  - {fileID: 494224}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &494224
@@ -4750,14 +4750,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113472}
   m_LocalRotation: {x: -2.30404638e-07, y: -.707106709, z: 1.42108547e-14, w: .707106829}
-  m_LocalPosition: {x: 5.17399979, y: 1.5, z: -8.57800007}
+  m_LocalPosition: {x: 5.17399979, y: 1.5, z: -8.57800293}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 413280}
   - {fileID: 459860}
   - {fileID: 411080}
-  m_Father: {fileID: 478522}
-  m_RootOrder: 1
+  m_Father: {fileID: 494180}
+  m_RootOrder: 5
 --- !u!4 &494676
 Transform:
   m_ObjectHideFlags: 1
@@ -9165,8 +9165,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 16, y: 1, z: 16}
-  m_Center: {x: 0, y: 1.20000005, z: 0}
+  m_Size: {x: 17, y: 5.5999999, z: 17}
+  m_Center: {x: 0, y: 2.6400001, z: 0}
 --- !u!65 &6529828
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -9594,7 +9594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc948283566f97f458d45d5f3165afad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToTrigger: 1
+  secondsToTrigger: 10
   chair: {fileID: 111056, guid: 512b405a8e89d3f478cec4ed817e5a3c, type: 2}
 --- !u!114 &11463784
 MonoBehaviour:
@@ -9607,7 +9607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8021672d60937d4d80c3a1ef4b0cc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tip: Missing Chair
+  tip: No Music For Your Chairs...
 --- !u!114 &11498062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9619,7 +9619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a1869e0c05f8b468a3eb3837214d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToTrigger: 1
+  secondsToTrigger: 3
   swingSpeed: 20
   doors:
   - {fileID: 174258}

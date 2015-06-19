@@ -14,6 +14,13 @@ public class CatchRoomController : MonoBehaviour
 	void Start () {
 		players = new List<Transform>();
 		monsterController = monster.GetComponent<MonsterFollowerController>();
+		
+		Invoke ("OpenDoors", secondsToTrigger);
+	}
+
+	void OpenDoors()
+	{
+		GetComponent<DoorsController> ().TriggerDoors (true);
 	}
 
 
