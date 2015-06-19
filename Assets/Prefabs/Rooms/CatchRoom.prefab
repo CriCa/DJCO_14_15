@@ -6194,7 +6194,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.4510803, y: -3.05924368, z: 50.9466476}
+  m_LocalPosition: {x: 7.20270872, y: -.746406078, z: 91.725296}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 465886}
@@ -11275,7 +11275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5771a557b4f22784082ca6804368a57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToTrigger: 13
+  secondsToTrigger: 20
   monster: {fileID: 139720}
 --- !u!114 &11488118
 MonoBehaviour:

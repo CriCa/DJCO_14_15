@@ -5342,7 +5342,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.6910114, y: 3.26358509, z: 73.00914}
+  m_LocalPosition: {x: 29.9392357, y: 28.2542801, z: -3.28598118}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 499870}
@@ -12883,10 +12883,10 @@ MonoBehaviour:
   secondsToTrigger: 10
   swingSpeed: 20
   doors:
-  - {fileID: 150282}
-  - {fileID: 145744}
-  - {fileID: 141074}
-  - {fileID: 136184}
+  - {fileID: 166846}
+  - {fileID: 182680}
+  - {fileID: 148986}
+  - {fileID: 121478}
 --- !u!114 &11477406
 MonoBehaviour:
   m_ObjectHideFlags: 1
