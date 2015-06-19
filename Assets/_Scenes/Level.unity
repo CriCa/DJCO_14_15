@@ -1587,18 +1587,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c57d5f3cfe820e439d164b7a60d6f64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapSize: 5
+  mapSize: 4
   roomTypes:
-  - {fileID: 117888, guid: f47492c181d75844c8bb3f38094c94d3, type: 2}
   - {fileID: 115164, guid: bfa6b91b47af6ab46a04748cc8371179, type: 2}
   - {fileID: 126382, guid: 6a9cb2ed46a7da34da5ed6f8d10f751e, type: 2}
-  - {fileID: 126382, guid: 6a9cb2ed46a7da34da5ed6f8d10f751e, type: 2}
-  - {fileID: 163906, guid: 54eb2c39480255641b107e7fea54d04a, type: 2}
-  - {fileID: 191714, guid: e2fb9393c0a64e04282aa0cbe871fd86, type: 2}
-  - {fileID: 147366, guid: 93ea01f041688684da0a2e6ec6ce16d5, type: 2}
+  - {fileID: 197480, guid: b7c5a399d88b71647b327a22f8ca2d86, type: 2}
   - {fileID: 151610, guid: b1c8e30c679c9024387b9b1dd5d6da49, type: 2}
+  - {fileID: 184226, guid: d7a8ba808c4cf044aa0cbb9d2f5964af, type: 2}
+  - {fileID: 163906, guid: 54eb2c39480255641b107e7fea54d04a, type: 2}
+  - {fileID: 139626, guid: 55d5ab3f9d019754bb3bb1a57d713d58, type: 2}
+  - {fileID: 191714, guid: e2fb9393c0a64e04282aa0cbe871fd86, type: 2}
+  - {fileID: 159766, guid: 6347410db08e75046b6bf54a38af0472, type: 2}
+  - {fileID: 147366, guid: 93ea01f041688684da0a2e6ec6ce16d5, type: 2}
   - {fileID: 110356, guid: 1759121eae58f4e44918f1df1a7b28b9, type: 2}
-  - {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   bridge: {fileID: 195472, guid: 4249e470fa336f54f901ca70b45464d4, type: 2}
   doorBlock: {fileID: 109794, guid: 2b9cf14e38c73874581eea447a788d3b, type: 2}
 --- !u!114 &1749685936

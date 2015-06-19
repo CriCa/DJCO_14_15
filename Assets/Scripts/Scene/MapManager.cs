@@ -48,19 +48,15 @@ public class MapManager : MonoBehaviour
 	public void GenerateMap() {
 		InitializeMap();
 	
-		// EXAMPLE: force first room to be of type 1
-		// mapPositions.RemoveAt(0);
-		// map[0,0] = 0;
+		// force first room to be the spawn
+		mapPositions.RemoveAt(0);
+		map[0,0] = 0;
 
-		// EXAMPLE: force at least three rooms of type 1
-		// FillWithObject(1, 3);
-
-		// forcing one type of each room, in order
+		// for all others, force at least one room of each
 		for (int i = 0; i < roomTypes.Length - 1; i++) {
-			mapPositions.RemoveAt(0);
-			map[i/mapSize, i%mapSize] = i+1;
+			FillWithObject(i+1, 1);
 		}
-
+		
 		// all others can be anything
 		FillRemainingPositions();
 	}
@@ -101,9 +97,9 @@ public class MapManager : MonoBehaviour
 
 
 	void FillRemainingPositions() {
-		// for each remaining position in the list, fill map with (TODO) random object
+		// for each remaining position in the list, fill map with random object
 		foreach(Vector2 pos in mapPositions) {
-			map[(int)pos.x, (int)pos.y] = 0;
+			map[(int)pos.x, (int)pos.y] = Random.Range(2, roomTypes.Length);
 		}
 
 		// all positions have been filled at this point, so we can clear the positions list
