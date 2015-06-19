@@ -10,12 +10,14 @@ public class CatchRoomController : MonoBehaviour
 	private List<Transform> players;
 	private MonsterFollowerController monsterController;
 
+	private bool arleadyOpen;
+
 
 	void Start () {
 		players = new List<Transform>();
 		monsterController = monster.GetComponent<MonsterFollowerController>();
-		
-		Invoke ("OpenDoors", secondsToTrigger);
+		arleadyOpen = false;
+
 	}
 
 	void OpenDoors()
@@ -28,6 +30,10 @@ public class CatchRoomController : MonoBehaviour
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "PlayerBody") {
 			players.Add(other.transform);
+			if(!arleadyOpen) {
+				Invoke ("OpenDoors", secondsToTrigger);
+				arleadyOpen = true;
+			}
 		}
 	}
 
