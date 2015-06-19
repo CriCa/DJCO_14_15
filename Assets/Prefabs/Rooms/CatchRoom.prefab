@@ -6194,7 +6194,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.9290438, y: 31.5743046, z: -51.755394}
+  m_LocalPosition: {x: 7.20270872, y: -.746406078, z: 91.725296}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 465886}
@@ -7062,7 +7062,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9a49dfca417144f4c8d61b3057669b92, type: 2}
+  - {fileID: 2100000, guid: 86174c52f4f23eb4a959814be94c8b56, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -7734,7 +7734,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9a49dfca417144f4c8d61b3057669b92, type: 2}
+  - {fileID: 2100000, guid: 86174c52f4f23eb4a959814be94c8b56, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -7974,7 +7974,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9a49dfca417144f4c8d61b3057669b92, type: 2}
+  - {fileID: 2100000, guid: 86174c52f4f23eb4a959814be94c8b56, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -8118,7 +8118,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9a49dfca417144f4c8d61b3057669b92, type: 2}
+  - {fileID: 2100000, guid: 86174c52f4f23eb4a959814be94c8b56, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -8406,7 +8406,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9a49dfca417144f4c8d61b3057669b92, type: 2}
+  - {fileID: 2100000, guid: 86174c52f4f23eb4a959814be94c8b56, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -8526,7 +8526,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9a49dfca417144f4c8d61b3057669b92, type: 2}
+  - {fileID: 2100000, guid: 86174c52f4f23eb4a959814be94c8b56, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -9342,7 +9342,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9a49dfca417144f4c8d61b3057669b92, type: 2}
+  - {fileID: 2100000, guid: 86174c52f4f23eb4a959814be94c8b56, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -9606,7 +9606,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 9a49dfca417144f4c8d61b3057669b92, type: 2}
+  - {fileID: 2100000, guid: 86174c52f4f23eb4a959814be94c8b56, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -11275,7 +11275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5771a557b4f22784082ca6804368a57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToTrigger: 13
+  secondsToTrigger: 20
   monster: {fileID: 139720}
 --- !u!114 &11488118
 MonoBehaviour:

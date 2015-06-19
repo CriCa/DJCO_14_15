@@ -118,7 +118,11 @@ PlayerSettings:
   iOSLaunchScreenBackgroundColor:
     serializedVersion: 2
     rgba: 0
+<<<<<<< HEAD
   iOSLaunchScreenFillPct: 100
+=======
+  iOSLaunchScreenFillPct: 1
+>>>>>>> 9d684413462f4b2830c7ae18302eaf067cec659d
   iOSLaunchScreenSize: 100
   iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
