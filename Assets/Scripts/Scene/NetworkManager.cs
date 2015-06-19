@@ -148,6 +148,8 @@ public class NetworkManager : MonoBehaviour
 	void SpawnPlayer() {
 		// disable spawn camera
 		spawnCamera.enabled = false;
+		spawnCamera.GetComponent<AudioListener> ().enabled = false;
+		spawnCamera.GetComponent<AudioSource> ().enabled = false;
 
 		// spawn player
 		int playerNum = PhotonNetwork.room.playerCount;
@@ -178,6 +180,8 @@ public class NetworkManager : MonoBehaviour
 
 		// enable spawn camera
 		spawnCamera.enabled = true;
+		spawnCamera.GetComponent<AudioListener> ().enabled = true;
+		spawnCamera.GetComponent<AudioSource> ().enabled = true;
 
 		// warn player, if needed
 		ChatManager.instance.AddWarningMessage("You died. get gud, scrub.");
@@ -199,6 +203,8 @@ public class NetworkManager : MonoBehaviour
 
 		// disable spawn camera
 		spawnCamera.enabled = false;
+		spawnCamera.GetComponent<AudioListener> ().enabled = false;
+		spawnCamera.GetComponent<AudioSource> ().enabled = false;
 
 		// re-enable all controls
 		playerAlive = true;
