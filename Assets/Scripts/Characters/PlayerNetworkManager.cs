@@ -11,6 +11,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 {
 	public float smoothing = 10f; // lerping movement update "speed"
 	public float snappingDistance = 5f; // if distance between updates is too big, we want to snap to the new pos directly
+	public AudioSource stabAudio;
 
 	private Vector3 positionGoal = Vector3.zero; // lerping destination
 	private Quaternion rotationGoal = Quaternion.identity; // we don't want to go directly to the new pos, we want to move towards it
@@ -167,6 +168,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 
 	[RPC]
 	void TakeDamage_RPC(float damage) {
+		stabAudio.Play();
 		if (photonView.isMine) 
 		{
 			playerControls.TakeDamage(damage);
