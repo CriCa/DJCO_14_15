@@ -306,10 +306,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentpos:
-    left: 249
-    right: 459
-    top: 69
-    bottom: 329
+    left: 243
+    right: 453
+    top: 66
+    bottom: 326
     isStyle: 0
   relative:
     left: 0
@@ -324,10 +324,10 @@ MonoBehaviour:
     bottom: 150
     isStyle: 0
   absolute:
-    left: 289
-    right: 429
-    top: 141
-    bottom: 191
+    left: 283
+    right: 423
+    top: 138
+    bottom: 188
     isStyle: 0
   layerOffset: 1
   lockPosition: 0
@@ -661,7 +661,7 @@ GUIText:
   m_Text: Resume
   m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: 359, y: 230}
+  m_PixelOffset: {x: 353, y: 227}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 57cdba702d624a943b72d40b17d0fc9f, type: 3}
@@ -791,9 +791,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentpos:
     left: 0
-    right: 707
+    right: 697
     top: 0
-    bottom: 398
+    bottom: 392
     isStyle: 0
   relative:
     left: 50
@@ -808,10 +808,10 @@ MonoBehaviour:
     bottom: 130
     isStyle: 0
   absolute:
-    left: 249
-    right: 459
-    top: 69
-    bottom: 329
+    left: 243
+    right: 453
+    top: 66
+    bottom: 326
     isStyle: 0
   layerOffset: 1
   lockPosition: 0
@@ -972,8 +972,8 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: 289
-    y: 207
+    x: 283
+    y: 204
     width: 140
     height: 50
   m_LeftBorder: 40
@@ -1019,7 +1019,7 @@ GUIText:
   m_Text: Disconnect
   m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: 359, y: 176}
+  m_PixelOffset: {x: 353, y: 173}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 57cdba702d624a943b72d40b17d0fc9f, type: 3}
@@ -1097,7 +1097,7 @@ GUIText:
   m_Text: Quit
   m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: 359, y: 122}
+  m_PixelOffset: {x: 353, y: 119}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 57cdba702d624a943b72d40b17d0fc9f, type: 3}
@@ -1151,10 +1151,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentpos:
-    left: 249
-    right: 459
-    top: 69
-    bottom: 329
+    left: 243
+    right: 453
+    top: 66
+    bottom: 326
     isStyle: 0
   relative:
     left: 0
@@ -1169,10 +1169,10 @@ MonoBehaviour:
     bottom: 176
     isStyle: 0
   absolute:
-    left: 289
-    right: 429
-    top: 195
-    bottom: 245
+    left: 283
+    right: 423
+    top: 192
+    bottom: 242
     isStyle: 0
   layerOffset: 1
   lockPosition: 0
@@ -1332,8 +1332,8 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: 289
-    y: 99
+    x: 283
+    y: 96
     width: 140
     height: 50
   m_LeftBorder: 40
@@ -1382,10 +1382,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentpos:
-    left: 249
-    right: 459
-    top: 69
-    bottom: 329
+    left: 243
+    right: 453
+    top: 66
+    bottom: 326
     isStyle: 0
   relative:
     left: 0
@@ -1400,10 +1400,10 @@ MonoBehaviour:
     bottom: 230
     isStyle: 0
   absolute:
-    left: 289
-    right: 429
-    top: 249
-    bottom: 299
+    left: 283
+    right: 423
+    top: 246
+    bottom: 296
     isStyle: 0
   layerOffset: 1
   lockPosition: 0
@@ -1702,9 +1702,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentpos:
     left: 0
-    right: 707
+    right: 697
     top: 0
-    bottom: 398
+    bottom: 392
     isStyle: 0
   relative:
     left: 0
@@ -1720,16 +1720,16 @@ MonoBehaviour:
     isStyle: 0
   absolute:
     left: 0
-    right: 707
+    right: 697
     top: 0
-    bottom: 398
+    bottom: 392
     isStyle: 0
   layerOffset: 1
   lockPosition: 1
   dynamic: 1
   editable: 1
-  pointed: 0
-  pointedOnBackground: 0
+  pointed: 1
+  pointedOnBackground: 1
   pointedTime: 0
   unpointedTime: 0
   disabled: 0
@@ -1972,8 +1972,8 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: 249
-    y: 69
+    x: 243
+    y: 66
     width: 210
     height: 260
   m_LeftBorder: 81
@@ -2773,8 +2773,8 @@ GUITexture:
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
-    x: 289
-    y: 153
+    x: 283
+    y: 150
     width: 140
     height: 50
   m_LeftBorder: 40

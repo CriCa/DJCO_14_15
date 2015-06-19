@@ -127,8 +127,8 @@ GUITexture:
   m_PixelInset:
     serializedVersion: 2
     x: 79
-    y: 127
-    width: 215
+    y: 10
+    width: 186
     height: 333
   m_LeftBorder: 81
   m_RightBorder: 105
@@ -347,8 +347,8 @@ GUITexture:
   m_PixelInset:
     serializedVersion: 2
     x: 119
-    y: 280
-    width: 145
+    y: 163
+    width: 116
     height: 50
   m_LeftBorder: 40
   m_RightBorder: 40
@@ -652,7 +652,7 @@ GUIText:
   m_Text: Quit
   m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: 188.5, y: 183}
+  m_PixelOffset: {x: 174, y: 66}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 57cdba702d624a943b72d40b17d0fc9f, type: 3}
@@ -1359,8 +1359,8 @@ GUITexture:
   m_PixelInset:
     serializedVersion: 2
     x: 119
-    y: 220
-    width: 145
+    y: 103
+    width: 116
     height: 50
   m_LeftBorder: 40
   m_RightBorder: 40
@@ -1405,7 +1405,7 @@ GUIText:
   m_Text: Settings
   m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: 191.5, y: 303}
+  m_PixelOffset: {x: 177, y: 186}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 57cdba702d624a943b72d40b17d0fc9f, type: 3}
@@ -2138,9 +2138,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentpos:
     left: 79
-    right: 294
-    top: 124
-    bottom: 457
+    right: 265
+    top: 49
+    bottom: 382
     isStyle: 0
   relative:
     left: 0
@@ -2156,9 +2156,9 @@ MonoBehaviour:
     isStyle: 0
   absolute:
     left: 116
-    right: 261
-    top: 374
-    bottom: 424
+    right: 232
+    top: 299
+    bottom: 349
     isStyle: 0
   layerOffset: 1
   lockPosition: 0
@@ -2851,7 +2851,7 @@ GUIText:
   m_Text: Play
   m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: 191.5, y: 363}
+  m_PixelOffset: {x: 177, y: 246}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 57cdba702d624a943b72d40b17d0fc9f, type: 3}
@@ -2958,8 +2958,8 @@ GUITexture:
   m_PixelInset:
     serializedVersion: 2
     x: 119
-    y: 340
-    width: 145
+    y: 223
+    width: 116
     height: 50
   m_LeftBorder: 40
   m_RightBorder: 40
@@ -3133,9 +3133,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentpos:
     left: 0
-    right: 1038
+    right: 697
     top: 0
-    bottom: 584
+    bottom: 392
     isStyle: 0
   relative:
     left: 0
@@ -3151,9 +3151,9 @@ MonoBehaviour:
     isStyle: 0
   absolute:
     left: 0
-    right: 1038
+    right: 697
     top: 0
-    bottom: 584
+    bottom: 392
     isStyle: 0
   layerOffset: 1
   lockPosition: 1
@@ -3698,7 +3698,7 @@ GUIText:
   m_Text: Main Menu
   m_Anchor: 0
   m_Alignment: 0
-  m_PixelOffset: {x: 101, y: 439}
+  m_PixelOffset: {x: 101, y: 322}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 57cdba702d624a943b72d40b17d0fc9f, type: 3}
@@ -3993,9 +3993,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentpos:
     left: 79
-    right: 294
-    top: 124
-    bottom: 457
+    right: 265
+    top: 49
+    bottom: 382
     isStyle: 0
   relative:
     left: 0
@@ -4011,9 +4011,9 @@ MonoBehaviour:
     isStyle: 0
   absolute:
     left: 119
-    right: 264
-    top: 254
-    bottom: 304
+    right: 235
+    top: 179
+    bottom: 229
     isStyle: 0
   layerOffset: 1
   lockPosition: 0
@@ -4177,8 +4177,8 @@ GUITexture:
   m_PixelInset:
     serializedVersion: 2
     x: 116
-    y: 160
-    width: 145
+    y: 43
+    width: 116
     height: 50
   m_LeftBorder: 40
   m_RightBorder: 40
@@ -4551,9 +4551,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentpos:
     left: 79
-    right: 294
-    top: 124
-    bottom: 457
+    right: 265
+    top: 49
+    bottom: 382
     isStyle: 0
   relative:
     left: 0
@@ -4569,9 +4569,9 @@ MonoBehaviour:
     isStyle: 0
   absolute:
     left: 119
-    right: 264
-    top: 194
-    bottom: 244
+    right: 235
+    top: 119
+    bottom: 169
     isStyle: 0
   layerOffset: 1
   lockPosition: 0
@@ -6061,7 +6061,7 @@ GUIText:
   m_Text: Credits
   m_Anchor: 4
   m_Alignment: 0
-  m_PixelOffset: {x: 191.5, y: 243}
+  m_PixelOffset: {x: 177, y: 126}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 57cdba702d624a943b72d40b17d0fc9f, type: 3}
@@ -6457,9 +6457,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentpos:
     left: 79
-    right: 294
-    top: 124
-    bottom: 457
+    right: 265
+    top: 49
+    bottom: 382
     isStyle: 0
   relative:
     left: 0
@@ -6475,9 +6475,9 @@ MonoBehaviour:
     isStyle: 0
   absolute:
     left: 119
-    right: 264
-    top: 314
-    bottom: 364
+    right: 235
+    top: 239
+    bottom: 289
     isStyle: 0
   layerOffset: 1
   lockPosition: 0
@@ -8322,7 +8322,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 092a5004c50db4e0f8bc4d9b334003b4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -8430,9 +8430,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentpos:
     left: 0
-    right: 1038
+    right: 697
     top: 0
-    bottom: 584
+    bottom: 392
     isStyle: 0
   relative:
     left: 0
@@ -8448,9 +8448,9 @@ MonoBehaviour:
     isStyle: 0
   absolute:
     left: 79
-    right: 294
-    top: 124
-    bottom: 457
+    right: 265
+    top: 49
+    bottom: 382
     isStyle: 0
   layerOffset: 1
   lockPosition: 0
