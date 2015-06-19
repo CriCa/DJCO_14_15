@@ -20,6 +20,7 @@ public class CatchRoomController : MonoBehaviour
 
 	void OpenDoors()
 	{
+		Debug.Log ("Opening Doors");
 		GetComponent<DoorsController> ().TriggerDoors (true);
 	}
 
