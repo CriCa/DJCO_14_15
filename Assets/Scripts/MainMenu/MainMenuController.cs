@@ -80,14 +80,11 @@ public class MainMenuController : MonoBehaviour {
 	}
 	
 	public void Create() {
-		if (connected) {
-			RoomOptions op = new RoomOptions () { isVisible = true, maxPlayers = 4 };
-		
+		if (connected) {		
 			if (RoomName.text != "") {
 				PlayerPrefs.SetString(ROOM_KEY, RoomName.text);
 				PhotonNetwork.LoadLevel("Level");
 			}
-				//PhotonNetwork.JoinOrCreateRoom (RoomName.text, op, TypedLobby.Default);
 		}
 	}
 	
