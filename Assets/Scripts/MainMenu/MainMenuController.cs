@@ -17,9 +17,9 @@ public class MainMenuController : MonoBehaviour {
 
 	private RoomInfo[] roomsList;
 
-	private static string USERNAME_KEY = "username_key";
-	private static string VOLUME_KEY = "volume_key";
-	private static string ROOM_KEY = "room_key";
+	public static string USERNAME_KEY = "username_key";
+	public static string VOLUME_KEY = "volume_key";
+	public static string ROOM_KEY = "room_key";
 	
 
 	// Use this for initialization

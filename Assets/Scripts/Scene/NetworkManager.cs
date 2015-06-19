@@ -9,13 +9,11 @@ using System.Collections;
 public class NetworkManager : MonoBehaviour 
 {
 	public static NetworkManager instance = null; // singleton object
-
-	public string VERSION; // current game version
+	
 	public int secondsToStart = 30; // seconds to start game once enough players have joined
 	public float respawnTime = 5f; // interval between player death and respawn
 	public int minPlayers = 4;
-
-	[SerializeField] private Text connText;
+	
 	[SerializeField] private Camera spawnCamera;
 
 	private int roomSeed; // stored on the server, used as the seed for random values
@@ -36,31 +34,36 @@ public class NetworkManager : MonoBehaviour
 
 
 	void Start() {
-		PhotonNetwork.logLevel = PhotonLogLevel.ErrorsOnly;
-		PhotonNetwork.ConnectUsingSettings(VERSION);
+		if (PhotonNetwork.connectionStateDetailed.ToString () != "JoinedLobby") {
+			PhotonNetwork.logLevel = PhotonLogLevel.ErrorsOnly;
+			PhotonNetwork.ConnectUsingSettings ("1.0");
+		} else {
 
-		StartCoroutine("UpdateConnectionText");
-	}
+			System.Random rndGenerator = new System.Random ();
+		
+			PhotonNetwork.playerName = PlayerPrefs.GetString (MainMenuController.USERNAME_KEY, "UnknownPlayer" + Random.Range (0, 999));
+			ChatManager.instance.SetPlayerName (PhotonNetwork.playerName);
 
+			RoomOptions ro = new RoomOptions () {isVisible = true, maxPlayers = 4};
+			PhotonNetwork.JoinOrCreateRoom (PlayerPrefs.GetString (MainMenuController.ROOM_KEY, "Default"), ro, TypedLobby.Default);
+			PlayerPrefs.DeleteKey (MainMenuController.ROOM_KEY);
 
-	IEnumerator UpdateConnectionText() {
-		while (true) {
-			connText.text = PhotonNetwork.connectionStateDetailed.ToString();
-			yield return null;
+			AudioListener.volume = PlayerPrefs.GetFloat (MainMenuController.VOLUME_KEY, 100.0f) / 100.0f;
 		}
 	}
 
-
 	void OnJoinedLobby() {
-		System.Random rndGenerator = new System.Random();
-
-		PhotonNetwork.playerName = "Player " + rndGenerator.Next(1, 10000);
-		ChatManager.instance.SetPlayerName(PhotonNetwork.playerName);
-
-		RoomOptions ro = new RoomOptions() {isVisible = true, maxPlayers = 5};
-		PhotonNetwork.JoinOrCreateRoom("Default", ro, TypedLobby.Default);
+		System.Random rndGenerator = new System.Random ();
+		
+		PhotonNetwork.playerName = PlayerPrefs.GetString (MainMenuController.USERNAME_KEY, "UnknownPlayer" + Random.Range (0, 999));
+		ChatManager.instance.SetPlayerName (PhotonNetwork.playerName);
+		
+		RoomOptions ro = new RoomOptions () {isVisible = true, maxPlayers = 4};
+		PhotonNetwork.JoinOrCreateRoom (PlayerPrefs.GetString (MainMenuController.ROOM_KEY, "Default"), ro, TypedLobby.Default);
+		PlayerPrefs.DeleteKey (MainMenuController.ROOM_KEY);
+		
+		AudioListener.volume = PlayerPrefs.GetFloat (MainMenuController.VOLUME_KEY, 100.0f) / 100.0f;
 	}
-
 
 	void OnCreatedRoom() {
 		// generate map
@@ -95,10 +98,6 @@ public class NetworkManager : MonoBehaviour
 		// get server settings
 		ExitGames.Client.Photon.Hashtable roomProperties = PhotonNetwork.room.customProperties;
 
-		// we no longer need connection info, so the field can be used for other stuff
-		StopCoroutine("UpdateConnectionText");
-		connText.text = "Instantiating map";
-
 		// player that created room could join before creating, so we need to check for null
 		// should place a failsafe here
 		if (roomProperties["map"] != null && roomProperties["seed"] != null) {
@@ -111,8 +110,6 @@ public class NetworkManager : MonoBehaviour
 			// we have the map info, so we can instantiate the rooms
 			MapManager.instance.FillMap(map);
 			MapManager.instance.SpawnMap();
-
-			connText.text = "";
 		}
 		
 		// spawn player
