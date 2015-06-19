@@ -13,6 +13,13 @@ public class HopscotchRoomController : MonoBehaviour {
 	private int[,] matrix;
 	private Vector2 goal;
 	private int matrixSize;
+	private int goalValue;
+
+	//Path progress
+	private int progress = 0;
+
+	//Falling spikes
+	private FallingSpikesController spikesController;
 
 	// Use this for initialization
 	void Start ()
@@ -22,9 +29,9 @@ public class HopscotchRoomController : MonoBehaviour {
 		matrix = new int[matrixSize,matrixSize];
 		goal = new Vector2 (matrixSize / 2, matrixSize / 2);
 
-		GeneratePath(); //fills pressurePlates matrix
+		GeneratePath(); //fills matrix
 		
-		for (int i=0; i < matrix.GetLength(0); i++)
+		for (int i=0; i < matrix.GetLength(0); i++) {
 			for (int j=0; j < matrix.GetLength(1); j++)
 			{
 				GameObject pressurePlateObj = Instantiate (pressurePlate, Vector3.zero, transform.rotation) as GameObject;
@@ -43,8 +50,11 @@ public class HopscotchRoomController : MonoBehaviour {
 				position.z = j*plateSize + j*spacement - centeringOffset;
 				pressurePlateObj.transform.localPosition = position;
 
-				pressurePlateObj.GetComponent<PressurePlateController>().SetPosition(matrix[j, i]);
+				pressurePlateObj.GetComponent<PressurePlateController>().SetInfo(this, matrix[j, i]);
 			}
+		}
+
+		spikesController = GetComponentInChildren<FallingSpikesController>();
 	}
 
 	private void GeneratePath()
@@ -120,6 +130,8 @@ public class HopscotchRoomController : MonoBehaviour {
 			Vector2 pos = pathArray[i];
 			matrix[(int) pos.x, (int) pos.y] = i+1; 
 		}
+
+		goalValue = pathArray.Length;
 	}
 
 	
@@ -168,11 +180,24 @@ public class HopscotchRoomController : MonoBehaviour {
 	{
 		return !(pos.x < 0 || pos.y < 0 || pos.x > (matrixSize - 1) || pos.y > (matrixSize - 1));
 	}
-	
-	
-	// Update is called once per frame
-	void Update ()
+
+	public void PlatePressed(int value)
 	{
-		
+		if (value == (progress + 1)) //Good Job!
+		{
+			progress++;
+
+			if(progress == goalValue)
+			{
+				GetComponent<DoorsController>().TriggerDoors(true);
+				Destroy(this);
+			}
+		} 
+		else
+		{
+			spikesController.StartSmashProcess();
+			progress = 0;
+		}
+
 	}
 }

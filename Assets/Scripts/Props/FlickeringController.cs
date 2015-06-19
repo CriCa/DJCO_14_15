@@ -3,6 +3,7 @@ using System.Collections;
 
 public class FlickeringController : MonoBehaviour {
 
+	public int delay = 2;
 	public float amplitude = 1f;
 	public float frequency = 0.5f;
 
@@ -14,21 +15,27 @@ public class FlickeringController : MonoBehaviour {
 	void Start () {
 		pointLight = GetComponent<Light>(); 
 		originalColor = pointLight.color;
+
 		rndGenerator = new System.Random();
+		StartCoroutine ("Flicker");
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-		float x = Time.time * frequency;
-		x = x - Mathf.Floor (x); //normalize
+	IEnumerator Flicker()
+	{
+		while (true)
+		{
+			yield return new WaitForSeconds(rndGenerator.Next(0, delay));
 
-		float rnd = (float)rndGenerator.NextDouble();
+			float x = Time.time * frequency;
+			x = x - Mathf.Floor (x); //normalize
 
-		float y = 1 - (rnd * 2);
+			float rnd = (float)rndGenerator.NextDouble();
 
-		float oscilation = y * amplitude + 1f;
+			float y = 1 - (rnd * 2);
 
-		pointLight.color = originalColor * oscilation;
+			float oscilation = y * amplitude + 1f;
+
+			pointLight.color = originalColor * oscilation;
+		}
 	}
 }

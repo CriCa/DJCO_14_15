@@ -34,7 +34,7 @@ public class ChairGameRoomController : MonoBehaviour
 		if (other.tag == "PlayerBody") 
 		{
 			playersInside = Mathf.Max(0, playersInside - 1);
-		}	
+		}
 	}
 	
 	IEnumerator SpawnChairs() 
@@ -45,9 +45,12 @@ public class ChairGameRoomController : MonoBehaviour
 		{
 			Vector3 roomPosition = transform.position;
 			roomPosition.x += i;
+			roomPosition.y += 0.5f;
 			roomPosition.z += i;
 			
 			GameObject chairObj = Instantiate(chair, roomPosition, transform.rotation) as GameObject;
+			chairObj.transform.parent = transform;
+			chairObj.transform.localEulerAngles = new Vector3(-90f, 0, 0);
 			chairObj.GetComponent<ChairController>().SetController(this);
 		}
 	}

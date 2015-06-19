@@ -23,9 +23,9 @@ RenderSettings:
   m_AmbientSkyColor: {r: .815686345, g: .811764777, b: .815686345, a: 1}
   m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
   m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
-  m_AmbientIntensity: .808000028
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 8185c62f5ccafe247bd3d1a04315857d, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -476,6 +476,7 @@ Transform:
   - {fileID: 1523764758}
   - {fileID: 594448153}
   - {fileID: 1837561553}
+  - {fileID: 435159659}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!1 &328056212
@@ -616,8 +617,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 397673473}
-  m_LocalRotation: {x: .037629094, y: .894398987, z: .0766568482, w: -.439042598}
-  m_LocalPosition: {x: -3967.28003, y: 2252.2876, z: -1960.84558}
+  m_LocalRotation: {x: .0582564175, y: .915970385, z: -.149708271, w: .367684454}
+  m_LocalPosition: {x: 2.80545211, y: 13.1896591, z: -19.368454}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -673,6 +674,33 @@ GUIText:
     rgba: 4294967295
   m_PixelCorrect: 1
   m_RichText: 1
+--- !u!1 &435159658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 435159659}
+  m_Layer: 0
+  m_Name: DoorBlocks
+  m_TagString: WorldDoorBlocks
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &435159659
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435159658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 190230880}
+  m_RootOrder: 3
 --- !u!1 &486033502
 GameObject:
   m_ObjectHideFlags: 0
@@ -2039,6 +2067,26 @@ Prefab:
       propertyPath: m_TagString
       value: SpectRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 10868280, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_Color.r
+      value: .793597937
+      objectReference: {fileID: 0}
+    - target: {fileID: 10868280, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_Color.g
+      value: .793597937
+      objectReference: {fileID: 0}
+    - target: {fileID: 10868280, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_Color.b
+      value: .793597937
+      objectReference: {fileID: 0}
+    - target: {fileID: 10868280, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_Color.a
+      value: .793597937
+      objectReference: {fileID: 0}
+    - target: {fileID: 10888874, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   m_IsPrefabParent: 0
@@ -2323,7 +2371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81679763419302d47ab42a288960e36d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VERSION: 0.0.07
+  VERSION: 0.0.09
   secondsToStart: 0
   respawnTime: 5
   minPlayers: 4
@@ -2357,10 +2405,15 @@ MonoBehaviour:
   - {fileID: 117888, guid: f47492c181d75844c8bb3f38094c94d3, type: 2}
   - {fileID: 115164, guid: bfa6b91b47af6ab46a04748cc8371179, type: 2}
   - {fileID: 197480, guid: b7c5a399d88b71647b327a22f8ca2d86, type: 2}
-  - {fileID: 159766, guid: 6347410db08e75046b6bf54a38af0472, type: 2}
-  - {fileID: 139626, guid: 55d5ab3f9d019754bb3bb1a57d713d58, type: 2}
+  - {fileID: 147366, guid: 93ea01f041688684da0a2e6ec6ce16d5, type: 2}
+  - {fileID: 163906, guid: 54eb2c39480255641b107e7fea54d04a, type: 2}
+  - {fileID: 191714, guid: e2fb9393c0a64e04282aa0cbe871fd86, type: 2}
+  - {fileID: 147366, guid: 93ea01f041688684da0a2e6ec6ce16d5, type: 2}
+  - {fileID: 151610, guid: b1c8e30c679c9024387b9b1dd5d6da49, type: 2}
+  - {fileID: 110356, guid: 1759121eae58f4e44918f1df1a7b28b9, type: 2}
   - {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   bridge: {fileID: 195472, guid: 4249e470fa336f54f901ca70b45464d4, type: 2}
+  doorBlock: {fileID: 109794, guid: 2b9cf14e38c73874581eea447a788d3b, type: 2}
 --- !u!114 &1749685936
 MonoBehaviour:
   m_ObjectHideFlags: 0
