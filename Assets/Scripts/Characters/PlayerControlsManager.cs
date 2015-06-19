@@ -20,6 +20,7 @@ public class PlayerControlsManager : MonoBehaviour
 	public float healInterval = 2f;
 	public float healIncrement = 1f;
 
+	private bool isPlayerMonster = false;
 	private float currentHP;
 	private HudDamageController hudDamageCtrl; // flash indication when player gets shot
 
@@ -105,12 +106,19 @@ public class PlayerControlsManager : MonoBehaviour
 
 	public void EnableControls() {
 		if (!gamePaused) {
-			fpController.enabled = true;
-			flashController.enabled = true;
-			shootController.enabled = true;
+			// if monster, maintain items disabled
+			if (isPlayerMonster) {
+				fpController.enabled = true;
+			}
+
+			// otherwise, we're good to go
+			else {
+				fpController.enabled = true;
+				flashController.enabled = true;
+				shootController.enabled = true;
+			}
 		}
 	}
-
 
 	public void DisableControls() {
 		fpController.enabled = false;
@@ -120,8 +128,16 @@ public class PlayerControlsManager : MonoBehaviour
 
 
 	public void EnableCameras() {
-		foreach (Camera cam in fpCameras) {
-			cam.enabled = true;
+		// if monster, enable only first person camera
+		if (isPlayerMonster) {
+			fpCameras[1].enabled = true;
+		}
+
+		// otherwise, enable all cameras including items
+		else {
+			foreach (Camera cam in fpCameras) {
+				cam.enabled = true;
+			}
 		}
 	}
 
@@ -149,6 +165,14 @@ public class PlayerControlsManager : MonoBehaviour
 
 
 	public void TransformIntoMonster() {
+		// should only transform once
+		if (isPlayerMonster) {
+			return;
+		}
+
+		// set new state
+		isPlayerMonster = true;
+
 		// change appearance
 		TransformIntoMonsterAppearance();
 
@@ -162,9 +186,15 @@ public class PlayerControlsManager : MonoBehaviour
 
 		colliderCenter.y = -0.62f;
 		colliderSize.y = 3.29f;
+		colliderSize.z = 5.37f;
 
 		playerCollider.center = colliderCenter;
 		playerCollider.size = colliderSize;
+
+		// enable new attack controller, but only locally
+		if (GetComponent<PlayerNetworkManager>().photonView.isMine) {
+			monsterModel.GetComponent<BoxCollider>().enabled = true;
+		}
 
 		// hide all items and disable respective controllers
 		Transform items = transform.Find("Items");

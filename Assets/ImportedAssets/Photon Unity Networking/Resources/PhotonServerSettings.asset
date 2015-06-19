@@ -37,4 +37,5 @@ MonoBehaviour:
   - TriggerAnimation_RPC
   - GetShot_RPC
   - TakeDamage_RPC
+  - TransformIntoMonster_RPC
   DisableAutoOpenWizard: 0

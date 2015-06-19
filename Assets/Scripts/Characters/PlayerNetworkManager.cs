@@ -31,6 +31,7 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 		// global references (for both local and networked player instances)
 		anim = GetComponent<Animator>();
 		spotlight = GetComponentInChildren<Light>();
+		playerControls = GetComponent<PlayerControlsManager>();
 
 		// if it's a local object, we want to enable all controls
 		if(photonView.isMine) 
@@ -41,8 +42,6 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 			GetComponent<AudioListener>().enabled = true;
 			GetComponent<FirstPersonController>().enabled = true;
 
-			// get reference to general player script
-			playerControls = GetComponent<PlayerControlsManager>();
 			playerControls.enabled = true;
 
 			// enable all cameras
@@ -139,6 +138,19 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 	public void TakeDamage(float damage) 
 	{
 		photonView.RPC("TakeDamage_RPC", PhotonTargets.All, damage);
+	}
+
+
+	public void TransformIntoMonster() 
+	{
+		photonView.RPC("TransformIntoMonster_RPC", PhotonTargets.All);
+	}
+
+
+	[RPC]
+	void TransformIntoMonster_RPC() 
+	{
+		playerControls.TransformIntoMonster();
 	}
 
 
