@@ -16,6 +16,7 @@ TagManager:
   - SpawnRoom
   - HudDamage
   - PauseMenu
+  - WorldDoorBlocks
   layers:
   - Default
   - TransparentFX

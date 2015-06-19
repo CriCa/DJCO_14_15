@@ -20,7 +20,6 @@ public class CatchRoomController : MonoBehaviour
 	void OnTriggerEnter(Collider other) {
 		if (other.tag == "PlayerBody") {
 			players.Add(other.transform);
-			UpdateTarget();
 		}
 	}
 
@@ -28,20 +27,29 @@ public class CatchRoomController : MonoBehaviour
 	void OnTriggerExit(Collider other) {
 		if (other.tag == "PlayerBody") {
 			players.Remove(other.transform);
-			UpdateTarget();
 		}
 	}
 
-
-	void UpdateTarget() {
-		// if we have no players inside, monster should be stopped
+	void Update()
+	{
 		if (players.Count == 0) {
-			monsterController.StopFollowing();
+			monsterController.StopFollowing ();
+		}
+		else
+		{
+			float closestDistance = Mathf.Infinity;
+			Transform closestTransform = null;
+
+			foreach(Transform player in players)
+			{
+				float distance = Vector3.Distance(player.transform.position, monster.transform.position);
+
+				if(distance < closestDistance)
+					closestTransform = player;
+			}
+
+			monsterController.SetTarget(closestTransform);
 		}
 
-		// otherwise, update target and let monster handle current/new targets internally
-		else {
-			monsterController.SetTarget(players[0]);
-		}
 	}
 }

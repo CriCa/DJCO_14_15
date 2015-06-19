@@ -15,7 +15,9 @@ public class MapManager : MonoBehaviour
 	public int mapSize; // nr of rooms, equal in both sides
 	public GameObject[] roomTypes;
 	public GameObject bridge;
+	public GameObject doorBlock;
 
+	private GameObject worldDoorBlocks;
 	private GameObject worldRooms; // where to instantiate the rooms
 	private GameObject worldBridges; // where to instantiate the bridges
 	private float roomSpacement = 38.2f; // space between each room
@@ -35,6 +37,7 @@ public class MapManager : MonoBehaviour
 
 
 	void Start () {
+		worldDoorBlocks = GameObject.FindGameObjectWithTag ("WorldDoorBlocks");
 		worldRooms = GameObject.FindGameObjectWithTag("WorldRooms");
 		worldBridges = GameObject.FindGameObjectWithTag("WorldBridges");
 		mapPositions = new List<Vector2>();
@@ -158,7 +161,32 @@ public class MapManager : MonoBehaviour
 					bridgeObj.transform.parent = worldBridges.transform;
 				}
 			}
-		}	     
+		}
+
+		//Block outter doors
+		for (int i=0; i<mapSize; i++)
+		{
+			GameObject doorBlockObj = Instantiate (doorBlock, new Vector3 (roomSpacement * i, 0, -9.5f), transform.rotation) as GameObject;
+			doorBlockObj.transform.parent = worldDoorBlocks.transform;
+		}
+
+		for (int i=0; i<mapSize; i++)
+		{
+			GameObject doorBlockObj = Instantiate (doorBlock, new Vector3 (roomSpacement * i, 0, roomSpacement * (mapSize - 1) + 9.5f - 1f), transform.rotation) as GameObject;
+			doorBlockObj.transform.parent = worldDoorBlocks.transform;
+		}
+
+		for (int i=0; i<mapSize; i++)
+		{
+			GameObject doorBlockObj = Instantiate (doorBlock, new Vector3 (-9.5f, 0, roomSpacement * i), transform.rotation * Quaternion.Euler (0, 90, 0)) as GameObject;
+			doorBlockObj.transform.parent = worldDoorBlocks.transform;
+		}
+
+		for (int i=0; i<mapSize; i++)
+		{
+			GameObject doorBlockObj = Instantiate (doorBlock, new Vector3 (roomSpacement * (mapSize - 1) + 9.5f - 1f, 0, roomSpacement * i), transform.rotation * Quaternion.Euler (0, 90, 0)) as GameObject;
+			doorBlockObj.transform.parent = worldDoorBlocks.transform;
+		}
 	}
 
 

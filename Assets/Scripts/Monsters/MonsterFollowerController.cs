@@ -16,14 +16,16 @@ public class MonsterFollowerController : MonoBehaviour
 
 
 	public void SetTarget(Transform target) {
-		if (this.target != target) {
+		if (this.target != target)
+		{
 			this.target = target;
+			StopCoroutine("FollowTarget");
 			StartCoroutine("FollowTarget");
 		}
 	}
-
-
-	public void StopFollowing() {
+	
+	public void StopFollowing()
+	{
 		StopCoroutine("FollowTarget");
 		target = null;
 		animator.SetBool("Running", false);
