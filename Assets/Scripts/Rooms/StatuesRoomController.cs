@@ -81,6 +81,9 @@ public class StatuesRoomController : MonoBehaviour
 			// check if player is moving within fov
 			if (IsPlayerMoving(playerTransform, playerControls)) {
 				playerNetManager.TakeDamage(1000);
+
+				isPlayerInside = false;
+				return true;
 			}
 
 			// if we're close enough, stop
