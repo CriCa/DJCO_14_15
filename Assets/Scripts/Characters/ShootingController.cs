@@ -13,7 +13,6 @@ public class ShootingController : MonoBehaviour
 	public float damage = 1f;
 
 	private PlayerNetworkManager playerNetManager;
-	private GameObject impactObj;
 	private bool shooting;
 	private float nextShot;
 
@@ -23,9 +22,6 @@ public class ShootingController : MonoBehaviour
 
 		shooting = false;
 		nextShot = 0f;
-
-		// spawning at start somewhere it can't be seen so it can simply be moved later largely improves performance
-		impactObj = Instantiate(impact, new Vector3(3f, 12f, 18f), Quaternion.identity) as GameObject;
 	}
 
 
@@ -49,10 +45,6 @@ public class ShootingController : MonoBehaviour
 				// if player is hit, should take damage
 				if (hit.transform.tag == "Player") {
 					hit.transform.GetComponent<PlayerNetworkManager>().TakeDamage(damage);
-				}
-				// otherwise, draw impact particles
-				else {
-					impactObj.transform.position = hit.point;
 				}
 			}
 		}
