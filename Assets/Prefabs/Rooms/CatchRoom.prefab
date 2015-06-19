@@ -11275,7 +11275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5771a557b4f22784082ca6804368a57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsToTrigger: 20
+  secondsToTrigger: 15
   monster: {fileID: 139720}
 --- !u!114 &11488118
 MonoBehaviour:
