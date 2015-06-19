@@ -154,6 +154,7 @@ public class PlayerControlsManager : MonoBehaviour
 		currentHP -= damage;
 
 		if (currentHP <= 0) {
+			//PhotonNetwork.Instantiate("DeadParticles", transform.position, transform.rotation, 0);
 			NetworkManager.instance.RespawnPlayer();
 		}
 	}

@@ -5729,7 +5729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impact: {fileID: 191386, guid: 6f6ae5cffcb525a49b8e62b96a264e2e, type: 2}
-  cooldown: .100000001
+  cooldown: 1.5
   maxShootingDistance: 4
   damage: 1
 --- !u!114 &11427038
