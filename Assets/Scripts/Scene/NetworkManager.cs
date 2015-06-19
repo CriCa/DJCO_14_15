@@ -45,7 +45,7 @@ public class NetworkManager : MonoBehaviour
 			ChatManager.instance.SetPlayerName (PhotonNetwork.playerName);
 
 			RoomOptions ro = new RoomOptions () {isVisible = true, maxPlayers = 4};
-			PhotonNetwork.JoinOrCreateRoom (PlayerPrefs.GetString (MainMenuController.ROOM_KEY, "Default"), ro, TypedLobby.Default);
+			PhotonNetwork.JoinOrCreateRoom (PlayerPrefs.GetString (MainMenuController.ROOM_KEY, "Default2"), ro, TypedLobby.Default);
 			PlayerPrefs.DeleteKey (MainMenuController.ROOM_KEY);
 
 			AudioListener.volume = PlayerPrefs.GetFloat (MainMenuController.VOLUME_KEY, 100.0f) / 100.0f;

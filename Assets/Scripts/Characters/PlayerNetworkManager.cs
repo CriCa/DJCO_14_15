@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.UI;
 
 /* 
  * Network Manager
@@ -147,6 +148,23 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 	}
 
 
+	public void EndSession()
+	{
+		photonView.RPC ("EndSession_RPC", PhotonTargets.All);
+	}
+
+
+	[RPC]
+	void EndSession_RPC()
+	{
+		Text output = GameObject.FindGameObjectWithTag("GameHint").GetComponent<Text>();
+		output.enabled = true;
+		output.text = "We hope you had as much fun as we had developing this game!";
+
+		Invoke("QuitSession", 5f);
+	}
+
+
 	[RPC]
 	void TransformIntoMonster_RPC() 
 	{
@@ -166,10 +184,18 @@ public class PlayerNetworkManager : Photon.MonoBehaviour
 
 
 	[RPC]
-	void TakeDamage_RPC(float damage) {
+	void TakeDamage_RPC(float damage) 
+	{
 		if (photonView.isMine) 
 		{
 			playerControls.TakeDamage(damage);
 		}
+	}
+
+
+	void QuitSession() 
+	{
+		PhotonNetwork.Disconnect();
+		Application.LoadLevel("MainMenu");
 	}
 }

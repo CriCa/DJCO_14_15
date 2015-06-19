@@ -1236,7 +1236,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1523764758
+--- !u!4 &1523764758 stripped
 Transform:
   m_PrefabParentObject: {fileID: 431814, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
   m_PrefabInternal: {fileID: 1523764757}
@@ -1591,8 +1591,8 @@ MonoBehaviour:
   roomTypes:
   - {fileID: 117888, guid: f47492c181d75844c8bb3f38094c94d3, type: 2}
   - {fileID: 115164, guid: bfa6b91b47af6ab46a04748cc8371179, type: 2}
-  - {fileID: 197480, guid: b7c5a399d88b71647b327a22f8ca2d86, type: 2}
-  - {fileID: 167026, guid: 00022f7b5bd6c69489d6233d9e8a4259, type: 2}
+  - {fileID: 126382, guid: 6a9cb2ed46a7da34da5ed6f8d10f751e, type: 2}
+  - {fileID: 126382, guid: 6a9cb2ed46a7da34da5ed6f8d10f751e, type: 2}
   - {fileID: 163906, guid: 54eb2c39480255641b107e7fea54d04a, type: 2}
   - {fileID: 191714, guid: e2fb9393c0a64e04282aa0cbe871fd86, type: 2}
   - {fileID: 147366, guid: 93ea01f041688684da0a2e6ec6ce16d5, type: 2}
