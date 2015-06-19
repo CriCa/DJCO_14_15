@@ -184,7 +184,7 @@ public class NetworkManager : MonoBehaviour
 		spawnCamera.GetComponent<AudioSource> ().enabled = true;
 
 		// warn player, if needed
-		ChatManager.instance.AddWarningMessage("You died. get gud, scrub.");
+		ChatManager.instance.AddMessage("Player " + PhotonNetwork.playerName + " died.");
 
 		// and start the actual spawn process
 		StartCoroutine("StartRespawnProcess");
