@@ -69,7 +69,7 @@ public class PlayerControlsManager : MonoBehaviour
 				gamePaused = true;
 				DisableControls();
 				output.enabled = true;
-				output.text = "Currently paused....";
+				output.text = "Currently paused...";
 			}
 			else {
 				gamePaused = false;
@@ -90,7 +90,7 @@ public class PlayerControlsManager : MonoBehaviour
 			gamePaused = true;
 			DisableControls();
 			output.enabled = true;
-			output.text = "Currently paused....";
+			output.text = "Currently paused...";
 		}
 	}
 	/* until here */
