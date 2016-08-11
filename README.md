@@ -26,6 +26,8 @@ Writhe was fully developed with the Unity 5 engine. For networking logic, it rel
 
 ## Screenshots
 
+<img src="Docs/room1.png" width="650">
+
 ![screenshot](Docs/room1.png)
 ![screenshot](Docs/room2.png)
 ![screenshot](Docs/room3.png)
